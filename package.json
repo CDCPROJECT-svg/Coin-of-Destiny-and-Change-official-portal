@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@thirdweb-dev/sdk": "^4.0.99",
+    "@thirdweb-dev/storage": "^2.0.15",
+    "ethers": "^6.16.0",
+    "xlsx": "^0.18.5"
+  }
+}
+const { ThirdwebStorage } = require("@thirdweb-dev/storage");
+const fs = require("fs");
+const XLSX = require("xlsx");
+
+const storage = new ThirdwebStorage();
