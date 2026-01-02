@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDC COIN - Destiny & Change</title>
     <style>
+  @keyframes rainbowFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+  .rainbow-text { 
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff); 
+    background-size: 400% 400%; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: rainbowFlow 5s ease infinite; 
+    font-weight: bold; 
+  }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.02); color: #FFD700; } 100% { transform: scale(1); } }
   .cdc-welcome { animation: fadeIn 3s ease-in, pulse 4s infinite; display: block; font-weight: bold; }
@@ -29,6 +38,6 @@
         <p style="font-size: 1.2rem;">The 204-Country Charity List and Wallet Tracking are being integrated. Check back soon!</p>
     </div>
 
-    <p>EMPOWERING COMMUNITIES • CREATING WEALTH WHILE WATCHING and SPENDING MONEY</p>
+    <p><span class="rainbow-text">EMPOWERING COMMUNITIES</span> • <span class="rainbow-text">CREATING WEALTH</span> WHILE <span class="rainbow-text">WATCHING</span> and <span class="rainbow-text">SPENDING MONEY</span></p>
 </body>
 </html>
