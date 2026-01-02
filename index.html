@@ -5,53 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDC Official Portal</title>
     <style>
-        body { background-color: #0f172a; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); color: #FFD700; } }
-        @keyframes rainbow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        @keyframes pop { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.3); } }
-        
-        .welcome-msg { animation: fadeIn 2s, pulse 4s infinite; font-weight: bold; font-size: 1.1rem; margin-bottom: 20px; }
-        .rainbow-text { 
-            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff); 
-            background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
-            animation: rainbow 3s linear infinite; font-weight: bold; 
-        }
-        .pop-icon { display: inline-block; animation: pop 2s infinite; margin: 0 3px; }
-        .mission-box { font-size: 0.85rem; line-height: 1.8; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px; margin: 10px 0; }
-        .legacy-section { font-size: 1.3rem; margin-top: 15px; border-top: 1px solid #334155; padding-top: 10px; }
-        .status-box { color: #94a3b8; font-size: 0.8rem; margin-top: 30px; }
+        body { background-color: #0f172a; color: white; font-family: sans-serif; text-align: center; padding: 20px; line-height: 1.6; }
+        .welcome { font-weight: bold; color: #FFD700; font-size: 1.2rem; margin-bottom: 20px; }
+        .rainbow { font-weight: bold; background: linear-gradient(90deg, red, orange, yellow, green, blue, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 5px rgba(255,255,255,0.3)); }
+        .icon { display: inline-block; margin: 0 5px; }
+        .legacy { font-size: 2.5rem; display: block; margin-top: 10px; }
+        .mission-box { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #334155; }
     </style>
 </head>
 <body>
-
     <h2>CDC COIN OF DESTINY & CHANGE</h2>
-
-    <div class="welcome-msg">
-        WELCOME to CDC COIN FAMILY where LIFE becomes Easy and HAYAHAY! 🌴💰
-    </div>
-
+    <div class="welcome">WELCOME to CDC COIN FAMILY where LIFE becomes Easy and HAYAHAY! 🌴💰</div>
+    
     <div class="mission-box">
-        <span class="rainbow-text">EMPOWERING COMMUNITIES</span> <span class="pop-icon">🤝</span> • 
-        <span class="rainbow-text">CREATING WEALTH</span> <span class="pop-icon">💎</span> <br>
-        WHILE <span class="rainbow-text">WATCHING</span> <span class="pop-icon">📺</span> and 
-        <span class="rainbow-text">SPENDING MONEY</span> <span class="pop-icon">💸</span> <br>
-        
-        TRAVEL <span class="pop-icon">✈️</span> • HOUSE <span class="pop-icon">🏠</span> • 
-        CAR <span class="pop-icon">🏎️</span> • MEDICAL <span class="pop-icon">🏥</span> <br>
-        
-        EDUCATION <span class="pop-icon">📚</span> • ELDERLY CARE <span class="pop-icon">👵</span> • 
-        LIVELIHOOD <span class="pop-icon">🌱</span>
-        
-        <div class="legacy-section">
-            <span class="rainbow-text">LEGACY</span> <span class="pop-icon" style="font-size: 2.5rem;">👑</span>
+        <span class="rainbow">EMPOWERING COMMUNITIES</span> <span class="icon">🤝</span><br>
+        <span class="rainbow">CREATING WEALTH</span> <span class="icon">💎</span><br>
+        WHILE <span class="rainbow">WATCHING</span> <span class="icon">📺</span> and <span class="rainbow">SPENDING MONEY</span> <span class="icon">💸</span><br>
+        <hr style="border: 0.5px solid #334155; margin: 10px 0;">
+        TRAVEL ✈️ • HOUSE 🏠 • CAR 🏎️ • MEDICAL 🏥<br>
+        EDUCATION 📚 • ELDERLY CARE 👵 • LIVELIHOOD 🌱<br>
+        <div style="margin-top:10px;">
+            <span class="rainbow" style="font-size:1.5rem;">LEGACY</span>
+            <span class="legacy">👑</span>
         </div>
     </div>
 
-    <div class="status-box">
+    <div style="color: #94a3b8; font-size: 0.8rem;">
         <p>🚧 Phase 1: Portal Deployment</p>
-        <p>The 204-Country Charity List and Wallet Tracking are being integrated. Check back soon!</p>
+        <p>The 204-Country Charity List and Wallet Tracking are being integrated.</p>
     </div>
-
 </body>
 </html>
