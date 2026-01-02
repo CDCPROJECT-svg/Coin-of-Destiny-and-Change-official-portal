@@ -5,36 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDC Official Portal</title>
     <style>
-  @keyframes glowBox { 0%, 100% { border-color: #FFD700; box-shadow: 0 0 5px #FFD700; } 50% { border-color: #ffffff; box-shadow: 0 0 20px #FFD700; } }
-  .phase1-effect { animation: fadeIn 3s ease-in, glowBox 3s infinite; }
-        body { background-color: #0f172a; color: white; font-family: sans-serif; text-align: center; padding: 20px; line-height: 1.6; }
-        .welcome { font-weight: bold; color: #FFD700; font-size: 1.2rem; margin-bottom: 20px; }
-        .rainbow { font-weight: bold; background: linear-gradient(90deg, red, orange, yellow, green, blue, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 5px rgba(255,255,255,0.3)); }
-        .icon { display: inline-block; margin: 0 5px; }
-        .legacy { font-size: 2.5rem; display: block; margin-top: 10px; }
-        .mission-box { background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin: 20px 0; border: 1px solid #334155; }
+        body { background-color: #0f172a; color: white; font-family: sans-serif; text-align: center; padding: 20px; line-height: 1.6; overflow-x: hidden; }
+        
+        /* Animations */
+        @keyframes rainbowFlow { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        @keyframes goldFlash { 0%, 100% { opacity: 1; text-shadow: 0 0 5px #FFD700; } 50% { opacity: 0.6; text-shadow: 0 0 20px #FFD700; color: #FFD700; } }
+        @keyframes pop { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.4); } }
+        @keyframes boxGlow { 0%, 100% { border-color: #FFD700; box-shadow: 0 0 10px #FFD700; } 50% { border-color: #fff; box-shadow: 0 0 30px #FFD700; } }
+
+        .welcome { font-weight: bold; font-size: 1.3rem; animation: goldFlash 3s infinite; margin-bottom: 20px; }
+        
+        .rainbow-text { 
+            background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #ff00ff, #ff0000); 
+            background-size: 400% 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+            animation: rainbowFlow 4s linear infinite; font-weight: bold; 
+        }
+
+        .icon-pop { display: inline-block; animation: pop 2s infinite; margin: 0 5px; }
+        
+        .mission-box { 
+            background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 20px; 
+            border: 2px solid #FFD700; margin: 20px 0; animation: boxGlow 3s infinite;
+        }
+
+        .status-box { 
+            margin-top: 30px; padding: 25px; border: 3px solid #FFD700; border-radius: 20px; 
+            animation: boxGlow 2s infinite; background: rgba(255, 215, 0, 0.1);
+        }
+        
+        .legacy { font-size: 3rem; display: block; margin-top: 10px; animation: pop 1.5s infinite; }
     </style>
 </head>
 <body>
+
     <h2>CDC COIN OF DESTINY & CHANGE</h2>
-    <div class="welcome">WELCOME to CDC COIN FAMILY where LIFE becomes Easy and HAYAHAY! 🌴💰</div>
-    
+
+    <div class="welcome">
+        WELCOME to CDC COIN FAMILY where LIFE becomes Easy and HAYAHAY! 🌴💰
+    </div>
+
     <div class="mission-box">
-        <span class="rainbow">EMPOWERING COMMUNITIES</span> <span class="icon">🤝</span><br>
-        <span class="rainbow">CREATING WEALTH</span> <span class="icon">💎</span><br>
-        WHILE <span class="rainbow">WATCHING</span> <span class="icon">📺</span> and <span class="rainbow">SPENDING MONEY</span> <span class="icon">💸</span><br>
-        <hr style="border: 0.5px solid #334155; margin: 10px 0;">
-        TRAVEL ✈️ • HOUSE 🏠 • CAR 🏎️ • MEDICAL 🏥<br>
-        EDUCATION 📚 • ELDERLY CARE 👵 • LIVELIHOOD 🌱<br>
-        <div style="margin-top:10px;">
-            <span class="rainbow" style="font-size:1.5rem;">LEGACY</span>
+        <span class="rainbow-text">EMPOWERING COMMUNITIES</span> <span class="icon-pop">🤝</span><br>
+        <span class="rainbow-text">CREATING WEALTH</span> <span class="icon-pop">💎</span><br>
+        WHILE <span class="rainbow-text">WATCHING</span> <span class="icon-pop">📺</span> and <br>
+        <span class="rainbow-text">SPENDING MONEY</span> <span class="icon-pop">💸</span>
+        <hr style="border: 0.5px solid #334155; margin: 15px 0;">
+        TRAVEL <span class="icon-pop">✈️</span> • HOUSE <span class="icon-pop">🏠</span> • CAR <span class="icon-pop">🏎️</span> • MEDICAL <span class="icon-pop">🏥</span><br>
+        EDUCATION <span class="icon-pop">📚</span> • ELDERLY CARE <span class="icon-pop">👵</span> • LIVELIHOOD <span class="icon-pop">🌱</span>
+        <div style="margin-top: 20px;">
+            <span class="rainbow-text" style="font-size: 2rem;">LEGACY</span>
             <span class="legacy">👑</span>
         </div>
     </div>
 
-    <div style="color: #94a3b8; font-size: 0.8rem;">
-        <p>🚧 Phase 1: Portal Deployment</p>
-        <p>The 204-Country Charity List and Wallet Tracking are being integrated.</p>
+    <div class="status-box">
+        <div style="font-size: 2.2rem; font-weight: bold; color: #FFD700; animation: goldFlash 2s infinite;">🚧 Phase 1: Portal Deployment</div>
+        <div style="font-size: 1.5rem; color: #ffffff; margin-top: 15px; font-weight: bold;">
+            The 204-Country Charity List and <br>
+            Wallet Tracking are being integrated. <br>
+            <span class="rainbow-text">Check back soon!</span>
+        </div>
     </div>
+
 </body>
 </html>
