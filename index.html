@@ -3,24 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDC Portal | Maintenance</title>
+    <title>CDC COIN OF DESTINY & CHANGE</title>
     <style>
-        body { background-color: #1a1a1a; color: #ffd700; font-family: sans-serif; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { border: 2px solid #ffd700; padding: 40px; border-radius: 15px; background: #222; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2); text-align: center; }
-        h1 { font-size: 2.5rem; margin: 10px 0; }
-        p { color: #ffffff; font-size: 1.1rem; }
-        .gear { font-size: 60px; animation: spin 4s linear infinite; }
-        @keyframes spin { 100% { transform: rotate(360deg); } }
+        :root { --gold: #ffd700; --platinum: #e5e4e2; --black: #000; }
+        body { background: var(--black); color: var(--gold); font-family: 'Times New Roman', serif; margin: 0; padding-bottom: 110px; }
+        
+        /* I. Branding & Header */
+        .header { text-align: center; padding: 25px 10px; border-bottom: 2px solid var(--gold); background: #0a0a0a; }
+        .logo-circle { width: 70px; height: 70px; border: 2px solid var(--gold); border-radius: 50%; margin: 0 auto 10px; background: #111; }
+        .title { font-size: 20px; font-weight: bold; letter-spacing: 1px; line-height: 1.2; }
+        .slogan { color: var(--platinum); font-style: italic; font-size: 12px; margin-top: 8px; display: block; padding: 0 10px; }
+
+        /* II. Utility Bars */
+        .utility-bar { display: flex; justify-content: space-around; background: #111; padding: 10px; border-bottom: 1px solid #333; }
+        select { background: transparent; color: var(--gold); border: 1px solid var(--gold); font-size: 11px; padding: 4px; border-radius: 4px; }
+
+        /* III. Member Profile Card */
+        .profile-card { margin: 15px; padding: 15px; background: #0a0a0a; border: 1px solid #222; border-left: 5px solid var(--gold); border-radius: 8px; }
+        .profile-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px; }
+        .label { color: #888; text-transform: uppercase; font-size: 11px; }
+
+        /* IV. Wallet Financials Grid */
+        .wallet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 15px; }
+        .wallet-box { background: linear-gradient(145deg, #111, #1a1a1a); border: 1px solid var(--platinum); padding: 12px; border-radius: 10px; text-align: center; }
+        .wallet-box small { color: var(--platinum); font-size: 10px; display: block; margin-bottom: 4px; }
+        .wallet-box strong { font-size: 15px; }
+
+        /* V. Progress & Ticker */
+        .ticker { background: #440000; color: #fff; padding: 10px; text-align: center; font-size: 11px; margin: 15px 0; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); font-weight: bold; }
+        .leadership-status { text-align: center; margin-bottom: 25px; padding: 10px; border: 1px solid #222; margin: 15px; border-radius: 8px; }
+        .security-alert { color: #ff4444; font-size: 11px; font-weight: bold; margin-top: 5px; display: block; }
+
+        /* VI. The 8 Leadership Incentives */
+        .incentive-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 0 15px; margin-bottom: 30px; }
+        .inc-item { text-align: center; font-size: 10px; color: var(--platinum); }
+        .inc-icon { font-size: 26px; display: block; margin-bottom: 5px; }
+
+        /* VII. Bottom Navigation (8 Anchors) */
+        .nav-bar { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 2px solid var(--gold); display: flex; justify-content: space-around; padding: 12px 0; z-index: 1000; }
+        .nav-anchor { color: var(--gold); text-decoration: none; font-size: 9px; text-align: center; min-width: 12%; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="gear">⚙️</div>
-        <h1>CDC OFFICIAL PORTAL</h1>
-        <p>18-Project Binary System is being optimized.</p>
-        <p><strong>Status:</strong> Security Guardian Calibration</p>
-        <p style="font-size: 0.8rem; color: #888; margin-top: 20px;">Zero Poverty Initiative 2026</p>
+
+    <div class="utility-bar">
+        <select><option>Language (11)</option></select>
+        <select><option>Currency (51)</option></select>
     </div>
+
+    <div class="header">
+        <div class="logo-circle"></div>
+        <div class="title">CDC COIN OF DESTINY & CHANGE</div>
+        <span class="slogan">"Empowering Communities Creating Wealth while Watching and Spending Moment"</span>
+    </div>
+
+    <div class="profile-card">
+        <div class="profile-row"><span class="label">ID:</span> <strong>CDC-XXXX-XX</strong></div>
+        <div class="profile-row"><span class="label">Join Date:</span> <strong>04 Jan 2026</strong></div>
+        <div class="profile-row"><span class="label">Nominee:</span> <strong>[REGISTERED NAME]</strong></div>
+    </div>
+
+    <div class="wallet-grid">
+        <div class="wallet-box"><small>REWARD WALLET</small><strong>18,888 USDT</strong></div>
+        <div class="wallet-box"><small>CDC COIN WALLET</small><strong>0.00 CDC</strong></div>
+        <div class="wallet-box"><small>WALLET POINTS</small><strong>0.00 PTS</strong></div>
+        <div class="wallet-box"><small>SUBSCRIPTION</small><strong>ACTIVE</strong></div>
+    </div>
+
+    <div class="ticker">📢 Level Complete! You have unlocked the next tier of the CDC-COIN Bonus.</div>
+
+    <div class="leadership-status">
+        <span class="label">Current Status</span><br>
+        <strong>PROJECT 1: LEVEL 7 / 28</strong><br>
+        <span class="security-alert">⚠️ SUCCESSION VERIFICATION REQUIRED</span>
+    </div>
+
+    <div class="incentive-grid">
+        <div class="inc-item"><span class="inc-icon">🏠</span>House</div>
+        <div class="inc-item"><span class="inc-icon">🏥</span>Health</div>
+        <div class="inc-item"><span class="inc-icon">🚗</span>Car</div>
+        <div class="inc-item"><span class="inc-icon">✈️</span>Travel</div>
+        <div class="inc-item"><span class="inc-icon">🛍️</span>Shopping</div>
+        <div class="inc-item"><span class="inc-icon">🎓</span>Scholar</div>
+        <div class="inc-item"><span class="inc-icon">👵</span>AgedCare</div>
+        <div class="inc-item"><span class="inc-icon">💰</span>Bonus</div>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="#" class="nav-anchor">🏠<br>HOME</a>
+        <a href="#" class="nav-anchor">💼<br>BUSINESS</a>
+        <a href="#" class="nav-anchor">💰<br>WALLET</a>
+        <a href="#" class="nav-anchor">🏆<br>INCENT</a>
+        <a href="#" class="nav-anchor">🤝<br>CHARITY</a>
+        <a href="#" class="nav-anchor">🌳<br>GENEAL</a>
+        <a href="#" class="nav-anchor">⚡<br>ACTION</a>
+        <a href="#" class="nav-anchor">➕<br>MORE</a>
+    </nav>
+
 </body>
 </html>
 
