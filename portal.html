@@ -3,116 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDC PRIVATE PORTAL</title>
+    <title>CDC Portal | Elite Private Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; }
+        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; --green: #00ff00; --red: #ff4444; }
         body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 80px; }
-        
-        /* Slide-to-Right Navigator */
-        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; overflow-y: auto; }
-        .side-nav.open { right: 0; box-shadow: -10px 0 30px rgba(0,0,0,0.9); }
-        .nav-link { display: block; padding: 15px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; text-transform: uppercase; }
-        .nav-link:hover { color: var(--gold); background: #111; }
-
-        /* Dashboard Header */
-        .header { padding: 15px; border-bottom: 1px solid var(--gold); position: relative; background: #050505; }
-        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; z-index: 1001; }
-        .global-status { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
-
-        /* Info & Wallets */
-        .info-bar { padding: 15px; font-size: 12px; background: #000; border-bottom: 1px solid #222; }
-        .grid-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
-        .card { background: var(--gray); padding: 15px; border-radius: 8px; border-bottom: 2px solid var(--gold); }
-        .card-label { font-size: 9px; color: var(--gold); text-transform: uppercase; }
-        .card-val { font-size: 16px; font-weight: bold; margin-top: 5px; }
-
-        /* Verification Warning */
-        .alert-zone { margin: 15px; padding: 15px; border: 1px dashed #ff4444; border-radius: 8px; text-align: center; background: rgba(255,0,0,0.05); }
-
-        /* The 8 Categories */
-        .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 15px; }
-        .cat-item { background: var(--gray); padding: 10px; border-radius: 8px; text-align: center; font-size: 22px; }
-        .cat-label { font-size: 9px; color: #888; display: block; margin-top: 5px; }
-
-        /* Bottom Nav */
-        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; justify-content: space-around; padding: 10px 0; z-index: 999; }
-        .bn-link { text-align: center; color: #666; font-size: 9px; text-decoration: none; }
-        .bn-link i { font-size: 18px; margin-bottom: 3px; }
-        .bn-link.active { color: var(--gold); }
+        .header { padding: 15px; border-bottom: 1px solid var(--gold); background: #050505; position: sticky; top: 0; z-index: 900; }
+        .clock-ticker { font-family: monospace; color: var(--gold); font-size: 14px; text-align: center; margin-top: 5px; }
+        .global-stats { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
+        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; }
+        .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+        .wallet-card { background: var(--gray); padding: 12px; border-radius: 8px; border-left: 3px solid var(--gold); }
+        .wallet-val { font-size: 15px; font-weight: bold; margin-top: 4px; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); z-index: 2000; display: none; overflow-y: auto; padding-bottom: 50px; }
+        .entity-card { background: #111; border: 1px solid #333; padding: 15px; margin: 10px 20px; border-radius: 8px; cursor: pointer; }
+        .entity-card h4 { margin: 0; color: var(--gold); font-size: 14px; }
+        .entity-card p { margin: 5px 0 0; font-size: 10px; color: #888; }
+        .input-group { padding: 20px; }
+        .input-group label { display: block; font-size: 10px; color: var(--gold); margin-bottom: 5px; text-transform: uppercase; }
+        .input-group input { width: 95%; background: #000; border: 1px solid #333; color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 5px; outline: none; }
+        .v-status { display: block; font-size: 9px; margin-bottom: 15px; font-weight: bold; }
+        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; }
+        .side-nav.open { right: 0; }
+        .nav-link { display: block; padding: 15px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; cursor: pointer; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; height: 65px; z-index: 998; }
+        .bn-item { flex: 1; text-align: center; color: #666; font-size: 9px; padding-top: 12px; text-decoration: none; }
+        .bn-item.active { color: var(--gold); }
     </style>
 </head>
 <body>
-
-    <nav class="side-nav" id="sidebar">
-        <div style="padding: 0 20px 20px; color: var(--gold); font-weight: bold; border-bottom: 1px solid #222;">NAVIGATOR</div>
-        <a href="#" class="nav-link"><i class="fas fa-briefcase"></i> &nbsp; Business</a>
-        <a href="#" class="nav-link"><i class="fas fa-wallet"></i> &nbsp; Wallet</a>
-        <a href="#" class="nav-link"><i class="fas fa-gift"></i> &nbsp; Incentives</a>
-        <a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i> &nbsp; Charity</a>
-        <a href="#" class="nav-link"><i class="fas fa-tree"></i> &nbsp; Genealogy</a>
-        <a href="#" class="nav-link"><i class="fas fa-bolt"></i> &nbsp; Action Center</a>
-        <a href="#" class="nav-link" style="color:#666;"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</a>
-    </nav>
-
     <div class="header">
-        <div class="global-status">
-            <span>🌐 LANG (192)</span>
-            <span>🌍 COUNTRY (204)</span>
-        </div>
-        <div style="font-weight: bold; font-size: 18px; color: var(--gold);">CDC PORTAL</div>
-        <div style="font-size: 9px; color: #888; font-style: italic;">"Empowering Communities Creating Wealth..."</div>
+        <div class="global-stats"><span>🌐 Lang: 192</span><span>🌍 Country: 204</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); font-size:18px;">CDC PORTAL</div>
+        <div id="realtime-clock" class="clock-ticker">--:--:-- | 2026</div>
         <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     </div>
 
-    <div class="info-bar">
-        <div style="display:flex; justify-content:space-between;">
-            <span>ID: <b style="color:var(--gold)">CDC-XXXX-XX</b></span>
-            <span>Joined: <b>04 Jan 2026</b></span>
+    <div class="grid-container">
+        <div class="wallet-card">
+            <div style="font-size:9px; color:var(--gold);">RESERVE POINTS</div>
+            <div class="wallet-val">1,500,000 PTS</div>
         </div>
-        <div style="margin-top:5px;">Nominee: <b>[REGISTERED NAME]</b></div>
-    </div>
-
-    <div class="grid-stats">
-        <div class="card">
-            <div class="card-label">Reward Wallet</div>
-            <div class="card-val">18,888 USDT</div>
-        </div>
-        <div class="card">
-            <div class="card-label">CDC Coin Wallet</div>
-            <div class="card-val">0.00 CDC</div>
+        <div class="wallet-card" style="border-left-color: var(--green);">
+            <div style="font-size:9px; color:var(--gold);">PROGRESS</div>
+            <div class="wallet-val" style="font-size:12px;">P1: LEVEL 7 / 28</div>
         </div>
     </div>
 
-    <div class="alert-zone">
-        <div style="color:var(--gold); font-size: 12px; font-weight: bold;">PROJECT 1: LEVEL 7 / 28</div>
-        <div style="color:#ff4444; font-size: 10px; margin-top: 5px; font-weight: bold;">⚠️ SUCCESSION VERIFICATION REQUIRED</div>
-        <button style="margin-top:10px; background:var(--gold); border:none; padding:8px 15px; border-radius:4px; font-weight:bold; font-size:10px;">LOCK CDC-COIN</button>
+    <div style="padding:15px; text-align:center;">
+        <button onclick="openBusinessModal()" style="background:var(--gold); color:#000; border:none; padding:15px 30px; border-radius:5px; font-weight:bold; width:100%;">💼 SETUP BUSINESS ENTITY</button>
     </div>
 
-    <div class="category-grid">
-        <div class="cat-item">🏠<span class="cat-label">House</span></div>
-        <div class="cat-item">🏥<span class="cat-label">Health</span></div>
-        <div class="cat-item">🚗<span class="cat-label">Car</span></div>
-        <div class="cat-item">✈️<span class="cat-label">Travel</span></div>
-        <div class="cat-item">🛍️<span class="cat-label">Shopping</span></div>
-        <div class="cat-item">🎓<span class="cat-label">Scholar</span></div>
-        <div class="cat-item">👵<span class="cat-label">AgedCare</span></div>
-        <div class="cat-item">💰<span class="cat-label">Bonus</span></div>
+    <div id="businessModal" class="modal-overlay">
+        <div style="text-align:center; padding: 30px 20px 10px;">
+            <h3 style="color:var(--gold); margin:0;">IDENTITY GATE</h3>
+            <p style="font-size:10px; color:#888;">Nominees must be existing CDC Portal Members.</p>
+        </div>
+        <div id="entityList">
+            <div onclick="showAncestry('Personal')" class="entity-card"><h4>Personal Account</h4><p>Standard individual registration.</p></div>
+            <div onclick="showAncestry('Family Clan')" class="entity-card"><h4>Family Clan</h4><p>Lineage-based Multi-Sig account.</p></div>
+            <div onclick="showAncestry('Merchant')" class="entity-card"><h4>Merchant</h4><p>Retail & Product Vendor account.</p></div>
+            <div onclick="showAncestry('Institution')" class="entity-card"><h4>Institution / Coop</h4><p>Official organization registration.</p></div>
+        </div>
+        <div id="ancestrySection" class="input-group" style="display:none;">
+            <h4 id="selectedType" style="color:var(--gold); text-align:center; margin-bottom:20px;"></h4>
+            <label>Father's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+            <label>Mother's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+            <div id="nomineeFields" style="display:none; margin-top:20px; border-top:1px solid #222; padding-top:20px;">
+                <label>Nominee 1: Head / Captain</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+                <label>Nominee 2: Treasurer</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+                <label>Nominee 3: Secretary</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+            </div>
+            <button onclick="saveAndPush()" id="btnActivate" style="width:100%; background:var(--gold); color:#000; border:none; padding:15px; font-weight:bold; border-radius:5px; margin-top:10px;">SUBMIT APPLICATION</button>
+            <button onclick="closeBusinessModal()" style="width:100%; background:transparent; border:none; color:#888; margin-top:15px; font-size:12px;">GO BACK</button>
+        </div>
     </div>
+
+    <nav class="side-nav" id="sidebar">
+        <div style="padding: 20px; color: var(--gold); border-bottom: 1px solid #333; font-weight: bold;">NAVIGATOR</div>
+        <a onclick="openBusinessModal()" class="nav-link">💼 BUSINESS ENTITY</a>
+        <a class="nav-link">💰 WALLET</a>
+        <a class="nav-link">🌳 GENEALOGY</a>
+    </nav>
 
     <div class="bottom-nav">
-        <a href="#" class="bn-link active"><i class="fas fa-home"></i><br>HOME</a>
-        <a href="#" class="bn-link"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
-        <a href="#" class="bn-link"><i class="fas fa-wallet"></i><br>WALLET</a>
-        <a href="#" class="bn-link"><i class="fas fa-tree"></i><br>GENEAL</a>
-        <a href="#" class="bn-link"><i class="fas fa-ellipsis-h"></i><br>MORE</a>
+        <a href="#" class="bn-item active"><i class="fas fa-home"></i><br>HOME</a>
+        <a href="#" class="bn-item"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
+        <a href="#" class="bn-item"><i class="fas fa-wallet"></i><br>WALLET</a>
+        <a href="#" class="bn-item"><i class="fas fa-tree"></i><br>GENEAL</a>
     </div>
 
     <script>
-        function toggleMenu() {
-            document.getElementById('sidebar').classList.toggle('open');
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('realtime-clock').innerText = now.toLocaleTimeString() + " | " + now.toLocaleDateString('en-GB');
         }
+        setInterval(updateClock, 1000);
+        function toggleMenu() { document.getElementById('sidebar').classList.toggle('open'); }
+        function openBusinessModal() { document.getElementById('businessModal').style.display = 'block'; if(document.getElementById('sidebar').classList.contains('open')) toggleMenu(); }
+        function closeBusinessModal() { document.getElementById('businessModal').style.display = 'none'; document.getElementById('entityList').style.display='block'; document.getElementById('ancestrySection').style.display='none'; }
+        function showAncestry(type) { document.getElementById('entityList').style.display = 'none'; document.getElementById('ancestrySection').style.display = 'block'; document.getElementById('selectedType').innerText = type.toUpperCase(); if(type !== 'Personal') document.getElementById('nomineeFields').style.display = 'block'; else document.getElementById('nomineeFields').style.display = 'none'; }
+        
+        const validDB = ["CDC-001", "CDC-002", "CDC-007"]; 
+        function checkMember(el) {
+            let id = el.value.toUpperCase();
+            let status = el.nextElementSibling;
+            if(id === "") { status.innerText = ""; return; }
+            if(validDB.includes(id)) { status.innerText = "✅ MEMBER VERIFIED"; status.style.color = "var(--green)"; }
+            else { status.innerHTML = "❌ NOT A MEMBER. <span style='color:var(--gold); cursor:pointer;' onclick='alert(\"Invite Link Sent!\")'>Click to Invite.</span>"; status.style.color = "var(--red)"; }
+        }
+        function saveAndPush() { alert("Application Received! Pending Multi-Sig Approval."); closeBusinessModal(); }
     </script>
 </body>
 </html>
