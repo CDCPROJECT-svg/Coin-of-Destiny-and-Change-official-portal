@@ -5,3 +5,4 @@ cdc_wallets.xlsx
 cdc_wallets.txt
 security_key.py
 security_key.py
+.env

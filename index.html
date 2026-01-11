@@ -3,60 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDC Sovereign Portal</title>
+    <title>CDC L20/L25 BINARY MONITOR</title>
     <style>
-        body { font-family: sans-serif; background: #0a0a0a; color: white; margin: 0; }
-        nav { background: #1a1a1a; padding: 1rem; display: flex; gap: 20px; border-bottom: 2px solid #288828; }
-        nav a { color: #00ff00; text-decoration: none; font-weight: bold; cursor: pointer; }
-        .container { padding: 20px; }
-        .card { background: #222; padding: 20px; border-radius: 10px; border-left: 5px solid #288828; margin-bottom: 20px; }
-        .hidden { display: none; }
-        .stat { color: #00ff00; font-size: 1.2rem; }
+        body { background: #050505; color: #ffd700; font-family: 'Courier New', monospace; padding: 20px; text-align: center; }
+        .tree-container { border: 2px solid #333; padding: 20px; border-radius: 15px; background: #0a0a0a; margin-top: 20px; }
+        .node { display: inline-block; padding: 10px; border: 1px solid #ffd700; margin: 5px; border-radius: 5px; font-size: 12px; }
+        .level-indicator { color: #888; font-size: 14px; margin-bottom: 20px; }
+        .progress-bar { width: 100%; background: #222; height: 20px; border-radius: 10px; overflow: hidden; margin: 10px 0; border: 1px solid #444; }
+        .fill { background: linear-gradient(90deg, #ffd700, #b8860b); height: 100%; width: 0%; transition: width 1s; }
+        .highlight { color: #fff; text-shadow: 0 0 10px #ffd700; }
     </style>
 </head>
 <body>
 
-<nav>
-    <a onclick="showPage('home')">HOME</a>
-    <a onclick="showPage('sovereign')">SOVEREIGN L8</a>
-    <a onclick="showPage('humanitarian')">HUMANITARIAN</a>
-</nav>
-
-<div id="home" class="container">
-    <h1>Welcome to CDC Portal</h1>
-    <div class="card">
-        <h3>Project Status: Project 1 (Binary)</h3>
-        <p>Active Countries: <span class="stat">204</span></p>
-        <p>System Law: <span class="stat">28.88 / 71.12 Split</span></p>
+    <h1>BINARY GENEALOGY MONITOR</h1>
+    
+    <div class="tree-container">
+        <div class="level-indicator">
+            CURRENT FOCUS: <span class="highlight">PROJECT 18 (L20 PERFECTION)</span>
+        </div>
+        
+        <div class="node">TOP NODE (ID: 001)</div>
+        <div>|</div>
+        <div>
+            <div class="node">L1-A</div>
+            <div class="node">L1-B</div>
+        </div>
+        <div style="margin-top:20px;">
+            <strong>L20 Filling Progress:</strong>
+            <div class="progress-bar"><div class="fill" id="l20-progress" style="width: 75%;"></div></div>
+            <small>Status: Waiting for L20 Perfection to feed Top Node...</small>
+        </div>
     </div>
-</div>
 
-<div id="sovereign" class="container hidden">
-    <h1>Sovereign L8 Dashboard</h1>
-    <div class="card">
-        <h3>Country Reserve</h3>
-        <p>Total Fund: <span class="stat">1,000,000 USDT</span></p>
-        <p>Visibility: <span class="stat">Level 8 (Anchor)</span></p>
+    <div class="tree-container" style="border-color: #444;">
+        <h3>PROJECTS 2-17 STATUS</h3>
+        <p style="font-size: 12px;">MAX DEPTH: <span style="color:white;">25 LEVELS</span> (Storage Minimized)</p>
+        <button onclick="location.href='dashboard.html'" style="padding: 10px; background: #ffd700; border: none; font-weight: bold; cursor: pointer; border-radius: 5px;">BACK TO HUB</button>
     </div>
-</div>
 
-<div id="humanitarian" class="container hidden">
-    <h1>Humanitarian Logic</h1>
-    <div class="card">
-        <h3>Disaster Response Math</h3>
-        <p>Withdrawal Rule: <span class="stat">Impact % = Withdrawal %</span></p>
-        <p>Global Vote Trigger: <span class="stat">8% Population Impact</span></p>
-    </div>
-</div>
-
-<script>
-    function showPage(pageId) {
-        document.getElementById('home').classList.add('hidden');
-        document.getElementById('sovereign').classList.add('hidden');
-        document.getElementById('humanitarian').classList.add('hidden');
-        document.getElementById(pageId).classList.remove('hidden');
-    }
-</script>
-
+    <script>
+        // Simulate L20 Filling Logic
+        let progress = 75;
+        const fillBar = document.getElementById('l20-progress');
+        
+        setInterval(() => {
+            if (progress < 100) {
+                progress += 0.5;
+                fillBar.style.width = progress + '%';
+            } else {
+                alert("L20 PERFECTED: Feeding data to Top Node!");
+                progress = 0; // Reset cycle
+            }
+        }, 3000);
+    </script>
 </body>
 </html>
