@@ -1,0 +1,1437 @@
+{
+    "CDC-C1A0003AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "PHP",
+        "points": "0"
+    },
+    "CDC-C1A0004AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "INR",
+        "points": "0"
+    },
+    "CDC-C1A0005AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "AED",
+        "points": "0"
+    },
+    "CDC-C1A0006AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "GBP",
+        "points": "0"
+    },
+    "CDC-C1A0007AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "EUR",
+        "points": "0"
+    },
+    "CDC-C1A0008AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0009AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0010AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0011AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0012AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0013AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0014AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0015AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0016AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0017AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0018AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0019AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0020AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0021AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0022AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0023AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0024AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0025AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0026AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0027AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0028AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0029AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0030AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0031AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0032AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0033AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0034AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0035AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0036AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0037AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0038AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0039AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0040AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0041AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0042AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0043AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0044AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0045AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0046AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0047AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0048AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0049AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0050AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0051AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0052AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0053AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0054AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0055AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0056AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0057AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0058AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0059AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0060AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0061AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0062AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0063AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0064AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0065AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0066AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0067AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0068AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0069AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0070AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0071AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0072AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0073AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0074AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0075AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0076AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0077AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0078AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0079AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0080AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0081AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0082AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0083AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0084AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0085AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0086AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0087AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0088AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0089AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0090AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0091AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0092AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0093AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0094AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0095AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0096AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0097AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0098AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0099AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0100AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0101AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0102AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0103AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0104AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0105AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0106AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0107AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0108AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0109AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0110AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0111AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0112AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0113AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0114AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0115AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0116AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0117AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0118AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0119AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0120AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0121AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0122AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0123AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0124AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0125AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0126AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0127AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0128AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0129AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0130AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0131AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0132AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0133AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0134AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0135AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0136AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0137AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0138AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0139AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0140AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0141AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0142AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0143AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0144AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0145AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0146AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0147AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0148AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0149AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0150AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0151AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0152AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0153AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0154AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0155AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0156AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0157AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0158AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0159AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0160AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0161AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0162AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0163AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0164AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0165AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0166AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0167AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0168AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0169AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0170AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0171AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0172AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0173AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0174AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0175AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0176AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0177AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0178AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0179AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0180AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0181AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0182AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0183AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0184AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0185AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0186AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0187AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0188AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0189AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0190AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0191AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0192AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0193AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0194AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0195AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0196AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0197AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0198AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0199AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0200AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0201AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0202AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0203AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0204AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0205AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0206AIOIN": {
+        "cdc": "0.00",
+        "usdt": "0.00",
+        "fiat": "0.00",
+        "currency": "USD",
+        "points": "0"
+    },
+    "CDC-C1A0001AIOIN": {
+        "cdc": "1,000,000.00",
+        "usdt": "500,000.00",
+        "fiat": "250,000.00",
+        "currency": "USD",
+        "points": "10,000"
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC BUSINESS PROTOTYPE</title>
+    <style>
+        :root { --gold: #ffd700; --plat: #e5e4e2; --dark: #050505; }
+        body { background: #000; color: var(--gold); font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 20px; }
+        
+        .dashboard-header { text-align: center; border: 1px solid var(--gold); padding: 15px; border-radius: 15px; margin-bottom: 25px; background: linear-gradient(145deg, #111, #000); }
+        .live-price { font-size: 12px; color: #fff; background: #222; padding: 5px 10px; border-radius: 20px; border: 1px solid var(--gold); }
+
+        /* Project Grid */
+        .grid-container { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .project-tile { background: #0a0a0a; border: 1px solid #222; border-radius: 15px; padding: 15px; border-top: 4px solid var(--gold); box-shadow: 0 4px 15px rgba(255,215,0,0.1); }
+        
+        .incentive-icon { font-size: 30px; margin-right: 15px; }
+        .project-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        
+        /* Progress Bar Refined */
+        .lvl-text { font-size: 13px; margin-bottom: 5px; display: flex; justify-content: space-between; }
+        .bar-bg { background: #1a1a1a; height: 12px; border-radius: 10px; border: 1px solid #333; overflow: hidden; }
+        .bar-fill { background: linear-gradient(90deg, #ffd700, #fff); height: 100%; transition: 2s ease-in-out; }
+
+        .claim-area { margin-top: 15px; padding: 15px; background: #111; border-radius: 10px; border: 1px dashed var(--gold); display: none; }
+        .active-claim { display: block; animation: slideUp 0.5s ease; }
+
+        .terms-scroll { height: 80px; overflow-y: scroll; font-size: 10px; color: #ccc; background: #000; padding: 8px; border: 1px solid #333; margin: 10px 0; text-align: justify; }
+        
+        button { background: var(--gold); color: #000; border: none; padding: 12px; font-weight: bold; width: 100%; border-radius: 8px; cursor: pointer; }
+        button:disabled { background: #333; color: #666; cursor: not-allowed; }
+
+        .footer-msg { margin-top: 30px; font-size: 12px; color: var(--plat); text-align: center; font-style: italic; }
+        
+        @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-header">
+        <h2 style="margin:0;">BUSINESS DASHBOARD</h2>
+        <p style="font-size:11px; color:var(--plat);">18 Projects Mastery | One Account Policy</p>
+        <span class="live-price">Live Rate: 1 USDT = 1.05 CDC-Coin 📈</span>
+    </div>
+
+    <div class="grid-container" id="projects">
+        </div>
+
+    <div class="footer-msg">
+        Welcome to CDC-Coin – Where LIFE becomes EASY and HAYAHAY! <br>
+        …To GOD be All the Glory. 🙏✨
+    </div>
+
+    <script>
+        const projectData = [
+            { id: 1, name: "Starter Project", icon: "🏠", reward: 18888, lvl: 20, prog: 100 },
+            { id: 2, name: "Car Incentive", icon: "🚗", reward: 18888, lvl: 15, prog: 75 },
+            { id: 3, name: "Global Estate", icon: "🌍", reward: 18888, lvl: 5, prog: 25 }
+        ];
+
+        const container = document.getElementById('projects');
+
+        projectData.forEach(p => {
+            const div = document.createElement('div');
+            div.className = 'project-tile';
+            div.innerHTML = `
+                <div class="project-meta">
+                    <div style="display:flex; align-items:center;">
+                        <span class="incentive-icon">${p.icon}</span>
+                        <div>
+                            <div style="font-size:14px; font-weight:bold;">PROJECT ${p.id}</div>
+                            <div style="font-size:11px; color:#aaa;">${p.name}</div>
+                        </div>
+                    </div>
+                    <div style="text-align:right;">
+                        <span style="font-size:10px; color:var(--gold);">STATUS</span><br>
+                        <span style="font-size:12px;">${p.prog === 100 ? 'READY' : 'ACTIVE'}</span>
+                    </div>
+                </div>
+
+                <div class="lvl-text">
+                    <span>Level Progress</span>
+                    <span>${p.lvl} / 20</span>
+                </div>
+                <div class="bar-bg">
+                    <div class="bar-fill" style="width:${p.prog}%"></div>
+                </div>
+
+                <div class="claim-area ${p.prog === 100 ? 'active-claim' : ''}">
+                    <div style="font-size:13px; color:var(--gold); font-weight:bold;">🎁 GRAND BONUS: ${p.reward.toLocaleString()} USDT</div>
+                    <div class="terms-scroll">
+                        <strong>LEGAL & TAX TERMS:</strong><br>
+                        Ang bawat kaukulang obligasyon sa buwis (Tax Responsibility) ay nasa ilalim ng personal na pananagutan ng miyembro. Ang CDC Management at ang CDC-Coin Ecosystem ay walang anumang pananagutan sa anumang uri ng buwis na ipapataw sa mga insentibo o Grand Bonus. Ang miyembro ay obligadong sumunod at magbayad ng kaukulang buwis sa kanilang bansa alinsunod sa umiiral na batas. Ang 6% system deduction (Founder, Team, Treasury, Global) at ang 8% daily withdrawal limit ay ipapatupad para sa sustainability at price protection.
+                    </div>
+                    <label style="font-size:10px; display:block; margin-bottom:8px;">
+                        <input type="checkbox" onchange="document.getElementById('btn-${p.id}').disabled = !this.checked"> 
+                        I agree to the Terms & Tax Responsibilities.
+                    </label>
+                    <button id="btn-${p.id}" disabled onclick="alert('Congratulations! Life is now HAYAHAY! 🙏')">CLAIM CDC-COIN</button>
+                </div>
+            `;
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1768 @@
+  147                  showDashboard(id);
+  148              } else {
+  149                  alert("ACCESS DENIED: INVALID AIOIN CREDENTIALS.");
+  150              }
+  151          }
+  152          function showDashboard(id) {
+  153              document.getElementById('loginArea').style.display = 'none';
+  154              document.getElementById('dashboardArea').style.display = 'block';
+  155              document.getElementById('userTitle').innerText = id;
+  156          }
+  157      </script>
+  158  </body>
+  159  </html>
+  160  EOF
+  161  cat << 'EOF' > portal_dashboard.html
+  162  <!DOCTYPE html>
+  163  <html>
+  164  <head>
+  165      <title>CDC PORTAL | Private Access</title>
+  166      <style>
+  167          body { background: #0a0a0a; color: #d4af37; font-family: 'Courier New', monospace; text-align: center; padding-top: 50px; }
+  168          .login-box { border: 2px solid #d4af37; padding: 30px; display: inline-block; border-radius: 15px; background: #111; box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+  169          input { background: #000; border: 1px solid #d4af37; color: #fff; padding: 12px; width: 280px; text-align: center; text-transform: uppercase; font-size: 1.1em; }
+  170          button { background: #d4af37; color: #000; border: none; padding: 12px 25px; cursor: pointer; font-weight: bold; margin-top: 15px; border-radius: 5px; }
+  171          .dashboard { display: none; margin-top: 30px; }
+  172          .stat-card { border: 1px solid #333; padding: 20px; margin: 15px auto; width: 80%; max-width: 450px; border-radius: 10px; background: #161616; }
+  173          .amount { color: #ffffff; font-size: 2em; letter-spacing: 2px; }
+  174          .status-badge { color: #00ff00; font-weight: bold; font-size: 1.2em; text-transform: uppercase; }
+  175          .footer-note { color: #444; font-size: 0.8em; margin-top: 50px; }
+  176      </style>
+  177  </head>
+  178  <body>
+  179      <h1>CDC COIN GLOBAL SYSTEM</h1>
+  180      
+  181      <div id="loginArea" class="login-box">
+  182          <h3 style="letter-spacing: 3px;">AUTHENTICATE AIOIN ID</h3>
+  183          <input type="text" id="aioinInput" placeholder="CDC-C1AXXXXAIOIN">
+  184          <br>
+  185          <button onclick="checkID()">ACCESS PORTAL</button>
+  186      </div>
+  187      <div id="dashboardArea" class="dashboard">
+  188          <h2 id="userTitle" style="color: #fff;"></h2>
+  189          
+  190          <div class="stat-card">
+  191              <p style="margin-bottom: 5px;">ACCOUNT STATUS</p>
+  192              <div class="status-badge">● ACTIVE</div>
+  193          </div>
+  194          <div class="stat-card">
+  195              <p style="margin-bottom: 5px;">TOTAL EARNINGS (PROJECT 1)</p>
+  196              <div class="amount" id="earnings">$0.00</div>
+  197          </div>
+  198          <div class="footer-note">
+  199              PRIVATE ENCRYPTED CORE<br>
+  200              Umbrella Privacy Active | Binary Structure Masked
+  201          </div>
+  202      </div>
+  203      <script>
+  204          function checkID() {
+  205              const id = document.getElementById('aioinInput').value.toUpperCase().trim();
+  206              if (id === 'CDC-C1A0001AIOIN' || id === 'CDC-C1A0002AIOIN' || (id.startsWith('CDC-C1A') && id.endsWith('AIOIN'))) {
+  207                  showDashboard(id);
+  208              } else {
+  209                  alert("ACCESS DENIED: INVALID AIOIN CREDENTIALS.");
+  210              }
+  211          }
+  212          function showDashboard(id) {
+  213              document.getElementById('loginArea').style.display = 'none';
+  214              document.getElementById('dashboardArea').style.display = 'block';
+  215              document.getElementById('userTitle').innerText = id;
+  216          }
+  217      </script>
+  218  </body>
+  219  </html>
+  220  EOF
+  221  cat << 'EOF' > portal_dashboard.html
+  222  <!DOCTYPE html>
+  223  <html>
+  224  <head>
+  225      <title>CDC PORTAL | Private Ledger</title>
+  226      <style>
+  227          body { background: #050505; color: #d4af37; font-family: 'Courier New', monospace; text-align: center; padding-top: 60px; }
+  228          .login-box { border: 1px solid #d4af37; padding: 40px; display: inline-block; background: #000; box-shadow: 0 0 20px rgba(212, 175, 55, 0.1); }
+  229          input { background: #000; border: 1px solid #444; color: #fff; padding: 12px; width: 300px; text-align: center; font-size: 1.1em; margin-bottom: 15px; }
+  230          button { background: #d4af37; color: #000; border: none; padding: 12px 30px; cursor: pointer; font-weight: bold; font-size: 1em; }
+  231          .dashboard { display: none; margin-top: 40px; }
+  232          .data-card { border-bottom: 1px solid #222; padding: 25px; max-width: 500px; margin: 0 auto; }
+  233          .amount { color: #ffffff; font-size: 2.2em; margin: 10px 0; }
+  234          .status-on { color: #00ff00; letter-spacing: 2px; font-weight: bold; }
+  235          .id-header { color: #888; font-size: 0.9em; margin-bottom: 20px; }
+  236      </style>
+  237  </head>
+  238  <body>
+  239      <h2 style="letter-spacing: 5px;">CDC COIN GLOBAL SYSTEM</h2>
+  240      
+  241      <div id="loginArea" class="login-box">
+  242          <input type="text" id="aioinInput" placeholder="ENTER AIOIN ID">
+  243          <br>
+  244          <button onclick="checkID()">AUTHENTICATE</button>
+  245      </div>
+  246      <div id="dashboardArea" class="dashboard">
+  247          <div class="id-header" id="userTitle"></div>
+  248          
+  249          <div class="data-card">
+  250  Exit
+  251  exit
+  252  <html lang="en">
+  253  <head>
+  254  </head>
+  255  <body onload="checkTOS()">
+  256  <div class="modal fade" id="tosModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  257  </div>
+  258  <div class="container my-5" id="mainDashboard" style="display:none;">
+  259  </div>
+  260  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  261  <script>
+  262  </script>
+  263  </body>
+  264  </html>
+  265  // CDC LIVE DASHBOARD LOGIC
+  266  const cdcRewards = [
+  267  }
+  268  <div class="dashboard-container">
+  269  </div>
+  270  // The CDC Tier Data
+  271  const tiers = [
+  272  }
+  273  // NEW: Storage Constraint Variables
+  274  const MAX_BINARY_LEVEL = 28; 
+  275  let currentProjectID = 1; // Track which of the 18 projects we are on
+  276  function next(side) {
+  277  }
+  278  function shiftToNextProject() {     if (currentProjectID < 18) {
+  279  }
+  280  exit
+  281  Clear
+  282  Exit
+  283  // A snippet for your Gold Dashboard
+  284  export function VideoIncentive() {
+  285  }
+  286  function processSale(grossAmount) {
+  287  }
+  288  Exit
+  289  ls
+  290  find ~ -name "*cdc*"
+  291  find ~ -name "merchant.js"
+  292  history 50
+  293  mkdir -p ~/cdc_project
+  294  cd ~/cdc_project
+  295  nano index.html
+  296  cd ~/Coin-of-Destiny-and-Change-official-portal
+  297  find ~ -type d -name "Coin-of-Destiny-and-Change-official-portal"
+  298  cd ~
+  299  git clone https://github.com/CDCPROJECT-svg/Coin-of-Destiny-and-Change-official-portal.git
+  300  cd Coin-of-Destiny-and-Change-official-portal
+  301  ls
+  302  ls main
+  303  git config --global user.email "your-email@example.com"
+  304  git config --global user.name "Your GitHub Name"
+  305  git add .
+  306  git commit -m "Finalized Binary 2-18 level cap and Merchant logic"
+  307  git push origin main
+  308  /**
+  309  const CDC_CONFIG = {
+  310  };
+  311  // Function to check if project is capped
+  312  function checkLevelCap(projectId, currentLevel) {
+  313  }
+  314  // Function for Merchant "Divide by 8"
+  315  function calculateMerchantPoints(grossSale) {
+  316  }
+  317  const CDC_CONFIG = {<script src="cdc_core_logic.js"></script>
+  318  nano cdc_core_logic.js
+  319  git add .
+  320  git commit -m "Finalized 18 projects and merchant logic"
+  321  git push origin main
+  322  function checkGuardianStatus(userLevel, isVerified) {
+  323  }
+  324  function start88Timer() {     // This represents the 88w:88d:88h:88m:88s countdown we finalized;     const timerValue = "88:88:88:88:88";     document.getElementById('timer-display').innerText = timerValue;
+  325  }
+  326  nano cdc_core_logic.js
+  327  git add cdc_core_logic.js
+  328  git commit -m "Finalized binary and merchant logic"
+  329  git push origin main
+  330  # 1. Save the Guardian and Binary logic to Git's memory
+  331  git add .
+  332  # 2. Label the update
+  333  git commit -m "Finalized 18-project binary and Guardian logic"
+  334  # 3. Send it to the internet (This is where you paste the token)
+  335  git push origin main
+  336  cat .gitignore
+  337  echo "cdc_wallets.xlsx" >> .gitignore
+  338  echo "cdc_wallets.txt" >> .gitignore
+  339  clear
+  340  ls
+  341  rm filename_here
+  342  rm main portal_backup.html generateWallets.js make_csv.js make_excel.js note.txt
+  343  ls
+  344  git add .
+  345  git commit -m "Workspace sanitized: 18 projects finalized and temporary files removed"
+  346  git push origin main
+  347  git config --global credential.helper store
+  348  git push origin main
+  349  nano index.html
+  350  git add index.html
+  351  git commit -m "Locking portal in Maintenance Mode"
+  352  git push origin main
+  353  cat cdc_core_logic.js
+  354  nano cdc_core_logic.js
+  355  git add cdc_core_logic.js
+  356  git commit -m "Finalized 18-project logic and fixed duplicate code"
+  357  git push origin main
+  358  node -e 'const c = 100 * 0.08; console.log("Commission: $" + c); console.log("User Points: " + (c/8));'
+  359  python -m http.server 8080
+  360  cat cdc_core_logic.js
+  361  nano cdc-private-explore.html
+  362  git add cdc-private-explore.html
+  363  git commit -m "Added secret portal explorer"
+  364  git push origin main
+  365  nano cdc_core_logic.js
+  366  const SYSTEM_MAINTENANCE_LOCK = true; // Set to false only on Launch Day
+  367  nano cdc_core_logic.js
+  368  git add cdc_core_logic.js
+  369  git commit -m "Fixed broken lines and activated Master Lock"
+  370  git push origin main
+  371  nano dashboard-preview.html
+  372  git add dashboard-preview.html
+  373  git commit -m "Added dashboard preview for visual testing"
+  374  git push origin main
+  375  nano index.html
+  376  git add index.html
+  377  git commit -m "Transitioned from Maintenance to Finalized Home Dashboard Framework"
+  378  git push origin main
+  379  python -m http.server 8080 --bind 127.0.0.1
+  380  <html lang="en">
+  381  <head>
+  382  </head>
+  383  <body>
+  384  </body>
+  385  </html>
+  386  nano index.html
+  387  python -m http.server 8080
+  388  nano index.html
+  389  Serving HTTP on 127.0.0.1 port 8080
+  390  python -m http.server 8080 
+  391  nano index.html
+  392  python -m http.server 8080
+  393  nano index.html
+  394  python -m http.server 8080
+  395  nano index.html
+  396  python -m http.server 8080
+  397  nano index.html
+  398  python -m http.server 8080
+  399  nano index.html
+  400  python -m http.server 8080
+  401  nano index.html
+  402  python -m http.server 8080
+  403  nano index.html
+  404  python -m http.server 8080
+  405  nano index.html
+  406  python -m http.server 8080
+  407  nano index.html
+  408  python -m http.server 8080
+  409  nano index.html
+  410  python -m http.server 8080
+  411  nano index.html
+  412  nano business_test.html
+  413  python -m http.server 8080
+  414  import json
+  415  # --- CDC SYNC MODULE ---
+  416  # This links your Termux Database to the Portal Visuals
+  417  def update_portal_status():
+  418  if __name__ == "__main__":;     update_portal_status()
+  419  nano cdc_sync.py
+  420  ls
+  421  "*guardian*"
+  422  nano ~/.bashrc
+  423  source ~/.bashrc
+  424  [200~​nano verify_succession.py~
+  425  nano verify_succession.py
+  426  ​pkg install nano -y
+  427  nano verify_succession.py
+  428  "print('READY')" > test.py
+  429  pkg install nano
+  430  nano verify.py
+  431  python verify.py
+  432  mkdir -p cdc_portal/projects && touch cdc_portal/mother_tree.db
+  433  ls
+  434  nano cdc_portal/feeder.py
+  435  nano cdc_portal/dashboard.py
+  436  nano cdc_portal/member_portal.py
+  437  python cdc_portal/dashboard.py
+  438  ls -R cdc_portal
+  439  nano cdc_portal/feeder.py
+  440  python cdc_portal/feeder.py
+  441  nano cdc_portal/security_key.py
+  442  python cdc_portal/security_key.py
+  443  python cdc_portal/dashboard.py
+  444  nano cdc_portal/dashboard.py
+  445  python cdc_portal/dashboard.py
+  446  ls -R cdc_portal
+  447  nano cdc_portal/cdc_step1.py
+  448  python cdc_portal/cdc_step1.py
+  449  nano cdc_portal/cdc_step1.py
+  450  python cdc_portal/cdc_step1.py
+  451  nano cdc_portal/main_engine.py 
+  452  python cdc_portal/main_engine.py
+  453  rm cdc_portal/mother_tree.db
+  454  python cdc_portal/main_engine.py
+  455  nano cdc_portal/main_engine.py
+  456  python cdc_portal/main_engine.py.
+  457  ​python cdc_portal/main_engine.py
+  458  python cdc_portal/main_engine.py
+  459  nano cdc_portal/main_engine.py
+  460  python cdc_portal/main_engine.py
+  461  nano cdc_portal/main_engine.py
+  462  C
+  463  nano cdc_portal/main_engine.py
+  464  python cdc_portal/main_engine.py
+  465  nano cdc_portal/main_engine.py
+  466  python cdc_portal/main_engine.py
+  467  [200~nano ~/.bashrc~
+  468  # --- CDC COIN PORTAL CUSTOM PROMPT ---
+  469  clear
+  470  echo -e "\e[1;33m=========================================\e[0m"
+  471  echo -e "\e[1;32m      CDC COIN OF DESTINY AND CHANGE     \e[0m"
+  472  echo -e "\e[1;36m      Status: EASY LIFE & HAYAHAY        \e[0m"
+  473  echo -e "\e[1;33m=========================================\e[0m"
+  474  echo ""
+  475  # Ito ang magbabago sa hitsura ng linyang tinitaypan mo
+  476  export PS1="\e[1;32mCDC-Ambassador\e[0m:\e[1;34m\w\e[m$ "
+  477  nano ~/.bashrc
+  478  pwd
+  479  ls -R
+  480  cat <<EOF > main_engine.py
+# CDC GLOBAL ENGINE - 2026
+# Rules: P1 = 28 Levels | P2-18 = 25 Levels | 8% Daily Withdrawal
+
+class CDCEngine:
+    def __init__(self):
+        self.feeding_depth = 28
+        self.project_depth = 25
+        self.withdrawal_limit = 0.08
+
+    def calculate_reward(self, cycle, project_id):
+        base_reward = 18888
+        if cycle == 1:
+            return base_reward
+        else:
+            # Progressive 10k increase for Cycle 2 & 3
+            if 2 <= project_id <= 17:
+                return base_reward + ((project_id - 1) * 10000)
+            return base_reward
+
+    def get_deduction(self, project_id):
+        if project_id <= 6: return 0.01
+        if project_id <= 12: return 0.02
+        if project_id <= 17: return 0.03
+        return 0.01
+
+engine = CDCEngine()
+print("CDC Engine Updated: Depth and Progressive Reward Logic Active.")
+EOF
+
+  481  cat <<EOF > dashboard.py
+import os
+
+def show_dashboard(level, project, status, wallet_usdt, wallet_cdc):
+    os.system('clear')
+    print("=====================================================")
+    print("          CDC COIN OF DESTINY & CHANGE")
+    print("  'Empowering Communities, Creating Wealth...' ")
+    print("=====================================================")
+    print(f" PROJECT {project}: LEVEL {level} / {28 if project == 1 else 25}")
+    print(f" REWARD WALLET: {wallet_usdt} USDT")
+    print(f" CDC COIN WALLET: {wallet_cdc} CDC")
+    print(f" STATUS: {status}")
+    print("-----------------------------------------------------")
+    print(" [WATCH YT] [LIKE] [SHARE] -> [CLAIM 8%]")
+    print("=====================================================")
+
+# Example Call
+show_dashboard(7, 1, "⚠️ VERIFICATION REQUIRED", "18,888", "0.00")
+EOF
+
+  482  cat index.html
+  483  cat <<EOF > index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CDC Portal | Maintenance</title>
+    <style>
+        body { background: #000; color: #d4af37; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
+        .box { border: 1px solid #d4af37; padding: 40px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>CDC COIN PORTAL</h1>
+        <p>SYSTEM UPGRADE IN PROGRESS</p>
+        <p style="color:#888;">Upgrading to 2026 Core Engine...</p>
+    </div>
+</body>
+</html>
+EOF
+
+  484  git add index.html
+  485  git commit -m "Set to Maintenance Mode"
+  486  git push origin main
+  487  # 1. Initialize the folder
+  488  git init
+  489  # 2. Add your GitHub as the "Origin" 
+  490  # (Replace YOUR_GITHUB_USERNAME with your actual username)
+  491  git remote add origin https://github.com/CDCPROJECT-svg/Coin-of-Destiny-and-Change-official-portal.git
+  492  # 3. Pull existing files from GitHub to sync up
+  493  git pull origin main
+  494  git fetch --all
+  495  git checkout -b main
+  496  git reset --hard origin/main
+  497  # 1. Create the Maintenance Page
+  498  cat <<EOF > index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CDC Portal | Maintenance</title>
+    <style>
+        body { background: #000; color: #d4af37; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; text-align: center; }
+        .box { border: 1px solid #d4af37; padding: 40px; border-radius: 10px; border-style: double; }
+        .loader { color: #888; font-size: 12px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 style="letter-spacing: 2px;">CDC COIN PORTAL</h1>
+        <p>SYSTEM UPGRADE IN PROGRESS</p>
+        <p style="color:#888; font-size: 14px;">Deploying 2026 Core Engine (Depth 28/25 Logic)</p>
+        <div class="loader">Verifying Succession...</div>
+    </div>
+</body>
+</html>
+EOF
+
+  499  # 2. Push to GitHub
+  500  git add index.html
+  501  git commit -m "Public site locked for Maintenance"
+  502  git push origin main
+  503  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC PRIVATE PORTAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; }
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 80px; }
+        
+        /* Slide-to-Right Navigator */
+        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; overflow-y: auto; }
+        .side-nav.open { right: 0; box-shadow: -10px 0 30px rgba(0,0,0,0.9); }
+        .nav-link { display: block; padding: 15px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; text-transform: uppercase; }
+        .nav-link:hover { color: var(--gold); background: #111; }
+
+        /* Dashboard Header */
+        .header { padding: 15px; border-bottom: 1px solid var(--gold); position: relative; background: #050505; }
+        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; z-index: 1001; }
+        .global-status { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
+
+        /* Info & Wallets */
+        .info-bar { padding: 15px; font-size: 12px; background: #000; border-bottom: 1px solid #222; }
+        .grid-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+        .card { background: var(--gray); padding: 15px; border-radius: 8px; border-bottom: 2px solid var(--gold); }
+        .card-label { font-size: 9px; color: var(--gold); text-transform: uppercase; }
+        .card-val { font-size: 16px; font-weight: bold; margin-top: 5px; }
+
+        /* Verification Warning */
+        .alert-zone { margin: 15px; padding: 15px; border: 1px dashed #ff4444; border-radius: 8px; text-align: center; background: rgba(255,0,0,0.05); }
+
+        /* The 8 Categories */
+        .category-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 15px; }
+        .cat-item { background: var(--gray); padding: 10px; border-radius: 8px; text-align: center; font-size: 22px; }
+        .cat-label { font-size: 9px; color: #888; display: block; margin-top: 5px; }
+
+        /* Bottom Nav */
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; justify-content: space-around; padding: 10px 0; z-index: 999; }
+        .bn-link { text-align: center; color: #666; font-size: 9px; text-decoration: none; }
+        .bn-link i { font-size: 18px; margin-bottom: 3px; }
+        .bn-link.active { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+    <nav class="side-nav" id="sidebar">
+        <div style="padding: 0 20px 20px; color: var(--gold); font-weight: bold; border-bottom: 1px solid #222;">NAVIGATOR</div>
+        <a href="#" class="nav-link"><i class="fas fa-briefcase"></i> &nbsp; Business</a>
+        <a href="#" class="nav-link"><i class="fas fa-wallet"></i> &nbsp; Wallet</a>
+        <a href="#" class="nav-link"><i class="fas fa-gift"></i> &nbsp; Incentives</a>
+        <a href="#" class="nav-link"><i class="fas fa-hand-holding-heart"></i> &nbsp; Charity</a>
+        <a href="#" class="nav-link"><i class="fas fa-tree"></i> &nbsp; Genealogy</a>
+        <a href="#" class="nav-link"><i class="fas fa-bolt"></i> &nbsp; Action Center</a>
+        <a href="#" class="nav-link" style="color:#666;"><i class="fas fa-sign-out-alt"></i> &nbsp; Logout</a>
+    </nav>
+
+    <div class="header">
+        <div class="global-status">
+            <span>🌐 LANG (192)</span>
+            <span>🌍 COUNTRY (204)</span>
+        </div>
+        <div style="font-weight: bold; font-size: 18px; color: var(--gold);">CDC PORTAL</div>
+        <div style="font-size: 9px; color: #888; font-style: italic;">"Empowering Communities Creating Wealth..."</div>
+        <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </div>
+
+    <div class="info-bar">
+        <div style="display:flex; justify-content:space-between;">
+            <span>ID: <b style="color:var(--gold)">CDC-XXXX-XX</b></span>
+            <span>Joined: <b>04 Jan 2026</b></span>
+        </div>
+        <div style="margin-top:5px;">Nominee: <b>[REGISTERED NAME]</b></div>
+    </div>
+
+    <div class="grid-stats">
+        <div class="card">
+            <div class="card-label">Reward Wallet</div>
+            <div class="card-val">18,888 USDT</div>
+        </div>
+        <div class="card">
+            <div class="card-label">CDC Coin Wallet</div>
+            <div class="card-val">0.00 CDC</div>
+        </div>
+    </div>
+
+    <div class="alert-zone">
+        <div style="color:var(--gold); font-size: 12px; font-weight: bold;">PROJECT 1: LEVEL 7 / 28</div>
+        <div style="color:#ff4444; font-size: 10px; margin-top: 5px; font-weight: bold;">⚠️ SUCCESSION VERIFICATION REQUIRED</div>
+        <button style="margin-top:10px; background:var(--gold); border:none; padding:8px 15px; border-radius:4px; font-weight:bold; font-size:10px;">LOCK CDC-COIN</button>
+    </div>
+
+    <div class="category-grid">
+        <div class="cat-item">🏠<span class="cat-label">House</span></div>
+        <div class="cat-item">🏥<span class="cat-label">Health</span></div>
+        <div class="cat-item">🚗<span class="cat-label">Car</span></div>
+        <div class="cat-item">✈️<span class="cat-label">Travel</span></div>
+        <div class="cat-item">🛍️<span class="cat-label">Shopping</span></div>
+        <div class="cat-item">🎓<span class="cat-label">Scholar</span></div>
+        <div class="cat-item">👵<span class="cat-label">AgedCare</span></div>
+        <div class="cat-item">💰<span class="cat-label">Bonus</span></div>
+    </div>
+
+    <div class="bottom-nav">
+        <a href="#" class="bn-link active"><i class="fas fa-home"></i><br>HOME</a>
+        <a href="#" class="bn-link"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
+        <a href="#" class="bn-link"><i class="fas fa-wallet"></i><br>WALLET</a>
+        <a href="#" class="bn-link"><i class="fas fa-tree"></i><br>GENEAL</a>
+        <a href="#" class="bn-link"><i class="fas fa-ellipsis-h"></i><br>MORE</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  504  git add portal.html
+  505  git commit -m "Added Elite Dashboard with Side Navigator"
+  506  git push origin main
+  507  <html lang="en">
+  508  <head>
+  509  </head>
+  510  <body>
+  511  </body>
+  512  </html>
+  513  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Portal | Private Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; --green: #00ff00; }
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 80px; }
+        .header { padding: 15px; border-bottom: 1px solid var(--gold); background: #050505; position: sticky; top: 0; z-index: 900; }
+        .clock-ticker { font-family: monospace; color: var(--gold); font-size: 14px; text-align: center; margin-top: 5px; letter-spacing: 1px; }
+        .global-stats { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
+        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; }
+        .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+        .wallet-card { background: var(--gray); padding: 12px; border-radius: 8px; border-left: 3px solid var(--gold); cursor: pointer; }
+        .wallet-label { font-size: 9px; color: var(--gold); text-transform: uppercase; }
+        .wallet-val { font-size: 15px; font-weight: bold; margin-top: 4px; }
+        .cycle-panel { background: linear-gradient(145deg, #111, #000); margin: 10px 15px; padding: 15px; border: 1px solid #333; border-radius: 10px; }
+        .cycle-title { color: var(--gold); font-size: 12px; font-weight: bold; border-bottom: 1px solid #222; padding-bottom: 5px; margin-bottom: 10px; }
+        .cycle-info { font-size: 11px; line-height: 1.6; color: #ccc; }
+        .progressive { color: var(--green); font-weight: bold; }
+        .icon-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 15px; text-align: center; }
+        .icon-box { background: var(--gray); padding: 10px 5px; border-radius: 8px; border: 1px solid #222; }
+        .icon-box span { display: block; font-size: 20px; }
+        .icon-box label { font-size: 9px; color: #888; }
+        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; overflow-y: auto; }
+        .side-nav.open { right: 0; }
+        .nav-link { display: block; padding: 12px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; height: 65px; z-index: 998; }
+        .bn-item { flex: 1; text-align: center; color: #666; font-size: 9px; padding-top: 12px; text-decoration: none; }
+        .bn-item.active { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="global-stats"><span>🌐 Lang: 192</span><span>🌍 Country: 204</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); font-size:18px;">CDC PORTAL</div>
+        <div id="realtime-clock" class="clock-ticker">00:00:00 AM | 04 JAN 2026</div>
+        <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="grid-container">
+        <div class="wallet-card" onclick="openTransferModule()">
+            <div class="wallet-label">Reserve Points (Feeding)</div>
+            <div class="wallet-val" id="res-pts">1,500,000 PTS</div>
+        </div>
+        <div class="wallet-card">
+            <div class="wallet-label">CDC Crypto</div>
+            <div class="wallet-val">50.00 CDC</div>
+        </div>
+        <div class="wallet-card">
+            <div class="wallet-label">CDC Fiat Wallet</div>
+            <div class="wallet-val">₱ 2,500.00</div>
+        </div>
+        <div class="wallet-card" style="border-left-color: var(--green);">
+            <div class="wallet-label">Progress</div>
+            <div class="wallet-val" style="font-size:12px;">P1: LEVEL 7 / 28</div>
+        </div>
+    </div>
+    <div class="cycle-panel">
+        <div class="cycle-title">🏆 GRAND REWARD STATUS</div>
+        <div class="cycle-info">
+            <b>Cycle 1:</b> 18,888 USDT Reward <br>
+            <b>Cycle 2:</b> 18,888 USDT + <span class="progressive">17,777 (Car/Travel)</span><br>
+            <b>Cycle 3:</b> 18,888 USDT + <span class="progressive">17,777 (House/Lot)</span>
+        </div>
+    </div>
+    <div class="icon-grid">
+        <div class="icon-box"><span>🏠</span><label>House</label></div>
+        <div class="icon-box"><span>🏥</span><label>Health</label></div>
+        <div class="icon-box"><span>🚗</span><label>Car</label></div>
+        <div class="icon-box"><span>✈️</span><label>Travel</label></div>
+        <div class="icon-box"><span>🛍️</span><label>Shopping</label></div>
+        <div class="icon-box"><span>🎓</span><label>Scholar</label></div>
+        <div class="icon-box"><span>👵</span><label>AgedCare</label></div>
+        <div class="icon-box"><span>💰</span><label>Bonus</label></div>
+    </div>
+    <nav class="side-nav" id="sidebar">
+        <div style="padding: 20px; color: var(--gold); border-bottom: 1px solid #333; font-weight: bold;">NAVIGATOR</div>
+        <a href="#" class="nav-link">💼 BUSINESS</a>
+        <a href="#" class="nav-link">💰 WALLET</a>
+        <a href="#" class="nav-link">🌳 GENEALOGY (Feeding)</a>
+        <a href="#" class="nav-link">⚡ ACTION CENTER</a>
+    </nav>
+    <div class="bottom-nav">
+        <a href="#" class="bn-item active"><i class="fas fa-home"></i><br>HOME</a>
+        <a href="#" class="bn-item"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
+        <a href="#" class="bn-item"><i class="fas fa-wallet"></i><br>WALLET</a>
+        <a href="#" class="bn-item"><i class="fas fa-gift"></i><br>INCENT</a>
+        <a href="#" class="bn-item"><i class="fas fa-hand-holding-heart"></i><br>CHARITY</a>
+    </div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            const dateString = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+            document.getElementById('realtime-clock').innerText = timeString + " | " + dateString.toUpperCase();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+        function toggleMenu() { document.getElementById('sidebar').classList.toggle('open'); }
+        function openTransferModule() {
+            let targetID = prompt("Enter Downline ID (20-Level Umbrella):");
+            if(targetID) {
+                let amount = prompt("Enter Points to Transfer (Feeding):");
+                if(amount) alert("Successfully transferred " + amount + " PTS to " + targetID);
+            }
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  514  nano portal.html
+  515  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Portal | Elite Private Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; --green: #00ff00; --red: #ff4444; }
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 80px; }
+        
+        /* Layout Elements */
+        .header { padding: 15px; border-bottom: 1px solid var(--gold); background: #050505; position: sticky; top: 0; z-index: 900; }
+        .clock-ticker { font-family: monospace; color: var(--gold); font-size: 14px; text-align: center; margin-top: 5px; }
+        .global-stats { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
+        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; }
+
+        /* Wallet Grid */
+        .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+        .wallet-card { background: var(--gray); padding: 12px; border-radius: 8px; border-left: 3px solid var(--gold); }
+        .wallet-val { font-size: 15px; font-weight: bold; margin-top: 4px; }
+
+        /* Modal Overlay */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); z-index: 2000; display: none; overflow-y: auto; padding-bottom: 50px; }
+        .entity-card { background: #111; border: 1px solid #333; padding: 15px; margin: 10px 20px; border-radius: 8px; cursor: pointer; }
+        .entity-card h4 { margin: 0; color: var(--gold); font-size: 14px; }
+        .entity-card p { margin: 5px 0 0; font-size: 10px; color: #888; }
+        
+        /* Input Styling */
+        .input-group { padding: 20px; }
+        .input-group label { display: block; font-size: 10px; color: var(--gold); margin-bottom: 5px; text-transform: uppercase; }
+        .input-group input { width: 90%; background: #000; border: 1px solid #333; color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 5px; outline: none; }
+        .v-status { display: block; font-size: 9px; margin-bottom: 15px; font-weight: bold; }
+
+        /* Navigation */
+        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; }
+        .side-nav.open { right: 0; }
+        .nav-link { display: block; padding: 15px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; cursor: pointer; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; height: 65px; z-index: 998; }
+        .bn-item { flex: 1; text-align: center; color: #666; font-size: 9px; padding-top: 12px; text-decoration: none; }
+        .bn-item.active { color: var(--gold); }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="global-stats"><span>🌐 Lang: 192</span><span>🌍 Country: 204</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); font-size:18px;">CDC PORTAL</div>
+        <div id="realtime-clock" class="clock-ticker">--:--:-- | 2026</div>
+        <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </div>
+
+    <div class="grid-container">
+        <div class="wallet-card">
+            <div style="font-size:9px; color:var(--gold);">RESERVE POINTS</div>
+            <div class="wallet-val">1,500,000 PTS</div>
+        </div>
+        <div class="wallet-card" style="border-left-color: var(--green);">
+            <div style="font-size:9px; color:var(--gold);">PROGRESS</div>
+            <div class="wallet-val" style="font-size:12px;">P1: LEVEL 7 / 28</div>
+        </div>
+    </div>
+
+    <div style="padding:15px; text-align:center;">
+        <button onclick="openBusinessModal()" style="background:var(--gold); color:#000; border:none; padding:15px 30px; border-radius:5px; font-weight:bold; width:100%;">💼 SELECT BUSINESS ENTITY</button>
+    </div>
+
+    <div id="businessModal" class="modal-overlay">
+        <div style="text-align:center; padding: 30px 20px 10px;">
+            <h3 style="color:var(--gold); margin:0;">IDENTITY GATE</h3>
+            <p style="font-size:10px; color:#888;">Only CDC Portal Members can be nominated.</p>
+        </div>
+
+        <div id="entityList">
+            <div onclick="showAncestry('Personal')" class="entity-card"><h4>Personal Account</h4><p>Individual Face Recognition KYC.</p></div>
+            <div onclick="showAncestry('Family Clan')" class="entity-card"><h4>Family Clan</h4><p>Requires 3-Nominee Multi-Sig.</p></div>
+            <div onclick="showAncestry('Merchant')" class="entity-card"><h4>Merchant</h4><p>Selling in CDC Only Mall.</p></div>
+            <div onclick="showAncestry('Institution')" class="entity-card"><h4>Institution / Coop</h4><p>Official group registration.</p></div>
+        </div>
+
+        <div id="ancestrySection" class="input-group" style="display:none;">
+            <h4 id="selectedType" style="color:var(--gold); text-align:center; margin-bottom:20px;"></h4>
+            
+            <label>Father's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+            
+            <label>Mother's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+
+            <div id="nomineeFields" style="display:none; margin-top:20px; border-top:1px solid #222; padding-top:20px;">
+                <label>Nominee 1: Head / Captain</label>
+                <input type="text" placeholder="Enter CDC ID (e.g. CDC-001)" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+
+                <label>Nominee 2: Treasurer</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+
+                <label>Nominee 3: Secretary</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+            </div>
+
+            <button onclick="saveAndPush()" id="btnActivate" style="width:100%; background:#222; color:#555; border:none; padding:15px; font-weight:bold; border-radius:5px; margin-top:10px;">VERIFY NOMINEES</button>
+            <button onclick="closeBusinessModal()" style="width:100%; background:transparent; border:none; color:#888; margin-top:15px; font-size:12px;">CANCEL</button>
+        </div>
+    </div>
+
+    <nav class="side-nav" id="sidebar">
+        <div style="padding: 20px; color: var(--gold); border-bottom: 1px solid #333; font-weight: bold;">NAVIGATOR</div>
+        <a onclick="openBusinessModal()" class="nav-link">💼 BUSINESS ENTITY</a>
+        <a class="nav-link">💰 WALLET</a>
+        <a class="nav-link">🌳 GENEALOGY</a>
+    </nav>
+
+    <div class="bottom-nav">
+        <a href="#" class="bn-item active"><i class="fas fa-home"></i><br>HOME</a>
+        <a href="#" class="bn-item"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
+        <a href="#" class="bn-item"><i class="fas fa-wallet"></i><br>WALLET</a>
+        <a href="#" class="bn-item"><i class="fas fa-tree"></i><br>GENEAL</a>
+    </div>
+
+    <script>
+        // Real-Time Clock
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('realtime-clock').innerText = now.toLocaleTimeString() + " | " + now.toLocaleDateString('en-GB');
+        }
+        setInterval(updateClock, 1000);
+
+        function toggleMenu() { document.getElementById('sidebar').classList.toggle('open'); }
+
+        function openBusinessModal() { 
+            document.getElementById('businessModal').style.display = 'block'; 
+            if(document.getElementById('sidebar').classList.contains('open')) toggleMenu();
+        }
+        function closeBusinessModal() { document.getElementById('businessModal').style.display = 'none'; }
+
+        function showAncestry(type) {
+            document.getElementById('entityList').style.display = 'none';
+            document.getElementById('ancestrySection').style.display = 'block';
+            document.getElementById('selectedType').innerText = type.toUpperCase();
+            if(type !== 'Personal') document.getElementById('nomineeFields').style.display = 'block';
+        }
+
+        // MEMBER VALIDATION LOGIC
+        const validDB = ["CDC-001", "CDC-002", "CDC-007"]; // Sample existing members
+
+        function checkMember(el) {
+            let id = el.value.toUpperCase();
+            let status = el.nextElementSibling;
+            if(id === "") { status.innerText = ""; return; }
+
+            if(validDB.includes(id)) {
+                status.innerText = "✅ MEMBER VERIFIED";
+                status.style.color = "var(--green)";
+            } else {
+                status.innerHTML = "❌ NOT A MEMBER. <span style='color:var(--gold); text-decoration:underline;' onclick='alert(\"Invite Sent!\")'>Invite them to Join CDC.</span>";
+                status.style.color = "var(--red)";
+            }
+        }
+
+        function saveAndPush() {
+            alert("Application Submitted! Pending Nominee Multi-Sig Verification.");
+            closeBusinessModal();
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  516  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Portal | Elite Private Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0a0a; --gray: #1a1a1a; --sidebar-w: 280px; --green: #00ff00; --red: #ff4444; }
+        body { background: #000; color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; overflow-x: hidden; padding-bottom: 80px; }
+        .header { padding: 15px; border-bottom: 1px solid var(--gold); background: #050505; position: sticky; top: 0; z-index: 900; }
+        .clock-ticker { font-family: monospace; color: var(--gold); font-size: 14px; text-align: center; margin-top: 5px; }
+        .global-stats { display: flex; justify-content: space-between; font-size: 10px; color: var(--gold); margin-bottom: 5px; font-weight: bold; }
+        .menu-btn { position: absolute; right: 20px; top: 25px; color: var(--gold); font-size: 24px; cursor: pointer; }
+        .grid-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+        .wallet-card { background: var(--gray); padding: 12px; border-radius: 8px; border-left: 3px solid var(--gold); }
+        .wallet-val { font-size: 15px; font-weight: bold; margin-top: 4px; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); z-index: 2000; display: none; overflow-y: auto; padding-bottom: 50px; }
+        .entity-card { background: #111; border: 1px solid #333; padding: 15px; margin: 10px 20px; border-radius: 8px; cursor: pointer; }
+        .entity-card h4 { margin: 0; color: var(--gold); font-size: 14px; }
+        .entity-card p { margin: 5px 0 0; font-size: 10px; color: #888; }
+        .input-group { padding: 20px; }
+        .input-group label { display: block; font-size: 10px; color: var(--gold); margin-bottom: 5px; text-transform: uppercase; }
+        .input-group input { width: 95%; background: #000; border: 1px solid #333; color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 5px; outline: none; }
+        .v-status { display: block; font-size: 9px; margin-bottom: 15px; font-weight: bold; }
+        .side-nav { position: fixed; top: 0; right: -280px; width: var(--sidebar-w); height: 100%; background: var(--dark); border-left: 1px solid var(--gold); transition: 0.4s; z-index: 1000; padding-top: 60px; }
+        .side-nav.open { right: 0; }
+        .nav-link { display: block; padding: 15px 20px; color: #ccc; text-decoration: none; border-bottom: 1px solid #111; font-size: 13px; cursor: pointer; }
+        .bottom-nav { position: fixed; bottom: 0; width: 100%; background: #000; border-top: 1px solid var(--gold); display: flex; height: 65px; z-index: 998; }
+        .bn-item { flex: 1; text-align: center; color: #666; font-size: 9px; padding-top: 12px; text-decoration: none; }
+        .bn-item.active { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="global-stats"><span>🌐 Lang: 192</span><span>🌍 Country: 204</span></div>
+        <div style="text-align:center; font-weight:bold; color:var(--gold); font-size:18px;">CDC PORTAL</div>
+        <div id="realtime-clock" class="clock-ticker">--:--:-- | 2026</div>
+        <div class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </div>
+
+    <div class="grid-container">
+        <div class="wallet-card">
+            <div style="font-size:9px; color:var(--gold);">RESERVE POINTS</div>
+            <div class="wallet-val">1,500,000 PTS</div>
+        </div>
+        <div class="wallet-card" style="border-left-color: var(--green);">
+            <div style="font-size:9px; color:var(--gold);">PROGRESS</div>
+            <div class="wallet-val" style="font-size:12px;">P1: LEVEL 7 / 28</div>
+        </div>
+    </div>
+
+    <div style="padding:15px; text-align:center;">
+        <button onclick="openBusinessModal()" style="background:var(--gold); color:#000; border:none; padding:15px 30px; border-radius:5px; font-weight:bold; width:100%;">💼 SETUP BUSINESS ENTITY</button>
+    </div>
+
+    <div id="businessModal" class="modal-overlay">
+        <div style="text-align:center; padding: 30px 20px 10px;">
+            <h3 style="color:var(--gold); margin:0;">IDENTITY GATE</h3>
+            <p style="font-size:10px; color:#888;">Nominees must be existing CDC Portal Members.</p>
+        </div>
+        <div id="entityList">
+            <div onclick="showAncestry('Personal')" class="entity-card"><h4>Personal Account</h4><p>Standard individual registration.</p></div>
+            <div onclick="showAncestry('Family Clan')" class="entity-card"><h4>Family Clan</h4><p>Lineage-based Multi-Sig account.</p></div>
+            <div onclick="showAncestry('Merchant')" class="entity-card"><h4>Merchant</h4><p>Retail & Product Vendor account.</p></div>
+            <div onclick="showAncestry('Institution')" class="entity-card"><h4>Institution / Coop</h4><p>Official organization registration.</p></div>
+        </div>
+        <div id="ancestrySection" class="input-group" style="display:none;">
+            <h4 id="selectedType" style="color:var(--gold); text-align:center; margin-bottom:20px;"></h4>
+            <label>Father's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+            <label>Mother's Full Name (3rd Gen Trace)</label>
+            <input type="text" placeholder="Entry Required">
+            <div id="nomineeFields" style="display:none; margin-top:20px; border-top:1px solid #222; padding-top:20px;">
+                <label>Nominee 1: Head / Captain</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+                <label>Nominee 2: Treasurer</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+                <label>Nominee 3: Secretary</label>
+                <input type="text" placeholder="Enter CDC ID" onkeyup="checkMember(this)">
+                <span class="v-status"></span>
+            </div>
+            <button onclick="saveAndPush()" id="btnActivate" style="width:100%; background:var(--gold); color:#000; border:none; padding:15px; font-weight:bold; border-radius:5px; margin-top:10px;">SUBMIT APPLICATION</button>
+            <button onclick="closeBusinessModal()" style="width:100%; background:transparent; border:none; color:#888; margin-top:15px; font-size:12px;">GO BACK</button>
+        </div>
+    </div>
+
+    <nav class="side-nav" id="sidebar">
+        <div style="padding: 20px; color: var(--gold); border-bottom: 1px solid #333; font-weight: bold;">NAVIGATOR</div>
+        <a onclick="openBusinessModal()" class="nav-link">💼 BUSINESS ENTITY</a>
+        <a class="nav-link">💰 WALLET</a>
+        <a class="nav-link">🌳 GENEALOGY</a>
+    </nav>
+
+    <div class="bottom-nav">
+        <a href="#" class="bn-item active"><i class="fas fa-home"></i><br>HOME</a>
+        <a href="#" class="bn-item"><i class="fas fa-briefcase"></i><br>BUSINESS</a>
+        <a href="#" class="bn-item"><i class="fas fa-wallet"></i><br>WALLET</a>
+        <a href="#" class="bn-item"><i class="fas fa-tree"></i><br>GENEAL</a>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('realtime-clock').innerText = now.toLocaleTimeString() + " | " + now.toLocaleDateString('en-GB');
+        }
+        setInterval(updateClock, 1000);
+        function toggleMenu() { document.getElementById('sidebar').classList.toggle('open'); }
+        function openBusinessModal() { document.getElementById('businessModal').style.display = 'block'; if(document.getElementById('sidebar').classList.contains('open')) toggleMenu(); }
+        function closeBusinessModal() { document.getElementById('businessModal').style.display = 'none'; document.getElementById('entityList').style.display='block'; document.getElementById('ancestrySection').style.display='none'; }
+        function showAncestry(type) { document.getElementById('entityList').style.display = 'none'; document.getElementById('ancestrySection').style.display = 'block'; document.getElementById('selectedType').innerText = type.toUpperCase(); if(type !== 'Personal') document.getElementById('nomineeFields').style.display = 'block'; else document.getElementById('nomineeFields').style.display = 'none'; }
+        
+        const validDB = ["CDC-001", "CDC-002", "CDC-007"]; 
+        function checkMember(el) {
+            let id = el.value.toUpperCase();
+            let status = el.nextElementSibling;
+            if(id === "") { status.innerText = ""; return; }
+            if(validDB.includes(id)) { status.innerText = "✅ MEMBER VERIFIED"; status.style.color = "var(--green)"; }
+            else { status.innerHTML = "❌ NOT A MEMBER. <span style='color:var(--gold); cursor:pointer;' onclick='alert(\"Invite Link Sent!\")'>Click to Invite.</span>"; status.style.color = "var(--red)"; }
+        }
+        function saveAndPush() { alert("Application Received! Pending Multi-Sig Approval."); closeBusinessModal(); }
+    </script>
+</body>
+</html>
+EOF
+
+  517  git add portal.html
+  518  git commit -m "Integrated Member Validation for Nominees"
+  519  git push origin main
+  520  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Portal | The Hayahay Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0b0d; --blue: #0052ff; --green: #00ff00; }
+        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding-bottom: 80px; }
+        
+        /* Marquee for Winners */
+        .marquee-bg { background: linear-gradient(90deg, #1e2329, var(--blue)); padding: 8px; overflow: hidden; white-space: nowrap; }
+        .marquee-text { display: inline-block; animation: scroll 20s linear infinite; color: var(--gold); font-weight: bold; font-size: 12px; }
+        @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        .header { padding: 20px; text-align: center; border-bottom: 1px solid #222; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 20px; }
+        .stat-card { background: #1a1c20; padding: 15px; border-radius: 12px; border: 1px solid #2b2f36; }
+        .stat-label { font-size: 10px; color: #848e9c; text-transform: uppercase; }
+        .stat-val { font-size: 18px; font-weight: bold; color: var(--gold); margin-top: 5px; }
+
+        /* Task Gateway */
+        .task-box { background: #1a1c20; margin: 0 20px; padding: 20px; border-radius: 16px; border: 1px solid var(--blue); }
+        .video-placeholder { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 8px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; }
+        
+        .btn-task { width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 8px; border: none; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .btn-locked { background: #2b2f36; color: #848e9c; cursor: not-allowed; }
+        .btn-active { background: var(--blue); color: white; }
+        .btn-claim { background: var(--gold); color: #000; font-size: 16px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="marquee-bg">
+        <div class="marquee-text">🏆 TOP 888 WINNER: ID #10294 - 38,888 USDT | 🏆 TOP 889 WINNER: ID #09928 - 28,888 USDT | 🏆 TOP 890 WINNER: ID #11022 - 18,888 USDT</div>
+    </div>
+
+    <div class="header">
+        <h2 style="margin:0; color:var(--gold);">CDC HAYAHAY ENGINE</h2>
+        <p style="font-size:11px; color:#848e9c;">Project 2: Progressive Reward (Depth: 25)</p>
+    </div>
+
+    <div class="stat-grid">
+        <div class="stat-card">
+            <div class="stat-label">Total Grand Bonus</div>
+            <div class="stat-val">28,888 USDT</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Release Limit</div>
+            <div class="stat-val" style="color:var(--green);">8.00% Daily</div>
+        </div>
+    </div>
+
+    <div class="task-box">
+        <h3 style="margin-top:0; font-size:16px;">Social Task Gateway</h3>
+        <div class="video-placeholder" id="videoArea">
+            <i class="fab fa-youtube fa-3x" style="color:red;"></i>
+        </div>
+        
+        <button id="watchBtn" class="btn-task btn-active" onclick="startWatch()">1. WATCH VIDEO (60s)</button>
+        <button id="likeBtn" class="btn-task btn-locked" onclick="doSocial('like')">2. LIKE & COMMENT</button>
+        <button id="shareBtn" class="btn-task btn-locked" onclick="doSocial('share')">3. SHARE CHANNEL</button>
+        
+        <hr style="border:0; border-top:1px solid #333; margin:15px 0;">
+        
+        <button id="claimBtn" class="btn-task btn-locked btn-claim" onclick="finalRelease()" disabled>RELEASE 8% CDC</button>
+        <p id="statusMsg" style="font-size:10px; text-align:center; color:#848e9c;">Finish tasks to unlock release button.</p>
+    </div>
+
+    <script>
+        let watched = false, liked = false, shared = false;
+
+        function startWatch() {
+            alert("Opening YouTube... Stay for 60 seconds to verify.");
+            window.open('https://youtube.com', '_blank');
+            setTimeout(() => {
+                watched = true;
+                document.getElementById('watchBtn').innerText = "WATCHED ✅";
+                document.getElementById('watchBtn').className = "btn-task btn-locked";
+                document.getElementById('likeBtn').className = "btn-task btn-active";
+                checkReady();
+            }, 5000); // 5s for demo, you can change to 60000
+        }
+
+        function doSocial(type) {
+            if(!watched) return;
+            if(type === 'like') {
+                liked = true;
+                document.getElementById('likeBtn').innerText = "LIKED ✅";
+                document.getElementById('shareBtn').className = "btn-task btn-active";
+            } else {
+                shared = true;
+                document.getElementById('shareBtn').innerText = "SHARED ✅";
+                window.open('https://facebook.com/sharer/sharer.php', '_blank');
+            }
+            checkReady();
+        }
+
+        function checkReady() {
+            if(watched && liked && shared) {
+                const btn = document.getElementById('claimBtn');
+                btn.className = "btn-task btn-active btn-claim";
+                btn.disabled = false;
+                document.getElementById('statusMsg').innerText = "Gateway Open! You can now release your 8%.";
+                document.getElementById('statusMsg').style.color = "var(--green)";
+            }
+        }
+
+        function finalRelease() {
+            alert("8% Manual Release Successful! 2,311.04 USDT equivalent in CDC transferred to Withdrawable Wallet.");
+            location.reload();
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  521  git add portal.html
+  522  git commit -m "Finalized Hayahay Engine with 8-percent release logic"
+  523  git push origin main
+  524  cat <<EOF > portal.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Genealogy | 25-28 Infinity Tree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #0a0b0d; --blue: #0052ff; --green: #00ff00; }
+        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding-bottom: 80px; text-align: center; }
+        
+        .tree-header { padding: 20px; border-bottom: 1px solid #222; background: #050505; sticky; top: 0; z-index: 100; }
+        .view-toggle { display: flex; justify-content: center; gap: 10px; margin: 15px 0; }
+        .toggle-btn { background: #1a1a1a; color: #888; border: 1px solid #333; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-size: 11px; }
+        .toggle-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+        /* Tree Visualization */
+        .tree-container { padding: 20px; overflow-x: auto; white-space: nowrap; }
+        .node { display: inline-block; margin: 0 5px; position: relative; }
+        .user-icon { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--gold); background: #111; display: flex; align-items: center; justify-content: center; margin-bottom: 5px; }
+        .user-id { font-size: 9px; color: #ccc; }
+        
+        /* Stats Bar */
+        .tree-stats { background: #111; margin: 15px; padding: 15px; border-radius: 10px; border-left: 4px solid var(--gold); text-align: left; }
+        .stat-line { display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 5px; }
+        .waiting-area { background: #1a1c20; border: 1px dashed var(--gold); padding: 10px; margin-top: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="tree-header">
+        <h2 style="margin:0; color:var(--gold);">GENEAL TREE VIEW</h2>
+        <div class="view-toggle">
+            <button class="toggle-btn active" onclick="switchView('feeding')">FEEDING (L28+)</button>
+            <button class="toggle-btn" onclick="switchView('p2')">PROJECT 2 (L25)</button>
+        </div>
+    </div>
+
+    <div class="tree-stats">
+        <div class="stat-line"><span>Current Depth:</span> <b id="depthVal">Level 28</b></div>
+        <div class="stat-line"><span>Total Members:</span> <b id="totalVal">268,435,455</b></div>
+        <div class="waiting-area">
+            <div style="font-size:10px; color:var(--gold); font-weight:bold; margin-bottom:5px;">FEEDING WAITING AREA (AUTO-LINEUP)</div>
+            <div style="font-size:12px; color:var(--green);"><i class="fas fa-spinner fa-spin"></i> 1,402 New Subscribers Queuing...</div>
+        </div>
+    </div>
+
+    <div class="tree-container">
+        <div class="node">
+            <div class="user-icon"><i class="fas fa-user-tie" style="color:var(--gold);"></i></div>
+            <div class="user-id">CDC-FOUNDER</div>
+            <div style="margin-top:10px;">
+                <div class="node">
+                    <div class="user-icon"><i class="fas fa-user" style="color:var(--blue);"></i></div>
+                    <div class="user-id">CDC-AMB-001</div>
+                </div>
+                <div class="node">
+                    <div class="user-icon"><i class="fas fa-user" style="color:var(--blue);"></i></div>
+                    <div class="user-id">CDC-AMB-002</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="font-size:10px; color:#555; padding: 20px;">
+        *Feeding area expands automatically past Level 28 to support Main Tree flow.
+    </p>
+
+    <script>
+        function switchView(view) {
+            const btns = document.querySelectorAll('.toggle-btn');
+            btns.forEach(b => b.classList.remove('active'));
+            
+            if(view === 'feeding') {
+                btns[0].classList.add('active');
+                document.getElementById('depthVal').innerText = "Level 28 (Expanding)";
+                document.getElementById('totalVal').innerText = "268,435,455";
+            } else {
+                btns[1].classList.add('active');
+                document.getElementById('depthVal').innerText = "Level 25 (Fixed)";
+                document.getElementById('totalVal').innerText = "33,554,431";
+            }
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  525  git add portal.html
+  526  git commit -m "Added Genealogy Tree with 25-level and 28-level infinity feeding logic"
+  527  git push origin main
+  528  cat <<EOF > sovereign.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Sovereign | Global Relief Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; --blue: #0052ff; --green: #00ff00; --card: #111; }
+        body { background: var(--dark); color: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding-bottom: 100px; }
+        
+        /* Header Section */
+        .header { padding: 30px 20px; text-align: center; border-bottom: 1px solid var(--gold); background: linear-gradient(to bottom, #111, #050505); }
+        .header h2 { margin: 0; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+        .header p { font-size: 10px; color: #888; margin-top: 5px; }
+
+        /* Impact Dashboard */
+        .container { padding: 15px; max-width: 500px; margin: auto; }
+        .impact-card { background: var(--card); border-radius: 15px; border: 1px solid #333; padding: 20px; margin-bottom: 20px; }
+        .impact-label { font-size: 11px; color: #888; text-transform: uppercase; }
+        .impact-value { font-size: 20px; font-weight: bold; color: var(--blue); margin-bottom: 15px; display: block; }
+        
+        /* The Math Results */
+        .result-gate { background: #000; border-radius: 10px; padding: 20px; border-top: 4px solid var(--gold); }
+        .release-total { text-align: center; margin-bottom: 20px; }
+        .release-total small { font-size: 10px; color: #888; display: block; }
+        .release-total span { font-size: 32px; font-weight: bold; color: var(--gold); }
+
+        .split-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #222; font-size: 14px; }
+        .split-row:last-child { border-bottom: none; }
+        .member-bonus { color: var(--green); font-weight: bold; }
+
+        /* Voting System */
+        .voting-section { text-align: center; padding-top: 10px; }
+        .quorum-status { font-size: 11px; color: #888; margin-bottom: 15px; }
+        .btn-vote { width: 100%; padding: 18px; background: var(--blue); border: none; color: white; font-weight: bold; border-radius: 10px; cursor: pointer; font-size: 16px; transition: 0.3s; }
+        .btn-vote:hover { background: #0041cc; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Sovereign Relief</h2>
+        <p>204 COUNTRIES | 18% QUORUM | 28.88% RESILIENCE</p>
+    </div>
+
+    <div class="container">
+        <div class="impact-card">
+            <span class="impact-label">Current Flagged Area:</span>
+            <span class="impact-value">🇵🇭 Visayas, Philippines</span>
+            
+            <div style="display: flex; justify-content: space-between;">
+                <div>
+                    <span class="impact-label">Pop. Impact:</span>
+                    <span style="display:block; font-weight:bold;">0.64%</span>
+                </div>
+                <div>
+                    <span class="impact-label">Country Fund:</span>
+                    <span style="display:block; font-weight:bold;">1,000,000 CDC</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-gate">
+            <div class="release-total">
+                <small>TOTAL AUTHORIZED RELEASE</small>
+                <span>6,400.00 CDC</span>
+            </div>
+
+            <div class="split-row">
+                <span>Community Aid (71.12%)</span>
+                <span>4,551.68</span>
+            </div>
+            
+            <div class="split-row member-bonus">
+                <span>Resilience Bonus (28.88%)</span>
+                <span>1,848.32</span>
+            </div>
+
+            <p style="font-size: 9px; color: #555; margin-top: 15px; text-align: center; font-style: italic;">
+                *Resilience bonus is split equally among CDC Portal members in the affected territory.
+            </p>
+        </div>
+
+        <div class="voting-section">
+            <div class="quorum-status">
+                <i class="fas fa-users"></i> Target Quorum: 18% Required
+            </div>
+            <button class="btn-vote" onclick="initiateVote()">OPEN SOVEREIGN VOTE</button>
+        </div>
+    </div>
+
+    <script>
+        function initiateVote() {
+            alert("VOTING SEQUENCE INITIALIZED\n\nTargeting: 18% of National Subscribers\nAuthorized Release: 6,400.00 CDC\nMember Bonus Split: 28.88%");
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  529  git add sovereign.html
+  530  git commit -m "Final Secure Sovereign Code: Proportional Impact + 28.88-percent Split"
+  531  git push origin main
+  532  cat <<EOF > vote.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC | Sovereign Voting Gate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; --blue: #0052ff; --green: #00ff00; }
+        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding: 15px; }
+        .vote-card { background: #111; border: 1px solid #222; border-radius: 16px; padding: 25px; text-align: center; }
+        .quorum-container { margin: 25px 0; }
+        .progress-bg { background: #222; height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 10px; }
+        .progress-fill { background: linear-gradient(90deg, var(--blue), var(--green)); width: 12.5%; height: 100%; transition: 1.5s ease-in-out; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .stat-box { background: #000; padding: 10px; border-radius: 8px; border: 1px solid #333; }
+        .stat-label { font-size: 10px; color: #888; display: block; }
+        .btn-yes { width: 100%; padding: 18px; background: var(--green); color: #000; border: none; border-radius: 10px; font-weight: bold; font-size: 18px; cursor: pointer; }
+        .btn-yes:disabled { background: #222; color: #555; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <div class="vote-card">
+        <h2 style="color:var(--gold); margin-bottom:5px;">SOVEREIGN VOTE</h2>
+        <p style="font-size:12px; color:#888;">COUNTRY: PHILIPPINES | IMPACT: 0.64%</p>
+
+        <div class="quorum-container">
+            <div class="progress-bg"><div class="progress-fill" id="fill"></div></div>
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+                <span>Current: <b id="currentPer">12.5%</b></span>
+                <span>Target: <b>18% Quorum</b></span>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-box">
+                <span class="stat-label">Member Bonus (28.88%)</span>
+                <span style="color:var(--green); font-weight:bold;">1,848.32 CDC</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Community Aid (71.12%)</span>
+                <span style="color:var(--gold); font-weight:bold;">4,551.68 CDC</span>
+            </div>
+        </div>
+
+        <button id="voteBtn" class="btn-yes" onclick="castSovereignVote()">YES, RELEASE RELIEF</button>
+        <p id="msg" style="font-size:10px; color:#555; margin-top:15px;">Voting is only open to residents of the affected area.</p>
+    </div>
+
+    <script>
+        function castSovereignVote() {
+            document.getElementById('voteBtn').disabled = true;
+            document.getElementById('voteBtn').innerText = "VOTE REGISTERED";
+            let fill = document.getElementById('fill');
+            fill.style.width = '18%'; 
+            document.getElementById('currentPer').innerText = "18% (QUORUM REACHED)";
+            
+            setTimeout(() => {
+                alert("QUORUM REACHED! Authorization confirmed.\n\nRelief Split 28.88% / 71.12% has been initiated for 204 Country Protocol.");
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  533  git add vote.html
+  534  git commit -m "Integrated Sovereign Voting Gate with 18-percent Quorum trigger"
+  535  git push origin main
+  536  cat <<EOF > geomap.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC | Real-Time Sovereign Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; --blue: #0052ff; --red: #ff3b30; }
+        body { background: var(--dark); color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        .realtime-header { padding: 20px; border-bottom: 1px solid var(--gold); background: #000; display: flex; justify-content: space-between; align-items: center; }
+        .live-clock { color: var(--gold); font-family: monospace; font-size: 14px; }
+        
+        .map-card { background: #111; margin: 15px; border-radius: 12px; border: 1px solid #222; overflow: hidden; }
+        .status-bar { padding: 10px; font-size: 10px; background: #1a1a1a; display: flex; justify-content: space-between; border-bottom: 1px solid #222; }
+        .country-info { padding: 20px; }
+        .pulse { display: inline-block; width: 8px; height: 8px; background: var(--red); border-radius: 50%; margin-right: 5px; animation: blink 1s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+        
+        .calc-input-group { background: #000; padding: 15px; border-radius: 8px; margin-top: 15px; }
+        input { background: #222; border: 1px solid #333; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-top: 5px; }
+        .btn-calc { background: var(--blue); color: white; border: none; width: 100%; padding: 12px; border-radius: 5px; margin-top: 10px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="realtime-header">
+        <div>
+            <h3 style="margin:0;">GEOMAP LIVE</h3>
+            <small style="color:#888;">204 Sovereign Nations</small>
+        </div>
+        <div class="live-clock" id="clock">JAN 07, 2026 - 23:33:56</div>
+    </div>
+
+    <div class="map-card">
+        <div class="status-bar">
+            <span><span class="pulse"></span> SYSTEM STATUS: MONITORING</span>
+            <span id="yearLabel">YEAR: 2026</span>
+        </div>
+        
+        <div class="country-info">
+            <h2 style="margin:0;">🇵🇭 PHILIPPINES</h2>
+            <p style="font-size:12px; color:#888;">Live 2026 Pop. Est: <b id="totalPop">117,000,000</b></p>
+            
+            <div class="calc-input-group">
+                <label style="font-size:11px; color:var(--gold);">ENTER AFFECTED POPULATION:</label>
+                <input type="number" id="affectedPop" placeholder="e.g. 748000" oninput="calculateRealtime()">
+                
+                <div id="results" style="display:none; margin-top:15px; border-top: 1px solid #222; padding-top:10px;">
+                    <div style="display:flex; justify-content:space-between; font-size:13px;">
+                        <span>Impact Impact %:</span>
+                        <span id="impactPerc" style="color:var(--blue); font-weight:bold;">0%</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-top:10px; color:var(--gold); font-weight:bold;">
+                        <span>Release Auth:</span>
+                        <span id="releaseAmt">0 CDC</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-calc" onclick="location.href='vote.html'">INITIATE 18% QUORUM VOTE</button>
+        </div>
+    </div>
+
+    <script>
+        // Update Clock Real-Time
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerText = now.toLocaleString('en-US', { 
+                month: 'short', day: '2-digit', year: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false 
+            }).toUpperCase();
+        }
+        setInterval(updateClock, 1000);
+
+        function calculateRealtime() {
+            const total = 117000000;
+            const affected = document.getElementById('affectedPop').value;
+            const resDiv = document.getElementById('results');
+            
+            if(affected > 0) {
+                resDiv.style.display = 'block';
+                const impact = (affected / total * 100).toFixed(2);
+                document.getElementById('impactPerc').innerText = impact + '%';
+                
+                // Assuming 1M Country Fund
+                const release = (1000000 * (impact / 100)).toLocaleString();
+                document.getElementById('releaseAmt').innerText = release + ' CDC';
+            } else {
+                resDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+EOF
+
+  537  // Migration Priority Logic
+  538  function triggerCycleMigration(targetCycle) {
+  539  }
+  540  cat <<EOF > rewards.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CDC | Cycle 1 Exit & Rewards</title>
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; }
+        body { background: var(--dark); color: #fff; font-family: sans-serif; padding: 20px; }
+        .reward-card { border: 1px solid var(--gold); padding: 20px; border-radius: 12px; text-align: center; }
+        .asset-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 20px; }
+        .asset-btn { padding: 15px; border: 1px solid #333; background: #111; color: white; cursor: pointer; border-radius: 8px; }
+        .asset-btn:hover { border-color: var(--gold); }
+        .parent-info { background: #1a1a1a; padding: 10px; border-radius: 8px; margin-top: 20px; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="reward-card">
+        <h2 style="color:var(--gold);">GRADUATE EXIT: CYCLE 1</h2>
+        <p>Requirements: 20th Level Complete + 50% Total Points Met</p>
+        
+        <div style="font-size: 24px; font-weight: bold; margin: 20px 0;">
+            18,888 USDT <span style="font-size: 14px; color: #888;">(in CDC Coin)</span>
+        </div>
+
+        <p style="color:var(--gold);">Choose 1 Asset Reward (Worth 17,777 USDT):</p>
+        <div class="asset-grid">
+            <button class="asset-btn">🚗 CAR</button>
+            <button class="asset-btn">✈️ TRAVEL</button>
+            <button class="asset-btn">🏥 HEALTHCARE</button>
+        </div>
+        <p style="font-size: 10px; color: #555; margin-top: 10px;">*House selection is excluded from this tier.</p>
+
+        <div class="parent-info">
+            <span style="color:#888;">VISIBLE PARENT (L8):</span> <br>
+            <strong>Username:</strong> CDC_SOVEREIGN_8 | <strong>Name:</strong> Sovereign Fund Manager
+        </div>
+    </div>
+</body>
+</html>
+EOF
+
+  541  git add geomap.html
+  542  git commit -m "Integrated 204 Country Map with L8 Sovereign Reward Logic"
+  543  git push origin main
+  544  // Humanitarian Direct Distribution Logic
+  545  function executeSolidarityBuild(disasterID, projectType) {
+  546  }
+  547  git add humanitarian_exec.js
+  548  git commit -m "Finalized Direct Foundation Distribution: Housing/Schools from 1% Solidarity Fund"
+  549  git push origin main
+  550  // Disaster Severity Check
+  551  function checkDisasterSeverity(affectedPop, totalPop) {
+  552  }
+  553  git add disaster_triggers.js
+  554  git commit -m "Hard-coded 8% Population Threshold for Global Solidarity Voting"
+  555  git push origin main
+  556  cat <<EOF > humanitarian_exec.js
+// CDC Foundation Direct Distribution Logic
+function executeSolidarityBuild(disasterID, projectType) {
+    let totalSolidarityPool = 0.01 * 204; // Simplified logic for 1% from 204 countries
+    
+    if (projectType == "HOUSING") {
+        console.log("CDC Foundation: Building Houses for victims.");
+    } else if (projectType == "SCHOOL") {
+        console.log("CDC Foundation: Building Schools.");
+    }
+}
+EOF
+
+  557  cat <<EOF > disaster_triggers.js
+// Disaster Severity Check - 8% Population Rule
+function checkDisasterSeverity(affectedPop, totalPop) {
+    let impactPercentage = (affectedPop / totalPop) * 100;
+
+    if (impactPercentage >= 8.0) {
+        // TRIGGER GLOBAL SOLIDARITY VOTE (1% Donation)
+        console.log("Severe Disaster (8%+): Global Solidarity Vote Unlocked.");
+    } else {
+        // LOCAL RESILIENCE ONLY (28.88% Fund)
+        console.log("Impact below 8%: Using Local L8 Resilience Funds.");
+    }
+}
+EOF
+
+  558  git add humanitarian_exec.js disaster_triggers.js
+  559  git commit -m "Finalized 8% Disaster Threshold and 1% Solidarity Distribution"
+  560  git push origin main
+  561  // STRICT COMPUTATION LOGIC - DO NOT ALTER
+  562  function calculateDisasterRelief(totalCountryFund, affectedPopPercent) {
+  563  }
+  564  git add disaster_triggers.js
+  565  git commit -m "STRICT MATH: Relief withdrawal based on population % with 28.88/71.12 split"
+  566  git push origin main
+  567  ls
+  568  rm disaster_triggers.js
+  569  rm humanitarian_exec.js
+  570  cat <<EOF > disaster_triggers.js
+// STRICT COMPUTATION LOGIC - DO NOT ALTER
+// Rule: Withdrawal matches population impact % exactly.
+// Split: 28.88% Liquid, 71.12% Reserve.
+
+function calculateDisasterRelief(totalCountryFund, affectedPopPercent) {
+    // Exact percentage withdrawal
+    let totalWithdrawn = totalCountryFund * (affectedPopPercent / 100);
+
+    // Strict split of the withdrawn amount
+    let liquidRelief_2888 = totalWithdrawn * 0.2888;
+    let reliefReserve_7112 = totalWithdrawn * 0.7112;
+
+    return {
+        totalWithdrawn: totalWithdrawn.toFixed(4),
+        liquidRelief: liquidRelief_2888.toFixed(4),
+        reserveRelief: reliefReserve_7112.toFixed(4)
+    };
+}
+
+console.log("Disaster Logic Locked: Withdrawal = Pop %, Split = 28.88/71.12");
+EOF
+
+  571  git add disaster_triggers.js
+  572  git commit -m "FIX: Corrected Disaster Math and removed shell syntax errors"
+  573  git push origin main
+  574  cat <<EOF > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Sovereign Portal</title>
+    <style>
+        body { font-family: sans-serif; background: #0a0a0a; color: white; margin: 0; }
+        nav { background: #1a1a1a; padding: 1rem; display: flex; gap: 20px; border-bottom: 2px solid #288828; }
+        nav a { color: #00ff00; text-decoration: none; font-weight: bold; cursor: pointer; }
+        .container { padding: 20px; }
+        .card { background: #222; padding: 20px; border-radius: 10px; border-left: 5px solid #288828; margin-bottom: 20px; }
+        .hidden { display: none; }
+        .stat { color: #00ff00; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a onclick="showPage('home')">HOME</a>
+    <a onclick="showPage('sovereign')">SOVEREIGN L8</a>
+    <a onclick="showPage('humanitarian')">HUMANITARIAN</a>
+</nav>
+
+<div id="home" class="container">
+    <h1>Welcome to CDC Portal</h1>
+    <div class="card">
+        <h3>Project Status: Project 1 (Binary)</h3>
+        <p>Active Countries: <span class="stat">204</span></p>
+        <p>System Law: <span class="stat">28.88 / 71.12 Split</span></p>
+    </div>
+</div>
+
+<div id="sovereign" class="container hidden">
+    <h1>Sovereign L8 Dashboard</h1>
+    <div class="card">
+        <h3>Country Reserve</h3>
+        <p>Total Fund: <span class="stat">1,000,000 USDT</span></p>
+        <p>Visibility: <span class="stat">Level 8 (Anchor)</span></p>
+    </div>
+</div>
+
+<div id="humanitarian" class="container hidden">
+    <h1>Humanitarian Logic</h1>
+    <div class="card">
+        <h3>Disaster Response Math</h3>
+        <p>Withdrawal Rule: <span class="stat">Impact % = Withdrawal %</span></p>
+        <p>Global Vote Trigger: <span class="stat">8% Population Impact</span></p>
+    </div>
+</div>
+
+<script>
+    function showPage(pageId) {
+        document.getElementById('home').classList.add('hidden');
+        document.getElementById('sovereign').classList.add('hidden');
+        document.getElementById('humanitarian').classList.add('hidden');
+        document.getElementById(pageId).classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
+EOF
+
+  575  git add index.html
+  576  git commit -m "Initialized Homepage and Navigation with SPA logic"
+  577  git push origin main
+  578  ls
+  579  ls -l index.html
+  580  git add index.html
+  581  git commit -m "Initialized Homepage and Navigation with SPA logic"
+  582  git push origin main
+  583  git add .
+  584  git commit -m "Fixed file structure and updated navigation"
+  585  git push origin main
+  586  ls
+  587  git add cdc_step1.py dashboard.py feeder.py main_engine.py member_portal.py
+  588  git commit -m "Imported core Python files: cdc_step1, dashboard, feeder, main_engine, and member_portal"
+  589  git push origin main
+  590  git ls-files | grep security_key.py
+  591  -git rm --cached security_key.py
+  592  echo "security_key.py" >> .gitignore
+  593  git add .gitignore
+  594  git commit -m "RESTORED GUARDIAN: Security key removed from cloud tracking"
+  595  git push origin main
+  596  git ls-files | grep security_key.py
+  597  git rm --cached security_key.py
+  598  echo "security_key.py" >> .gitignore
+  599  git add .gitignore
+  600  git commit -m "SECURE: Guardian activated - security_key.py is now local-only"
+  601  git push origin main
+  602  git ls-files | grep security_key.py
+  603  head -n 50 member_portal.py
+  604  grep -rE "28|level|binary|graduation" .
+  605  ls portal.html sovereign.html vote.html
+  606  grep -nC 5 "<nav" index.html
+  607  tail -n 20 index.html
+  608  grep -n "hidden" index.html
+  609  tail -n 5 index.html
+  610  tail -n 25 index.html
+  611  grep "onclick" index.html
+  612  sed -i 's|<a onclick="showPage('\''humanitarian'\'')">HUMANITARIAN</a>|<a onclick="showPage('\''humanitarian'\'')">HUMANITARIAN</a>\n    <a onclick="showPage('\''portal.html'\'')">BINARY (L28)</a>|' index.html
+  613  grep "onclick" index.html
+  614  sed -n '/id="home"/,$p' index.html > backup_logic.txt
+  615  cat backup_logic.txt
+  616  grep -nC 2 "function showPage" index.html
+  617  sed -i '53i <div id="portal-window" class="container hidden"><iframe id="mainFrame" style="width:100%; height:80vh; border:2px solid #288828; background:#000;"></iframe></div>' index.html
+  618  sed -n '50,60p' index.html
+  619  sed -i '56,60c\        const sections = ["home", "sovereign", "humanitarian", "portal-window"];\n        sections.forEach(id => document.getElementById(id).classList.add("hidden"));\n\n        if (pageId.includes(".html")) {\n            document.getElementById("portal-window").classList.remove("hidden");\n            document.getElementById("mainFrame").src = pageId;\n        } else {\n            document.getElementById(pageId).classList.remove("hidden");\n        }' index.html
+  620  sed -n '54,68p' index.html
+  621  [200~sed -i '65,68c\        }\n    }\n</script>\n\n</body>\n</html>' index.html
+  622  tail -n 12 index.html
+  623  ~
+  624  sed -i '65,68c\        }\n    }\n</script>\n</body>\n</html>' index.html
+  625  tail -n 8 index.html
+  626  cat <<EOF > script_fix.txt
+        } else {
+            document.getElementById(pageId).classList.remove("hidden");
+        }
+    }
+</script>
+</body>
+</html>
+EOF
+
+  627  sed -i '/} else {/,$d' index.html
+  628  cat script_fix.txt >> index.html
+  629  rm script_fix.txt
+  630  tail -n 10 index.html
+  631  ls -F
+  632  cat portal.html
+  633  sed -i 's/<div class="view-toggle">.*<\/div>/<div class="view-toggle"><select id="projectSelect" class="toggle-btn" onchange="loadProject(this.value)"><option value="1">MAIN TREE (L28)<\/option><option value="2">PROJECT 2 (L25)<\/option><option value="3">PROJECT 3 (L25)<\/option><\/select><\/div>/' portal.html
+  634  cat <<EOF > portal_logic_fix.txt
+    <script>
+        function loadProject(pNum) {
+            const depth = (pNum == 1) ? 28 : 25;
+            // Binary Tree Formula: 2^n - 1
+            const total = Math.pow(2, depth) - 1;
+            
+            document.getElementById('depthVal').innerText = "Level " + depth + (pNum == 1 ? " (Expanding)" : " (Fixed)");
+            document.getElementById('totalVal').innerText = total.toLocaleString();
+            
+            console.log("Project " + pNum + " Loaded with depth " + depth);
+        }
+    </script>
+EOF
+
+  635  # This command replaces the old script with the new dynamic one
+  636  sed -i '/<script>/,$d' portal.html
+  637  cat portal_logic_fix.txt >> portal.html
+  638  echo "</body></html>" >> portal.html
+  639  rm portal_logic_fix.txt
+  640  grep "loadProject" portal.html
+  641  sed -i "s/onclick=.*feeding.*\"/onclick=\"loadProject(1)\"/g" portal.html
+  642  sed -i "s/onclick=.*p2.*\"/onclick=\"loadProject(2)\"/g" portal.html
+  643  grep -B 1 "loadProject" portal.html
+  644  python -m http.server 8080
+  645  history
+  646  history > termux_history_from_start.txt
