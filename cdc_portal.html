@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CDC COIN - Private Portal</title>
+ <style>
+ :root { --gold: #ffd700; --platinum: #e5e4e2; --black: #000; }
+ body { background: var(--black); color: var(--gold); font-family: 'Times New Roman', serif; margin: 0; display: flex; overflow-x: hidden; }
+
+ /* Left Sidebar Navigator */
+ .sidebar { 
+ width: 280px; 
+ height: 100vh; 
+ background: #0a0a0a; 
+ border-right: 2px solid var(--gold); 
+ position: fixed; 
+ display: flex; 
+ flex-direction: column;
+ padding: 20px 15px;
+ box-sizing: border-box;
+ }
+
+ .sidebar-logo { width: 90px; height: 90px; border: 2px solid var(--gold); border-radius: 50%; margin: 0 auto 10px; background: #111; }
+ .sidebar-title { font-size: 16px; font-weight: bold; text-align: center; color: var(--gold); margin-bottom: 5px; }
+ .sidebar-slogan { font-size: 11px; color: var(--platinum); font-style: italic; text-align: center; margin-bottom: 40px; line-height: 1.4; }
+
+ .nav-links { display: flex; flex-direction: column; gap: 8px; }
+ .nav-anchor { 
+ color: var(--gold); 
+ text-decoration: none; 
+ font-size: 14px; 
+ padding: 12px; 
+ border-bottom: 1px solid #1a1a1a; 
+ display: flex;
+ align-items: center;
+ border-radius: 4px;
+ }
+ .nav-anchor:hover { background: #111; }
+ .nav-anchor span { margin-right: 15px; font-size: 18px; width: 25px; text-align: center; }
+
+ /* Main Dashboard Area */
+ .main-content { margin-left: 280px; padding: 30px; width: calc(100% - 280px); }
+
+ .utility-row { display: flex; gap: 15px; margin-bottom: 30px; }
+ select { background: #000; color: var(--gold); border: 1px solid var(--gold); padding: 10px; border-radius: 5px; width: 50%; cursor: pointer; }
+
+ .wallet-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 30px; }
+ .wallet-box { background: #0a0a0a; border: 1px solid var(--platinum); padding: 20px; border-radius: 12px; text-align: center; border-bottom: 3px solid var(--gold); }
+ .wallet-box small { color: #888; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; }
+ .wallet-box strong { font-size: 20px; display: block; margin-top: 10px; color: #fff; }
+
+ .incentive-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+ .inc-item { text-align: center; background: #0a0a0a; padding: 15px; border-radius: 10px; border: 1px solid #222; }
+ .inc-icon { font-size: 30px; display: block; margin-bottom: 10px; }
+ </style>
+</head>
+<body>
+
+ <div class="sidebar">
+ <div class="sidebar-logo"></div>
+ <div class="sidebar-title">CDC COIN OF DESTINY & CHANGE</div>
+ <div class="sidebar-slogan">"Empowering Communities Creating Wealth while Watching and Spending Moment"</div>
+ 
+ <nav class="nav-links">
+ <a href="#" class="nav-anchor"><span>🏠</span> HOME</a>
+ <a href="#" class="nav-anchor"><span>💼</span> BUSINESS</a>
+ <a href="#" class="nav-anchor"><span>💰</span> WALLET</a>
+ <a href="#" class="nav-anchor"><span>🏆</span> INCENTIVES</a>
+ <a href="#" class="nav-anchor"><span>🤝</span> CHARITY</a>
+ <a href="#" class="nav-anchor"><span>🌳</span> GENEALOGY</a>
+ <a href="#" class="nav-anchor"><span>⚡</span> ACTION CENTER</a>
+ <a href="#" class="nav-anchor"><span>➕</span> MORE</a>
+ </nav>
+ </div>
+
+ <div class="main-content">
+ <div class="utility-row">
+ <select>
+ <option>Language (11 Selected)</option>
+ <option>English</option><option>简体中文</option><option>Amharic</option>
+ <option>Filipino</option><option>Español</option><option>Français</option>
+ <option>हिन्दी</option><option>العربية</option><option>Português</option>
+ <option>日本語</option><option>Deutsch</option>
+ </select>
+ 
+ <select>
+ <option>Country & Currency (204 Total)</option>
+ <option>USA - USD</option><option>Philippines - PHP</option>
+ <option>Guyana - GYD</option><option>Malaysia - MYR</option>
+ <option>Nigeria - NGN</option><option>United Kingdom - GBP</option>
+ </select>
+ </div>
+
+ <div class="wallet-grid">
+ <div class="wallet-box"><small>Reward Wallet</small><strong>18,888 USDT</strong></div>
+ <div class="wallet-box"><small>CDC Coin</small><strong>0.00 CDC</strong></div>
+ <div class="wallet-box"><small>Join Date</small><strong>04 JAN 2026</strong></div>
+ </div>
+
+ <div class="incentive-grid">
+ <div class="inc-item"><span class="inc-icon">🏠</span><small>House</small></div>
+ <div class="inc-item"><span class="inc-icon">🏥</span><small>Health</small></div>
+ <div class="inc-item"><span class="inc-icon">🚗</span><small>Car</small></div>
+ <div class="inc-item"><span class="inc-icon">✈️</span><small>Travel</small></div>
+ <div class="inc-item"><span class="inc-icon">🛍️</span><small>Shopping</small></div>
+ <div class="inc-item"><span class="inc-icon">🎓</span><small>Scholar</small></div>
+ <div class="inc-item"><span class="inc-icon">👵</span><small>AgedCare</small></div>
+ <div class="inc-item"><span class="inc-icon">💰</span><small>Bonus</small></div>
+ </div>
+ </div>
+
+</body>
+</html>
