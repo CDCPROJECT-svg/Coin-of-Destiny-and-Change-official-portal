@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDC Coin of Destiny & Change</title>
+
+<style>
+:root{
+  --gold:#ffd700;
+  --dark:#0b0b0b;
+  --panel:#151515;
+  --text:#eaeaea;
+  --platinum:#e5e4e2;
+}
+
+/* ===== BODY ===== */
+body{
+  margin:0;
+  background:var(--dark);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  overflow-x:hidden;
+  touch-action:pan-y;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:#000;
+  padding:15px;
+  border-bottom:1px solid var(--gold);
+}
+header h1{margin:0;color:var(--gold);}
+header p{margin:5px 0 0;font-size:14px;}
+
+/* ===== TICKER ===== */
+.ticker-wrap{
+  position:fixed; top:0; width:100%;
+  background:#111;
+  border-bottom:1px solid var(--gold);
+  z-index:2000; padding:8px 0;
+}
+.ticker{
+  display:inline-block;
+  white-space:nowrap;
+  animation:marquee 28s linear infinite;
+  color:var(--platinum);
+  font-size:13px;
+  font-weight:bold;
+}
+.ticker:hover { animation-play-state:paused; cursor:default; }
+
+@keyframes marquee{
+  0%{transform:translateX(100%)}
+  100%{transform:translateX(-100%)}
+}
+.ticker-wrap::before,
+.ticker-wrap::after {
+  content:'';
+  position:absolute; top:0; width:50px; height:100%; z-index:10;
+}
+.ticker-wrap::before { left:0; background:linear-gradient(to right,#111,transparent);}
+.ticker-wrap::after { right:0; background:linear-gradient(to left,#111,transparent);}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+  position:fixed; left:-270px; top:0;
+  width:265px; height:100vh;
+  background:#0a0a0a;
+  border-right:2px solid var(--gold);
+  padding:60px 10px 20px;
+  transition:.5s ease;
+  z-index:1500; overflow-y:auto;
+}
+.sidebar.active{ left:0; }
+
+.nav-title{
+  text-align:center; font-weight:bold;
+  border-bottom:1px solid #333;
+  padding-bottom:10px; margin-bottom:10px;
+}
+.nav-item{
+  display:block; padding:12px;
+  color:var(--gold); text-decoration:none;
+  border-bottom:1px solid #222; font-size:14px;
+  cursor:pointer;
+}
+.nav-item:hover { background:#222; color:var(--platinum); transition:0.3s; }
+.sub-item{
+  padding:8px 35px; font-size:13px;
+  color:var(--platinum);
+  display:none;
+}
+.nav-item.active + .sub-item{ display:block; }
+
+/* ===== MAIN CONTENT ===== */
+.main{ padding:90px 20px 25px; }
+
+/* ===== PANEL ===== */
+.panel{
+  background:var(--panel);
+  border:1px solid #222;
+  border-radius:8px;
+  padding:15px;
+  margin-bottom:20px;
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+}
+
+/* ===== BOX ===== */
+.box{
+  background:#101010;
+  border:1px solid #222;
+  border-radius:8px;
+  padding:12px;
+  text-align:center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.box:hover{ transform:scale(1.05); box-shadow:0 0 10px var(--gold);}
+.box h4{margin:0 0 5px;color:var(--gold);}
+.box p{margin:0;font-size:13px;}
+
+/* ===== LEVEL BAR ===== */
+.level-wrap{ margin-top:10px; }
+.level-text{ font-size:12px; margin-bottom:5px; }
+.level-bar{
+  width:100%; height:10px;
+  background:#222; border-radius:6px;
+  overflow:hidden;
+}
+.level-fill{
+  height:100%; width:0%;
+  background:linear-gradient(90deg,var(--gold),#ffb700);
+  transition: width 0.5s ease;
+}
+
+/* ===== SELECT ===== */
+select{
+  width:100%;
+  background:#000;
+  color:#fff;
+  border:1px solid #333;
+  padding:8px;
+  margin-bottom:10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .main{ padding:80px 10px; }
+  .grid{ grid-template-columns:1fr; }
+  .sidebar{ width:230px; padding:60px 5px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>CDC COIN OF DESTINY & CHANGE</h1>
+  <p>Empowering Communities Creating Wealth while Watching, Spending Moment and Money</p>
+</header>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker-wrap">
+  <div class="ticker">
+💎 Global Reserve: <b>0</b> | 🏦 Treasury: <b>0</b> | 🪙 CDC Price: <b>$1.02</b> | Founder: <b>Uday</b> | Succession: <b>Verified</b>
+  </div>
+</div>
+
+<!-- ===== SIDEBAR ===== -->
+<div class="sidebar" id="sidebar">
+  <div class="nav-title">CDC MENU</div>
+
+  <div class="nav-item">🏠 HOME</div>
+
+  <div class="nav-item">💼 BUSINESS</div>
+  <div class="sub-item">Personal</div>
+  <div class="sub-item">Merchant</div>
+  <div class="sub-item">Association</div>
+  <div class="sub-item">Cooperative</div>
+  <div class="sub-item">Government Agency</div>
+
+  <div class="nav-item">💰 WALLET</div>
+  <div class="sub-item">CDC-Coin TREASURY</div>
+  <div class="sub-item">CDC-Coin RESERVE</div>
+  <div class="sub-item">CDC-Coin PORTAL</div>
+  <div class="sub-item">USDT</div>
+  <div class="sub-item">CDC-Coin Forfeited</div>
+  <div class="sub-item">CDC-Coin Merchant</div>
+  <div class="sub-item">CDC-Coin Backup</div>
+  <div class="sub-item">CDC-Coin Miscellaneous</div>
+  <div class="sub-item">CDC-Coin Locked</div>
+  <div class="sub-item">CDC-Coin Incentive</div>
+  <div class="sub-item">CDC-Coin Reward</div>
+  <div class="sub-item">CDC-Coin INFRA</div>
+  <div class="sub-item">CDC-Coin Foundation</div>
+  <div class="sub-item">CDC-Coin 204 Countries Charity</div>
+  <div class="sub-item">CDC-Coin Innovation</div>
+  <div class="sub-item">CDC-Coin Blockchain Fund</div>
+  <div class="sub-item">CDC-Coin System Maintenance</div>
+
+  <div class="nav-item">🏆 INCENTIVES</div>
+  <div class="sub-item">CYCLE 1 – 18,888 → 178,888 USDT</div>
+  <div class="sub-item">CYCLE 2 – Enhanced Rewards</div>
+
+  <div class="nav-item">🌳 GENEALOGY</div>
+  <div class="sub-item">Binary Cycle 1</div>
+  <div class="sub-item">Binary Cycle 2</div>
+
+  <div class="nav-item">⚡ ACTION CENTER</div>
+  <div class="sub-item">Rules</div>
+  <div class="sub-item">Inactive</div>
+  <div class="sub-item">Deactivated</div>
+  <div class="sub-item">Terminated</div>
+  <div class="sub-item">Blocklisted</div>
+
+  <div class="nav-item">➕ MORE</div>
+  <div class="sub-item">Succession</div>
+  <div class="sub-item">PIN Reset</div>
+  <div class="sub-item">Password Reset</div>
+  <div class="sub-item">ID Card</div>
+  <div class="sub-item">QR Code</div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main">
+
+  <!-- LANGUAGE & COUNTRY SELECT -->
+  <div class="panel">
+    <h3>🌐 Language</h3>
+    <select>
+      <option>Select Language</option>
+      <option>English</option>
+      <option>Filipino</option>
+      <option>Chinese</option>
+      <option>Arabic</option>
+      <option>Spanish</option>
+      <option>French</option>
+      <option>German</option>
+      <option>Japanese</option>
+      <option>Hindi</option>
+      <option>Portuguese</option>
+      <option>Russian</option>
+    </select>
+
+    <h3>🌍 Country & Currency</h3>
+    <select>
+      <option>Select Country</option>
+      <option>CDC-Coin</option>
+      <option>USDT</option>
+      <option>Philippines – PHP</option>
+      <option>United States – USD</option>
+      <option>United Kingdom – GBP</option>
+      <option>Japan – JPY</option>
+      <option>Germany – EUR</option>
+      <option>France – EUR</option>
+      <option>Nigeria – NGN</option>
+      <option>Brazil – BRL</option>
+    </select>
+  </div>
+
+  <!-- ACCOUNT OVERVIEW -->
+  <div class="panel">
+    <h3>👤 Account Overview</h3>
+    <div class="grid">
+      <div class="box"><h4>Username</h4><p>default</p></div>
+      <div class="box"><h4>Account Status</h4><p>default</p></div>
+      <div class="box"><h4>Level Status</h4><p>default</p></div>
+      <div class="box"><h4>CDC Points</h4><p>0</p></div>
+      <div class="box"><h4>Total CDC Earned</h4><p>0</p></div>
+      <div class="box"><h4>CDC Coin</h4><p>0</p></div>
+      <div class="box"><h4>CDC Coin Locked</h4><p>0</p></div>
+      <div class="box"><h4>Portal USDT</h4><p>0</p></div>
+    </div>
+  </div>
+
+  <!-- WALLETS DISPLAY -->
+  <div class="panel">
+    <h3>💰 Wallets</h3>
+    <div class="grid">
+      <div class="box">CDC-Coin TREASURY</div>
+      <div class="box">CDC-Coin RESERVE</div>
+      <div class="box">CDC-Coin PORTAL</div>
+      <div class="box">USDT</div>
+      <div class="box">CDC-Coin Forfeited</div>
+      <div class="box">CDC-Coin Merchant</div>
+      <div class="box">CDC-Coin Backup</div>
+      <div class="box">CDC-Coin Miscellaneous</div>
+      <div class="box">CDC-Coin Locked</div>
+      <div class="box">CDC-Coin Incentive</div>
+      <div class="box">CDC-Coin Reward</div>
+      <div class="box">CDC-Coin INFRA</div>
+      <div class="box">CDC-Coin Foundation</div>
+      <div class="box">CDC-Coin 204 Countries Charity</div>
+      <div class="box">CDC-Coin Innovation</div>
+      <div class="box">CDC-Coin Blockchain Fund</div>
+      <div class="box">CDC-Coin System Maintenance</div>
+    </div>
+  </div>
+
+  <!-- INCENTIVES -->
+  <div class="panel">
+    <h3>🎁 Incentives</h3>
+    <div class="grid">
+      <div class="box">🏠 House</div>
+      <div class="box">🏥 Health</div>
+      <div class="box">🚗 Car</div>
+      <div class="box">✈️ Travel</div>
+      <div class="box">🛍️ Shopping</div>
+      <div class="box">🎓 Scholar</div>
+      <div class="box">👵 AgedCare</div>
+      <div class="box">💰 Bonus</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    ● LIVE BLOCKCHAIN FEED
+  </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+CDC Coin of Destiny & Change © 2026
+</div>
+
+<!-- ===== JS ===== -->
+<script>
+/* ===== SIDEBAR SWIPE ===== */
+let startX=0;
+const sidebar=document.getElementById('sidebar');
+document.addEventListener('touchstart', e=> startX=e.touches[0].clientX);
+document.addEventListener('touchend', e=>{
+  let endX=e.changedTouches[0].clientX;
+  if(endX>startX+100) sidebar.classList.add('active');
+  if(endX<startX-100) sidebar.classList.remove('active');
+});
+
+/* ===== LEVEL BAR DYNAMIC ===== */
+const currentLevel = 7;
+const maxLevel = 28;
+const fillPercent = (currentLevel / maxLevel) * 100;
+const levelFill=document.createElement('div');
+levelFill.classList.add('level-fill');
+levelFill.style.width=fillPercent+'%';
+document.querySelectorAll('.level-bar').forEach(bar=>bar.appendChild(levelFill.cloneNode(true)));
+
+/* ===== SIDEBAR TOGGLE SUBMENU ===== */
+document.querySelectorAll('.nav-item').forEach(item=>{
+  item.addEventListener('click', ()=>{
+    item.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
