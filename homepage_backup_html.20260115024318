@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODAC Official Portal</title>
+
+<style>
+:root {
+  --gold: #ffd700;
+  --dark: #0a0a0a;
+  --gray: #1a1a1a;
+}
+
+body {
+  background: var(--dark);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h2, h3 {
+  color: var(--gold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: bold;
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+a:hover { color: #fff200; }
+
+.section-box {
+  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--gold);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.submenu { display: none; margin-left: 15px; }
+.submenu.active { display: block; }
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #111;
+  color: white;
+  border: 1px solid var(--gold);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<h2>CODAC Coin of Destiny & Change</h2>
+<p>Empowering Communities Creating Wealth While Watching, Spending Moments and Money</p>
+
+<div class="section-box">
+💎 Global Reserve: <b>0</b> |
+🏦 Treasury: <b>0</b> |
+🪙 CODAC Price: <b>$1.02</b><br>
+Founder: <b>Uday</b> | Succession: <b>Verified</b>
+</div>
+
+<!-- MENU -->
+<div class="section-box">
+<h3>📌 CODAC MENU</h3>
+<a href="homepage.html">🏠 HOME</a>
+<a href="business.html">💼 BUSINESS</a>
+<a href="wallet.html">💰 WALLET</a>
+
+<a onclick="toggleSubmenu('incentivesSub')">🎁 INCENTIVES</a>
+<div class="submenu" id="incentivesSub">
+  <a href="house.html">🏠 House</a>
+  <a href="health.html">🏥 Health</a>
+  <a href="car.html">🚗 Car</a>
+  <a href="travel.html">✈️ Travel</a>
+  <a href="shopping.html">🛍️ Shopping</a>
+  <a href="scholar.html">🎓 Scholar</a>
+</div>
+
+<a onclick="toggleSubmenu('rewardsSub')">🏆 REWARDS</a>
+<div class="submenu" id="rewardsSub">
+  <a href="cycle1_rewards.html">Cycle 1 → 18,888 → 178,888 USDT</a>
+  <a href="cycle2_rewards.html">Cycle 2</a>
+</div>
+
+<a href="genealogy.html">🌳 GENEALOGY</a>
+<a href="action_center.html">⚡ ACTION CENTER</a>
+</div>
+
+<!-- ACCOUNT -->
+<div class="section-box">
+<h3>👤 Account Overview</h3>
+<p>Username: default</p>
+<p>Status: default</p>
+<p>Leadership Level: default</p>
+<p>CODAC Coin: 0</p>
+<p>CODAC Locked: 0</p>
+<p>Portal USDT: 0</p>
+</div>
+
+<!-- WALLETS -->
+<div class="section-box">
+<h3>💰 Wallets</h3>
+<p>CODAC-Coin Treasury</p>
+<p>CODAC-Coin Reserve</p>
+<p>CODAC-Coin Portal</p>
+<p>USDT Wallet</p>
+<p>CODAC Incentive Wallet</p>
+<p>CODAC Reward Wallet</p>
+<p>CODAC Foundation Wallet</p>
+<p>CODAC 204 Countries Charity Wallet</p>
+</div>
+
+<!-- LANGUAGE -->
+<div class="section-box">
+<h3>🌐 Language</h3>
+<select>
+<option>English</option>
+<option>Arabic</option>
+<option>Bengali</option>
+<option>Chinese (Simplified)</option>
+<option>Chinese (Traditional)</option>
+<option>Filipino</option>
+<option>French</option>
+<option>German</option>
+<option>Hindi</option>
+<option>Indonesian</option>
+<option>Italian</option>
+<option>Japanese</option>
+<option>Korean</option>
+<option>Malay</option>
+<option>Portuguese</option>
+<option>Russian</option>
+<option>Spanish</option>
+<option>Thai</option>
+<option>Turkish</option>
+<option>Urdu</option>
+<option>Vietnamese</option>
+</select>
+</div>
+
+<!-- COUNTRY & CURRENCY (FULL LIST) -->
+<div class="section-box">
+<h3>🌍 Country & Currency</h3>
+<select>
+<option>🪙 CODAC Coin</option>
+<option>💲 USDT</option>
+
+<option>🇦🇫 Afghanistan – AFN</option>
+<option>🇦🇱 Albania – ALL</option>
+<option>🇩🇿 Algeria – DZD</option>
+<option>🇦🇷 Argentina – ARS</option>
+<option>🇦🇺 Australia – AUD</option>
+<option>🇦🇹 Austria – EUR</option>
+<option>🇧🇩 Bangladesh – BDT</option>
+<option>🇧🇪 Belgium – EUR</option>
+<option>🇧🇷 Brazil – BRL</option>
+<option>🇨🇦 Canada – CAD</option>
+<option>🇨🇳 China – CNY</option>
+<option>🇨🇴 Colombia – COP</option>
+<option>🇨🇿 Czech Republic – CZK</option>
+<option>🇩🇰 Denmark – DKK</option>
+<option>🇪🇬 Egypt – EGP</option>
+<option>🇪🇺 Eurozone – EUR</option>
+<option>🇫🇮 Finland – EUR</option>
+<option>🇫🇷 France – EUR</option>
+<option>🇩🇪 Germany – EUR</option>
+<option>🇬🇭 Ghana – GHS</option>
+<option>🇬🇷 Greece – EUR</option>
+<option>🇭🇰 Hong Kong – HKD</option>
+<option>🇭🇺 Hungary – HUF</option>
+<option>🇮🇳 India – INR</option>
+<option>🇮🇩 Indonesia – IDR</option>
+<option>🇮🇷 Iran – IRR</option>
+<option>🇮🇶 Iraq – IQD</option>
+<option>🇮🇪 Ireland – EUR</option>
+<option>🇮🇱 Israel – ILS</option>
+<option>🇮🇹 Italy – EUR</option>
+<option>🇯🇵 Japan – JPY</option>
+<option>🇰🇪 Kenya – KES</option>
+<option>🇰🇷 South Korea – KRW</option>
+<option>🇰🇼 Kuwait – KWD</option>
+<option>🇱🇺 Luxembourg – EUR</option>
+<option>🇲🇾 Malaysia – MYR</option>
+<option>🇲🇽 Mexico – MXN</option>
+<option>🇳🇱 Netherlands – EUR</option>
+<option>🇳🇿 New Zealand – NZD</option>
+<option>🇳🇬 Nigeria – NGN</option>
+<option>🇳🇴 Norway – NOK</option>
+<option>🇵🇰 Pakistan – PKR</option>
+<option>🇵🇭 Philippines – PHP</option>
+<option>🇵🇱 Poland – PLN</option>
+<option>🇵🇹 Portugal – EUR</option>
+<option>🇶🇦 Qatar – QAR</option>
+<option>🇷🇴 Romania – RON</option>
+<option>🇷🇺 Russia – RUB</option>
+<option>🇸🇦 Saudi Arabia – SAR</option>
+<option>🇸🇬 Singapore – SGD</option>
+<option>🇿🇦 South Africa – ZAR</option>
+<option>🇪🇸 Spain – EUR</option>
+<option>🇸🇪 Sweden – SEK</option>
+<option>🇨🇭 Switzerland – CHF</option>
+<option>🇹🇭 Thailand – THB</option>
+<option>🇹🇷 Turkey – TRY</option>
+<option>🇦🇪 UAE – AED</option>
+<option>🇬🇧 United Kingdom – GBP</option>
+<option>🇺🇸 United States – USD</option>
+<option>🇻🇳 Vietnam – VND</option>
+<option>🇿🇼 Zimbabwe – ZWL</option>
+</select>
+</div>
+
+<!-- LIVE FEED -->
+<div class="section-box">
+<h3>● LIVE BLOCKCHAIN FEED</h3>
+<p>Coming Soon…</p>
+</div>
+
+<p>© 2026 CODAC Coin of Destiny & Change</p>
+
+<script>
+function toggleSubmenu(id) {
+  document.getElementById(id).classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

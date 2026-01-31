@@ -1,0 +1,38 @@
+<div id="home" class="container">
+    <h1>Welcome to CODAC Portal</h1>
+    <div class="card">
+        <h3>Project Status: Project 1 (Binary)</h3>
+        <p>Active Countries: <span class="stat">204</span></p>
+        <p>System Law: <span class="stat">28.88 / 71.12 Split</span></p>
+    </div>
+</div>
+
+<div id="sovereign" class="container hidden">
+    <h1>Sovereign L8 Dashboard</h1>
+    <div class="card">
+        <h3>Country Reserve</h3>
+        <p>Total Fund: <span class="stat">1,000,000 USDT</span></p>
+        <p>Visibility: <span class="stat">Level 8 (Anchor)</span></p>
+    </div>
+</div>
+
+<div id="humanitarian" class="container hidden">
+    <h1>Humanitarian Logic</h1>
+    <div class="card">
+        <h3>Disaster Response Math</h3>
+        <p>Withdrawal Rule: <span class="stat">Impact % = Withdrawal %</span></p>
+        <p>Global Vote Trigger: <span class="stat">8% Population Impact</span></p>
+    </div>
+</div>
+
+<script>
+    function showPage(pageId) {
+        document.getElementById('home').classList.add('hidden');
+        document.getElementById('sovereign').classList.add('hidden');
+        document.getElementById('humanitarian').classList.add('hidden');
+        document.getElementById(pageId).classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODAC Portal - Level 5</title>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+:root {
+    --gold: #ffd700;
+    --dark: #0a0a0a;
+    --gray: #1a1a1a;
+}
+body {
+    background: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* =================== CODAC HEADER =================== */
+.codac-header {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.codac-header h2 { margin:0; color: var(--gold); font-size:1.4rem; }
+.codac-header p { margin:5px 0; color:#ccc; font-size:0.95rem; }
+.codac-header h3 { margin:5px 0; color: var(--gold); font-size:1rem; }
+
+/* =================== CODAC MENU =================== */
+.codac-menu a, .codac-menu .dropbtn { 
+    text-decoration: none; 
+    color: var(--gold); 
+    font-weight: bold; 
+    display: block; 
+    margin: 5px 0; 
+    cursor: pointer; 
+}
+.codac-menu { background: #111; padding: 10px; border-radius: 12px; }
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background-color: #222; min-width: 200px; z-index: 1; border-radius: 10px; padding: 10px; }
+.dropdown-content a { padding: 5px; display: block; }
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Wallet Slide-out Panel */
+#walletPanel {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    border-left: 2px solid var(--gold);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    overflow-y: auto;
+}
+#walletPanel.open { right: 0; }
+.wallet-box { background: #222; padding: 15px; border-radius: 10px; margin-bottom: 10px; }
+.wallet-title { font-size: 18px; color: gold; margin-bottom: 5px; }
+.wallet-toggle { position: fixed; top: 20px; right: 10px; background: var(--gold); color: black; border: none; padding: 10px; border-radius: 8px; cursor: pointer; z-index: 10000; }
+
+/* Swiper */
+.swiper { width: 100%; height: 300px; margin: 20px 0; }
+.swiper-slide { display: flex; flex-direction: column; padding: 10px; box-sizing: border-box; overflow-y: auto; }
+
+/* Master Hub header spacing adjustment */
+.master-header { margin-top: 2em; text-align: center; border-bottom: 1px solid var(--gold); padding-bottom: 5px; }
+.master-header h1 { color: var(--gold); font-size: 1.2rem; letter-spacing: 1px; }
+
+.card { background: var(--gray); border: 1px solid #333; border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+.btn { background: var(--gold); color: black; border: none; padding: 10px; border-radius: 8px; font-weight: bold; width: 100%; margin-bottom: 5px; cursor: pointer; text-align: left; display: flex; justify-content: space-between; text-decoration: none; }
+
+/* Level Progress Grid */
+.level-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 10px; }
+.level-box { border: 1px solid #444; padding: 5px; font-size: 10px; border-radius: 4px; text-align: center; background: #000; color: #888; }
+.level-complete { border-color: var(--gold); color: var(--gold); font-weight: bold; }
+
+/* Registration Forms */
+.registration-section { background:#111; border:1px solid var(--gold); border-radius:12px; padding:15px; margin-top:20px; }
+.registration-section h2 { color: var(--gold); margin-bottom:10px; }
+.registration-section h3 { color:#fff; margin-top:10px; }
+.registration-section p, .registration-section li { color:#ccc; font-size:14px; line-height:1.5; }
+.registration-section ul { list-style: disc; margin-left:20px; }
+</style>
+</head>
+
+<body>
+
+<!-- ======================= CODAC HEADER ======================= -->
+<div class="codac-header">
+  <h2>CODAC COIN OF DESTINY & CHANGE</h2>
+  <p>Empowering Communities • Creating Wealth • Watching • Spending Moments & Money</p>
+
+  <h3>💎 Global Reserve: <b>0</b> | 🏦 Treasury: <b>0</b> | 🪙 CODAC Price: <b>$1.02</b></h3>
+  <p>Founder: <b>Uday</b> | Succession: <b>Verified</b></p>
+</div>
+
+<!-- ======================= CODAC MENU ======================= -->
+<nav class="codac-menu">
+  <a href="homepage.html">🏠 HOME</a>
+
+  <!-- BUSINESS DROPDOWN -->
+  <div class="dropdown">
+    <button class="dropbtn">💼 BUSINESS</button>
+    <div class="dropdown-content">
+      <a href="#">Registration</a>
+      <a href="#">Personal</a>
+      <a href="#">Merchant</a>
+      <a href="#">Association</a>
+      <a href="#">Cooperative</a>
+      <a href="#">Family Clan</a>
+      <a href="#">Corporation</a>
+      <a href="#">Government Agency</a>
+      <a href="#">Country</a>
+      <a href="#" onclick="toggleWallet()">➡ Open Wallet Panel</a>
+    </div>
+  </div>
+
+  <a href="#" onclick="toggleWallet()">💰 WALLET</a>
+  <span class="points">CODAC Points: <b id="codacPoints">232</b></span>
+
+  <a href="incentives.html">🏆 INCENTIVES</a>
+  <a href="rewards.html">🏆 REWARDS</a>
+  <a href="genealogy.html">🌳 GENEALOGY</a>
+  <a href="action_center.html">⚡ ACTION CENTER</a>
+  <a href="more.html">➕ MORE</a>
+</nav>
+
+<!-- ======================= WALLET PANEL ======================= -->
+<button class="wallet-toggle" onclick="toggleWallet()">🪙 My Wallet</button>
+<div id="walletPanel">
+  <h3>💰 CODAC WALLET PANEL</h3>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC-Coin Wallet Address</div>
+    <p id="walletCODAC">0xABC123...</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">USDT Wallet Address</div>
+    <p id="walletUSDT">0xUSDT456...</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">Total CODAC Earned</div>
+    <p id="totalCODAC">1818</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC Coin Balance</div>
+    <p id="balanceCODAC">730</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC Coin Locked</div>
+    <p id="lockedCODAC">338</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">Portal USDT Wallet</div>
+    <p id="portalUSDT">1889</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC-POINT</div>
+    <p id="codacPoint">232</p>
+  </div>
+</div>
+
+<!-- ======================= DASHBOARD / MASTER HUB ======================= -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <!-- Master Hub -->
+    <div class="swiper-slide">
+      <div class="master-header"><h1>CODAC MASTER HUB</h1></div>
+      <div class="card">
+        <button class="btn" onclick="location.href='business_test.html'">💼 BUSINESS ENGINE</button>
+        <button class="btn" onclick="location.href='portal.html'">🌳 BINARY MONITOR (L28)</button>
+      </div>
+    </div>
+
+    <!-- Leadership / Level Status -->
+    <div class="swiper-slide">
+      <div class="header"><h1>LEADERSHIP LEVEL STATUS</h1></div>
+      <div class="card">
+        <div class="level-grid" id="levelGrid">
+          <div class="level-box level-complete">L1</div>
+          <div class="level-box level-complete">L2</div>
+          <div class="level-box level-complete">L3</div>
+          <div class="level-box">L4</div>
+          <div class="level-box">L5</div>
+          <div class="level-box">L6</div>
+          <div class="level-box">L7</div>
+          <div class="level-box">L8</div>
+          <div class="level-box">L9</div>
+          <div class="level-box">L10</div>
+          <div class="level-box">L11</div>
+          <div class="level-box">L12</div>
+          <div class="level-box">L13</div>
+          <div class="level-box">L14</div>
+          <div class="level-box">L15</div>
+          <div class="level-box">L16</div>
+          <div class="level-box">L17</div>
+          <div class="level-box">L18</div>
+          <div class="level-box">L19</div>
+          <div class="level-box">L20</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ======================= BUSINESS REGISTRATION TYPES ======================= -->
+<div class="registration-section">
+  <h2>💼 BUSINESS → Registration Types</h2>
+
+  <h3>Personal</h3>
+  <ul>
+    <li>Full Name</li>
+    <li>Date of Birth</li>
+    <li>Gender: Male / Female / Other</li>
+    <li>Nationality</li>
+    <li>Contact Number</li>
+    <li>Email</li>
+    <li>CODAC Username</li>
+    <li>Password / Confirm Password</li>
+    <li>Profile Picture (optional)</li>
+  </ul>
+
+  <h3>Merchant</h3>
+  <ul>
+    <li>Business Name</li>
+    <li>Business Type / Category</li>
+    <li>Business Registration Number</li>
+    <li>Owner Name (link to Personal)</li>
+    <li>Contact Number</li>
+    <li>Email</li>
+    <li>Address</li>
+    <li>Upload Business Documents</li>
+    <li>CODAC Merchant ID (optional)</li>
+  </ul>
+
+  <h3>Association</h3>
+  <ul>
+    <li>Association Name</li>
+    <li>Purpose / Type</li>
+    <li>Leader / President Name</li>
+    <li>Contact Email / Phone</li>
+    <li>Address / Headquarters</li>
+    <li>Members Count</li>
+    <li>Upload Charter / Documents</li>
+  </ul>
+
+  <h3>Cooperative</h3>
+  <ul>
+    <li>Cooperative Name</li>
+    <li>Registration Number</li>
+    <li>Leader / Chairperson Name</li>
+    <li>Contact Email / Phone</li>
+    <li>Members Count</li>
+    <li>Upload Cooperative Documents</li>
+  </ul>
+
+  <h3>Family Clan</h3>
+  <ul>
+    <li>Clan Name</li>
+    <li>Head of Clan</li>
+    <li>Number of Members</li>
+    <li>Location / Region</li>
+    <li>Contact Info</li>
+    <li>Clan Symbol / Logo (optional)</li>
+  </ul>
+
+  <h3>Corporation</h3>
+  <ul>
+    <li>Corporation Name</li>
+    <li>Registration Number</li>
+    <li>CEO / President Name</li>
+    <li>Contact Email / Phone</li>
+    <li>Address / Headquarters</li>
+    <li>Upload Legal Documents</li>
+    <li>CODAC Corporate ID (optional)</li>
+  </ul>
+
+  <h3>Government Agency</h3>
+  <ul>
+    <li>Agency Name</li>
+    <li>Ministry / Department</li>
+    <li>Contact Person</li>
+    <li>Contact Email / Phone</li>
+    <li>Address</li>
+    <li>Authorization / Government ID</li>
+  </ul>
+
+  <h3>Country</h3>
+  <ul>
+    <li>Country Name</li>
+    <li>Government Type</li>
+    <li>President / Prime Minister Name</li>
+    <li>Population</li>
+    <li>Currency</li>
+    <li>Contact Email / Embassy</li>
+    <li>CODAC Country Code</li>
+    <li>Upload Country Verification Documents (optional)</li>
+    <li>Country Tax Wallet Account</li>
+    <li>Tax wallet will automatically receive CODAC Portal member taxes and grand rewards contributions. Blockchain fund unlocking via voting.</li>
+  </ul>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<p style="text-align:center; margin-top:20px;">CODAC Coin of Destiny & Change © 2026</p>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', { direction: 'horizontal' });
+
+// Toggle wallet panel
+function toggleWallet() {
+  document.getElementById('walletPanel').classList.toggle('open');
+}
+</script>
+</body>
+</html>

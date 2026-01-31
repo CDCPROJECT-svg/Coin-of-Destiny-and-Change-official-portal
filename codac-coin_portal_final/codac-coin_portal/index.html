@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODAC COIN OF DESTINY & CHANGE</title>
+
+<style>
+:root{
+ --gold:#ffd700;
+ --platinum:#e5e4e2;
+ --black:#000;
+}
+
+body{
+ margin:0;
+ font-family:'Times New Roman', serif;
+ background:var(--black);
+ color:var(--gold);
+ overflow-x:hidden;
+}
+
+/* ================= TICKER ================= */
+.ticker-wrap{
+ position:fixed;
+ top:0;
+ width:100%;
+ background:#0a0a0a;
+ border-bottom:2px solid var(--gold);
+ z-index:1000;
+ overflow:hidden;
+}
+.ticker{
+ display:inline-block;
+ white-space:nowrap;
+ padding:12px 0;
+ animation:scroll 40s linear infinite;
+ font-size:13px;
+ color:var(--platinum);
+ font-weight:bold;
+}
+@keyframes scroll{
+ 0%{transform:translateX(100%)}
+ 100%{transform:translateX(-100%)}
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar{
+ position:fixed;
+ left:-280px;
+ top:0;
+ width:260px;
+ height:100%;
+ background:#0a0a0a;
+ border-right:2px solid var(--gold);
+ padding:20px;
+ box-sizing:border-box;
+ transition:0.4s;
+ z-index:1001;
+}
+.sidebar.active{left:0}
+
+.sidebar-logo{
+ width:80px;height:80px;
+ border:2px solid var(--gold);
+ border-radius:50%;
+ margin:50px auto 10px;
+ background:#000;
+}
+.sidebar-title{
+ text-align:center;
+ font-size:13px;
+ font-weight:bold;
+}
+.sidebar-slogan{
+ text-align:center;
+ font-size:10px;
+ color:var(--platinum);
+ margin-bottom:25px;
+}
+
+.nav a{
+ display:block;
+ padding:14px;
+ color:var(--gold);
+ text-decoration:none;
+ border-bottom:1px solid #222;
+ font-size:14px;
+}
+.nav a:hover{background:#111}
+
+/* ================= MAIN ================= */
+.main{
+ padding:90px 20px 130px;
+}
+
+select{
+ width:100%;
+ padding:12px;
+ margin-bottom:12px;
+ background:#111;
+ color:var(--gold);
+ border:1px solid var(--gold);
+ border-radius:6px;
+}
+
+/* ================= WALLET GRID ================= */
+.wallet-grid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:14px;
+ margin-top:10px;
+}
+
+.wallet{
+ background:#0a0a0a;
+ border:1px solid var(--platinum);
+ border-bottom:4px solid var(--gold);
+ padding:18px;
+ border-radius:14px;
+ text-align:center;
+}
+.wallet small{
+ display:block;
+ font-size:10px;
+ color:var(--platinum);
+ letter-spacing:1px;
+}
+.wallet strong{
+ display:block;
+ font-size:18px;
+ margin-top:6px;
+ color:#fff;
+}
+
+/* ================= INCENTIVES ================= */
+.incentives{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:14px;
+ margin-top:25px;
+}
+.inc{
+ background:#0a0a0a;
+ border:1px solid #222;
+ border-radius:10px;
+ padding:14px;
+ text-align:center;
+ font-size:11px;
+ color:var(--platinum);
+}
+.inc span{
+ display:block;
+ font-size:26px;
+ margin-bottom:6px;
+}
+
+/* ================= SLIDE HINT ================= */
+.slide-hint{
+ position:fixed;
+ left:0;
+ top:50%;
+ width:8px;
+ height:50px;
+ background:var(--gold);
+ opacity:0.6;
+ border-radius:0 5px 5px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= TICKER ================= -->
+<div class="ticker-wrap">
+ <div class="ticker">
+ 💎 CODAC PRICE: $1.02 |
+ 🏦 GLOBAL TREASURY: DEFAULT |
+ 💰 REWARD WALLET: 18,888 USDT |
+ 🎁 USDT BONUS: 0 |
+ 🪙 CODAC COIN: 0.00 |
+ 🌍 ACTIVE COUNTRIES: 204 |
+ ⚠️ SUCCESSION VERIFICATION REQUIRED
+ </div>
+</div>
+
+<div class="slide-hint"></div>
+
+<!-- ================= SIDEBAR ================= -->
+<div id="sidebar" class="sidebar">
+ <div class="sidebar-logo"></div>
+ <div class="sidebar-title">CODAC COIN OF DESTINY & CHANGE</div>
+ <div class="sidebar-slogan">Empowering Communities, Creating Wealth</div>
+
+ <div class="nav">
+  <a href="#">🏠 HOME</a>
+  <a href="#">💼 BUSINESS</a>
+  <a href="#">💰 WALLET</a>
+  <a href="#">🏆 INCENTIVES</a>
+  <a href="#">🤝 CHARITY</a>
+  <a href="#">🌳 GENEALOGY</a>
+  <a href="#">⚡ ACTION CENTER</a>
+  <a href="#">➕ MORE</a>
+ </div>
+</div>
+
+<!-- ================= MAIN ================= -->
+<div class="main">
+
+ <select>
+  <option>Language (11)</option>
+  <option>English</option>
+  <option>Filipino</option>
+  <option>French</option>
+  <option>Arabic</option>
+  <option>Hindi</option>
+ </select>
+
+ <select>
+  <option>Country & Currency (204)</option>
+  <option>Philippines – PHP</option>
+  <option>USA – USD</option>
+  <option>Malaysia – MYR</option>
+  <option>Nigeria – NGN</option>
+ </select>
+
+ <!-- ================= WALLETS ================= -->
+ <div class="wallet-grid">
+  <div class="wallet"><small>REWARD WALLET</small><strong>18,888 USDT</strong></div>
+  <div class="wallet"><small>USDT BONUS</small><strong>0.00 USDT</strong></div>
+  <div class="wallet"><small>CODAC COIN WALLET</small><strong>0.00 CODAC</strong></div>
+  <div class="wallet"><small>CODAC COIN FIAT</small><strong>0.00</strong></div>
+  <div class="wallet"><small>SUBSCRIPTION POINTS</small><strong>0 PTS</strong></div>
+  <div class="wallet"><small>JOIN DATE</small><strong>04 JAN 2026</strong></div>
+ </div>
+
+ <!-- ================= INCENTIVES ================= -->
+ <div class="incentives">
+  <div class="inc"><span>🏠</span>House</div>
+  <div class="inc"><span>🏥</span>Health</div>
+  <div class="inc"><span>🚗</span>Car</div>
+  <div class="inc"><span>✈️</span>Travel</div>
+  <div class="inc"><span>🛍️</span>Shopping</div>
+  <div class="inc"><span>🎓</span>Scholar</div>
+  <div class="inc"><span>👵</span>Aged Care</div>
+  <div class="inc"><span>💰</span>Bonus</div>
+ </div>
+
+</div>
+
+<script>
+let startX=0,endX=0;
+const sidebar=document.getElementById("sidebar");
+
+document.addEventListener("touchstart",e=>{
+ startX=e.changedTouches[0].screenX;
+});
+document.addEventListener("touchend",e=>{
+ endX=e.changedTouches[0].screenX;
+ if(endX>startX+50) sidebar.classList.add("active");
+ if(endX<startX-50) sidebar.classList.remove("active");
+});
+</script>
+
+</body>
+</html>

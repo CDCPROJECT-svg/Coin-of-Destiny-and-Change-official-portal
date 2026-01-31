@@ -1,0 +1,536 @@
+=========================================================================
+          📜 CODAC MASTER LEDGER AUDIT REPORT - 2026-01-29 17:19:47
+=========================================================================
+
+PORTAL ID                      | NAME/LABEL                | BALANCE         | LOCKED  
+-------------------------------------------------------------------------------------
+BURN-WALLET                    | TOTAL BURN                | 0.0000          | 0.00    
+COLLECTOR-001                  | CYCLE LOCK COLLECTOR      | 2.7500          | 0.00    
+COUNTRY-PH                     | PHILIPPINES WALLET        | 0.0000          | 0.00    
+FORFEITED-001                  | FORFEITED FUNDS           | 0.0000          | 0.00    
+FOUNDATION-001                 | CODAC FOUNDATION          | 0.0000          | 0.00    
+INCENTIVE-001                  | PORTAL INCENTIVES         | 0.0000          | 0.00    
+INFRA-001                      | INFRASTRUCTURE WALLET     | 0.0000          | 0.00    
+TREASURY-001                   | PORTAL TREASURY           | 0.0000          | 0.00    
+BIZ-0516                       | CODAC TRADING STORE       | 0.0000          | 0.00    
+CODAC-A09L-Afg-000-000-195     | Afghanistan               | 0.0000          | 0.00    
+CODAC-A09L-Alb-000-000-297     | Albania                   | 0.0000          | 0.00    
+CODAC-A09L-Alg-000-000-252     | Algeria                   | 0.0000          | 0.00    
+CODAC-A09L-And-000-000-366     | Andorra                   | 0.0000          | 0.00    
+CODAC-A09L-Ang-000-000-370     | Angola                    | 0.0000          | 0.00    
+CODAC-A09L-Ant-000-000-312     | Antigua and Barbuda       | 0.0000          | 0.00    
+CODAC-A09L-Arg-000-000-299     | Argentina                 | 0.0000          | 0.00    
+CODAC-A09L-Arm-000-000-261     | Armenia                   | 0.0000          | 0.00    
+CODAC-A09L-Aus-000-000-349     | Australia                 | 0.0000          | 0.00    
+CODAC-A09L-Aus-000-000-353     | Austria                   | 0.0000          | 0.00    
+CODAC-A09L-Aze-000-000-264     | Azerbaijan                | 0.0000          | 0.00    
+CODAC-A09L-BOSNI               | Bosnia and Herzegovina    | 0.0000          | 0.00    
+CODAC-A09L-Bah-000-000-324     | Bahrain                   | 0.0000          | 0.00    
+CODAC-A09L-Bah-000-000-367     | Bahamas                   | 0.0000          | 0.00    
+CODAC-A09L-Ban-000-000-226     | Bangladesh                | 0.0000          | 0.00    
+CODAC-A09L-Bar-000-000-368     | Barbados                  | 0.0000          | 0.00    
+CODAC-A09L-Bel-000-000-305     | Belarus                   | 0.0000          | 0.00    
+CODAC-A09L-Bel-000-000-346     | Belgium                   | 0.0000          | 0.00    
+CODAC-A09L-Bel-000-000-373     | Belize                    | 0.0000          | 0.00    
+CODAC-A09L-Ben-000-000-211     | Benin                     | 0.0000          | 0.00    
+CODAC-A09L-Bhu-000-000-234     | Bhutan                    | 0.0000          | 0.00    
+CODAC-A09L-Bol-000-000-242     | Bolivia                   | 0.0000          | 0.00    
+CODAC-A09L-Bot-000-000-273     | Botswana                  | 0.0000          | 0.00    
+CODAC-A09L-Bra-000-000-281     | Brazil                    | 0.0000          | 0.00    
+CODAC-A09L-Bru-000-000-340     | Brunei                    | 0.0000          | 0.00    
+CODAC-A09L-Bul-000-000-298     | Bulgaria                  | 0.0000          | 0.00    
+CODAC-A09L-Bur-000-000-182     | Burundi                   | 0.0000          | 0.00    
+CODAC-A09L-Bur-000-000-198     | Burkina Faso              | 0.0000          | 0.00    
+CODAC-A09L-CABOV               | Cabo Verde                | 0.0000          | 0.00    
+CODAC-A09L-CONGO               | Congo                     | 0.0000          | 0.00    
+CODAC-A09L-Cam-000-000-217     | Cambodia                  | 0.0000          | 0.00    
+CODAC-A09L-Cam-000-000-219     | Cameroon                  | 0.0000          | 0.00    
+CODAC-A09L-Can-000-000-348     | Canada                    | 0.0000          | 0.00    
+CODAC-A09L-Cen-000-000-184     | Central African Republic  | 0.0000          | 0.00    
+CODAC-A09L-Cha-000-000-192     | Chad                      | 0.0000          | 0.00    
+CODAC-A09L-Chi-000-000-285     | China                     | 0.0000          | 0.00    
+CODAC-A09L-Chi-000-000-300     | Chile                     | 0.0000          | 0.00    
+CODAC-A09L-Col-000-000-268     | Colombia                  | 0.0000          | 0.00    
+CODAC-A09L-Com-000-000-208     | Comoros                   | 0.0000          | 0.00    
+CODAC-A09L-Cos-000-000-292     | Costa Rica                | 0.0000          | 0.00    
+CODAC-A09L-Cro-000-000-321     | Croatia                   | 0.0000          | 0.00    
+CODAC-A09L-Cub-000-000-304     | Cuba                      | 0.0000          | 0.00    
+CODAC-A09L-Cyp-000-000-333     | Cyprus                    | 0.0000          | 0.00    
+CODAC-A09L-DEMOC               | Democratic Republic of th | 0.0000          | 0.00    
+CODAC-A09L-Den-000-000-352     | Denmark                   | 0.0000          | 0.00    
+CODAC-A09L-Dji-000-000-232     | Djibouti                  | 0.0000          | 0.00    
+CODAC-A09L-Dom-000-000-279     | Dominica                  | 0.0000          | 0.00    
+CODAC-A09L-Dom-000-000-291     | Dominican Republic        | 0.0000          | 0.00    
+CODAC-A09L-EASTT               | East Timor                | 0.0000          | 0.00    
+CODAC-A09L-Ecu-000-000-266     | Ecuador                   | 0.0000          | 0.00    
+CODAC-A09L-Egy-000-000-248     | Egypt                     | 0.0000          | 0.00    
+CODAC-A09L-El-000-000-245      | El Salvador               | 0.0000          | 0.00    
+CODAC-A09L-Equ-000-000-290     | Equatorial Guinea         | 0.0000          | 0.00    
+CODAC-A09L-Eri-000-000-201     | Eritrea                   | 0.0000          | 0.00    
+CODAC-A09L-Est-000-000-330     | Estonia                   | 0.0000          | 0.00    
+CODAC-A09L-Esw-000-000-249     | Eswatini                  | 0.0000          | 0.00    
+CODAC-A09L-Eth-000-000-205     | Ethiopia                  | 0.0000          | 0.00    
+CODAC-A09L-FRENC               | French Guiana             | 0.0000          | 0.00    
+CODAC-A09L-Fij-000-000-265     | Fiji                      | 0.0000          | 0.00    
+CODAC-A09L-Fin-000-000-351     | Finland                   | 0.0000          | 0.00    
+CODAC-A09L-Fra-000-000-344     | France                    | 0.0000          | 0.00    
+CODAC-A09L-GREEN               | Greenland                 | 0.0000          | 0.00    
+CODAC-A09L-GUADE               | Guadeloupe                | 0.0000          | 0.00    
+CODAC-A09L-Gab-000-000-289     | Gabon                     | 0.0000          | 0.00    
+CODAC-A09L-Gam-000-000-197     | Gambia                    | 0.0000          | 0.00    
+CODAC-A09L-Geo-000-000-260     | Georgia                   | 0.0000          | 0.00    
+CODAC-A09L-Ger-000-000-345     | Germany                   | 0.0000          | 0.00    
+CODAC-A09L-Gha-000-000-228     | Ghana                     | 0.0000          | 0.00    
+CODAC-A09L-Gre-000-000-309     | Grenada                   | 0.0000          | 0.00    
+CODAC-A09L-Gre-000-000-327     | Greece                    | 0.0000          | 0.00    
+CODAC-A09L-Gua-000-000-262     | Guatemala                 | 0.0000          | 0.00    
+CODAC-A09L-Gui-000-000-200     | Guinea-Bissau             | 0.0000          | 0.00    
+CODAC-A09L-Gui-000-000-212     | Guinea                    | 0.0000          | 0.00    
+CODAC-A09L-Guy-000-000-374     | Guyana                    | 0.0000          | 0.00    
+CODAC-A09L-HONGK               | Hong Kong                 | 0.0000          | 0.00    
+CODAC-A09L-Hai-000-000-213     | Haiti                     | 0.0000          | 0.00    
+CODAC-A09L-Hon-000-000-237     | Honduras                  | 0.0000          | 0.00    
+CODAC-A09L-Hun-000-000-319     | Hungary                   | 0.0000          | 0.00    
+CODAC-A09L-ISRAE               | Israel                    | 0.0000          | 0.00    
+CODAC-A09L-Ice-000-000-354     | Iceland                   | 0.0000          | 0.00    
+CODAC-A09L-Ind-000-000-241     | India                     | 0.0000          | 0.00    
+CODAC-A09L-Ind-000-000-253     | Indonesia                 | 0.0000          | 0.00    
+CODAC-A09L-Ira-000-000-257     | Iran                      | 0.0000          | 0.00    
+CODAC-A09L-Ira-000-000-276     | Iraq                      | 0.0000          | 0.00    
+CODAC-A09L-Ire-000-000-357     | Ireland                   | 0.0000          | 0.00    
+CODAC-A09L-Ita-000-000-336     | Italy                     | 0.0000          | 0.00    
+CODAC-A09L-Jam-000-000-270     | Jamaica                   | 0.0000          | 0.00    
+CODAC-A09L-Jap-000-000-338     | Japan                     | 0.0000          | 0.00    
+CODAC-A09L-Jor-000-000-275     | Jordan                    | 0.0000          | 0.00    
+CODAC-A09L-Kaz-000-000-287     | Kazakhstan                | 0.0000          | 0.00    
+CODAC-A09L-Ken-000-000-220     | Kenya                     | 0.0000          | 0.00    
+CODAC-A09L-Kir-000-000-215     | Kiribati                  | 0.0000          | 0.00    
+CODAC-A09L-Kos-000-000-377     | Kosovo                    | 0.0000          | 0.00    
+CODAC-A09L-Kuw-000-000-325     | Kuwait                    | 0.0000          | 0.00    
+CODAC-A09L-Kyr-000-000-231     | Kyrgyzstan                | 0.0000          | 0.00    
+CODAC-A09L-Lao-000-000-233     | Laos                      | 0.0000          | 0.00    
+CODAC-A09L-Lat-000-000-328     | Latvia                    | 0.0000          | 0.00    
+CODAC-A09L-Leb-000-000-277     | Lebanon                   | 0.0000          | 0.00    
+CODAC-A09L-Les-000-000-206     | Lesotho                   | 0.0000          | 0.00    
+CODAC-A09L-Lib-000-000-190     | Liberia                   | 0.0000          | 0.00    
+CODAC-A09L-Lib-000-000-274     | Libya                     | 0.0000          | 0.00    
+CODAC-A09L-Lie-000-000-363     | Liechtenstein             | 0.0000          | 0.00    
+CODAC-A09L-Lit-000-000-329     | Lithuania                 | 0.0000          | 0.00    
+CODAC-A09L-Lux-000-000-361     | Luxembourg                | 0.0000          | 0.00    
+CODAC-A09L-MACAU               | Macau                     | 0.0000          | 0.00    
+CODAC-A09L-MARTI               | Martinique                | 0.0000          | 0.00    
+CODAC-A09L-Mad-000-000-191     | Madagascar                | 0.0000          | 0.00    
+CODAC-A09L-Mal-000-000-189     | Malawi                    | 0.0000          | 0.00    
+CODAC-A09L-Mal-000-000-199     | Mali                      | 0.0000          | 0.00    
+CODAC-A09L-Mal-000-000-286     | Malaysia                  | 0.0000          | 0.00    
+CODAC-A09L-Mal-000-000-308     | Maldives                  | 0.0000          | 0.00    
+CODAC-A09L-Mal-000-000-334     | Malta                     | 0.0000          | 0.00    
+CODAC-A09L-Mar-000-000-317     | Marshall Islands          | 0.0000          | 0.00    
+CODAC-A09L-Mau-000-000-229     | Mauritania                | 0.0000          | 0.00    
+CODAC-A09L-Mau-000-000-307     | Mauritius                 | 0.0000          | 0.00    
+CODAC-A09L-Mex-000-000-282     | Mexico                    | 0.0000          | 0.00    
+CODAC-A09L-Mic-000-000-254     | Micronesia                | 0.0000          | 0.00    
+CODAC-A09L-Mol-000-000-376     | Moldova                   | 0.0000          | 0.00    
+CODAC-A09L-Mon-000-000-250     | Mongolia                  | 0.0000          | 0.00    
+CODAC-A09L-Mon-000-000-294     | Montenegro                | 0.0000          | 0.00    
+CODAC-A09L-Mon-000-000-362     | Monaco                    | 0.0000          | 0.00    
+CODAC-A09L-Mor-000-000-243     | Morocco                   | 0.0000          | 0.00    
+CODAC-A09L-Moz-000-000-187     | Mozambique                | 0.0000          | 0.00    
+CODAC-A09L-Mya-000-000-218     | Myanmar                   | 0.0000          | 0.00    
+CODAC-A09L-Nam-000-000-271     | Namibia                   | 0.0000          | 0.00    
+CODAC-A09L-Nau-000-000-315     | Nauru                     | 0.0000          | 0.00    
+CODAC-A09L-Nep-000-000-222     | Nepal                     | 0.0000          | 0.00    
+CODAC-A09L-Net-000-000-347     | Netherlands               | 0.0000          | 0.00    
+CODAC-A09L-New-000-000-342     | New Zealand               | 0.0000          | 0.00    
+CODAC-A09L-Nic-000-000-238     | Nicaragua                 | 0.0000          | 0.00    
+CODAC-A09L-Nig-000-000-188     | Niger                     | 0.0000          | 0.00    
+CODAC-A09L-Nig-000-000-227     | Nigeria                   | 0.0000          | 0.00    
+CODAC-A09L-Nor-000-000-296     | North Macedonia           | 0.0000          | 0.00    
+CODAC-A09L-Nor-000-000-355     | Norway                    | 0.0000          | 0.00    
+CODAC-A09L-Nor-000-000-372     | North Korea               | 0.0000          | 0.00    
+CODAC-A09L-Oma-000-000-322     | Oman                      | 0.0000          | 0.00    
+CODAC-A09L-PUERT               | Puerto Rico               | 0.0000          | 0.00    
+CODAC-A09L-Pak-000-000-221     | Pakistan                  | 0.0000          | 0.00    
+CODAC-A09L-Pal-000-000-246     | Palestine                 | 0.0000          | 0.00    
+CODAC-A09L-Pal-000-000-314     | Palau                     | 0.0000          | 0.00    
+CODAC-A09L-Pan-000-000-302     | Panama                    | 0.0000          | 0.00    
+CODAC-A09L-Pap-000-000-235     | Papua New Guinea          | 0.0000          | 0.00    
+CODAC-A09L-Par-000-000-263     | Paraguay                  | 0.0000          | 0.00    
+CODAC-A09L-Per-000-000-267     | Peru                      | 0.0000          | 0.00    
+CODAC-A09L-Phi-000-000-239     | Philippines               | 0.0000          | 0.00    
+CODAC-A09L-Pol-000-000-318     | Poland                    | 0.0000          | 0.00    
+CODAC-A09L-Por-000-000-326     | Portugal                  | 0.0000          | 0.00    
+CODAC-A09L-Qat-000-000-360     | Qatar                     | 0.0000          | 0.00    
+CODAC-A09L-REUNI               | Reunion                   | 0.0000          | 0.00    
+CODAC-A09L-Rom-000-000-306     | Romania                   | 0.0000          | 0.00    
+CODAC-A09L-Rus-000-000-284     | Russia                    | 0.0000          | 0.00    
+CODAC-A09L-Rwa-000-000-204     | Rwanda                    | 0.0000          | 0.00    
+CODAC-A09L-SAINT               | Saint Kitts and Nevis     | 0.0000          | 0.00    
+CODAC-A09L-SAOTO               | Sao Tome and Principe     | 0.0000          | 0.00    
+CODAC-A09L-Sai-000-000-280     | Saint Lucia               | 0.0000          | 0.00    
+CODAC-A09L-Sai-000-000-310     | Saint Vincent             | 0.0000          | 0.00    
+CODAC-A09L-Sam-000-000-255     | Samoa                     | 0.0000          | 0.00    
+CODAC-A09L-San-000-000-364     | San Marino                | 0.0000          | 0.00    
+CODAC-A09L-Sau-000-000-323     | Saudi Arabia              | 0.0000          | 0.00    
+CODAC-A09L-Sen-000-000-216     | Senegal                   | 0.0000          | 0.00    
+CODAC-A09L-Ser-000-000-293     | Serbia                    | 0.0000          | 0.00    
+CODAC-A09L-Sey-000-000-313     | Seychelles                | 0.0000          | 0.00    
+CODAC-A09L-Sie-000-000-194     | Sierra Leone              | 0.0000          | 0.00    
+CODAC-A09L-Sin-000-000-359     | Singapore                 | 0.0000          | 0.00    
+CODAC-A09L-Slo-000-000-320     | Slovakia                  | 0.0000          | 0.00    
+CODAC-A09L-Slo-000-000-332     | Slovenia                  | 0.0000          | 0.00    
+CODAC-A09L-Sol-000-000-210     | Solomon Islands           | 0.0000          | 0.00    
+CODAC-A09L-Som-000-000-185     | Somalia                   | 0.0000          | 0.00    
+CODAC-A09L-Sou-000-000-183     | South Sudan               | 0.0000          | 0.00    
+CODAC-A09L-Sou-000-000-272     | South Africa              | 0.0000          | 0.00    
+CODAC-A09L-Sou-000-000-337     | South Korea               | 0.0000          | 0.00    
+CODAC-A09L-Spa-000-000-335     | Spain                     | 0.0000          | 0.00    
+CODAC-A09L-Sri-000-000-251     | Sri Lanka                 | 0.0000          | 0.00    
+CODAC-A09L-Sud-000-000-196     | Sudan                     | 0.0000          | 0.00    
+CODAC-A09L-Sur-000-000-278     | Suriname                  | 0.0000          | 0.00    
+CODAC-A09L-Swe-000-000-350     | Sweden                    | 0.0000          | 0.00    
+CODAC-A09L-Swi-000-000-356     | Switzerland               | 0.0000          | 0.00    
+CODAC-A09L-Syr-000-000-371     | Syria                     | 0.0000          | 0.00    
+CODAC-A09L-Tai-000-000-339     | Taiwan                    | 0.0000          | 0.00    
+CODAC-A09L-Taj-000-000-225     | Tajikistan                | 0.0000          | 0.00    
+CODAC-A09L-Tan-000-000-207     | Tanzania                  | 0.0000          | 0.00    
+CODAC-A09L-Tha-000-000-269     | Thailand                  | 0.0000          | 0.00    
+CODAC-A09L-Tog-000-000-202     | Togo                      | 0.0000          | 0.00    
+CODAC-A09L-Ton-000-000-256     | Tonga                     | 0.0000          | 0.00    
+CODAC-A09L-Tri-000-000-369     | Trinidad and Tobago       | 0.0000          | 0.00    
+CODAC-A09L-Tun-000-000-247     | Tunisia                   | 0.0000          | 0.00    
+CODAC-A09L-Tur-000-000-283     | Turkey                    | 0.0000          | 0.00    
+CODAC-A09L-Tur-000-000-288     | Turkmenistan              | 0.0000          | 0.00    
+CODAC-A09L-Tuv-000-000-316     | Tuvalu                    | 0.0000          | 0.00    
+CODAC-A09L-Uga-000-000-203     | Uganda                    | 0.0000          | 0.00    
+CODAC-A09L-Ukr-000-000-259     | Ukraine                   | 0.0000          | 0.00    
+CODAC-A09L-Uni-000-000-341     | United Arab Emirates      | 0.0000          | 0.00    
+CODAC-A09L-Uni-000-000-343     | United Kingdom            | 0.0000          | 0.00    
+CODAC-A09L-Uni-000-000-358     | United States             | 0.0000          | 0.00    
+CODAC-A09L-Uru-000-000-301     | Uruguay                   | 0.0000          | 0.00    
+CODAC-A09L-Uzb-000-000-258     | Uzbekistan                | 0.0000          | 0.00    
+CODAC-A09L-Van-000-000-223     | Vanuatu                   | 0.0000          | 0.00    
+CODAC-A09L-Vat-000-000-365     | Vatican City              | 0.0000          | 0.00    
+CODAC-A09L-Ven-000-000-303     | Venezuela                 | 0.0000          | 0.00    
+CODAC-A09L-Vie-000-000-240     | Vietnam                   | 0.0000          | 0.00    
+CODAC-A09L-WESTE               | Western Sahara            | 0.0000          | 0.00    
+CODAC-A09L-Yem-000-000-193     | Yemen                     | 0.0000          | 0.00    
+CODAC-A09L-Zam-000-000-209     | Zambia                    | 0.0000          | 0.00    
+CODAC-A09L-Zim-000-000-214     | Zimbabwe                  | 0.0000          | 0.00    
+CODAC-RES-L08-001              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-002              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-003              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-004              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-005              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-006              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-007              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-008              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-009              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-010              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-011              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-012              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-013              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-014              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-015              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-016              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-017              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-018              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-019              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-020              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-021              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-022              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-023              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-024              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-025              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-026              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-027              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-028              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-029              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-030              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-031              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-032              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-033              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-034              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-035              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-036              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-037              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-038              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-039              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-040              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-041              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-042              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-043              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-044              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-045              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-046              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-047              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-048              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-049              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-050              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-051              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-052              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-053              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-054              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-055              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-056              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-057              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-058              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-059              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-060              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-061              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-062              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-063              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-064              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-065              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-066              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-067              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-068              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-069              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-070              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-071              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-072              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-073              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-074              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-075              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-076              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-077              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-078              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-079              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-080              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-081              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-082              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-083              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-084              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-085              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-086              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-087              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-088              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-089              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-090              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-091              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-092              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-093              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-094              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-095              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-096              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-097              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-098              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-099              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-100              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-101              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-102              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-103              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-104              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-105              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-106              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-107              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-108              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-109              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-110              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-111              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-112              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-113              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-114              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-115              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-116              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-117              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-118              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-119              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-120              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-121              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-122              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-123              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-124              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-125              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-126              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-127              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-RES-L08-128              | Portal Reserve            | 0.0000          | 0.00    
+CODAC-SPEC-001                 | CODAC-Coin Backup         | 0.0000          | 0.00    
+CODAC-SPEC-002                 | CODAC-Coin Miscellaneous  | 0.0000          | 0.00    
+CODAC-SPEC-003                 | CODAC-Coin Incentive      | 0.0000          | 0.00    
+CODAC-SPEC-004                 | CODAC-Coin Reward         | 0.0000          | 0.00    
+CODAC-SPEC-005                 | CODAC-Coin INFRA          | 0.0000          | 0.00    
+CODAC-SPEC-006                 | CODAC-Coin Foundation     | 0.0000          | 0.00    
+CODAC-SPEC-007                 | CODAC-Coin Innovation     | 0.0000          | 0.00    
+CODAC-SPEC-008                 | CODAC-Coin Blockchain Fun | 0.0000          | 0.00    
+CODAC-SPEC-009                 | CODAC-Coin System Mainten | 0.0000          | 0.00    
+CODAC-SPEC-010                 | CODAC-Coin Portal         | 0.0000          | 0.00    
+CODAC-SPEC-011                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-012                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-013                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-014                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-015                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-016                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-017                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-018                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-019                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-020                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-021                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-022                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-023                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-024                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-025                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-026                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-027                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-028                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-029                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-030                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-031                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-032                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-033                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-034                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-035                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-036                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-037                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-038                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-039                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-040                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-041                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-042                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-043                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-044                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-045                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-046                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-047                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-048                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-049                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-050                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-051                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+CODAC-SPEC-052                 | CODAC-Coin Global Backup  | 0.0000          | 0.00    
+COFOUNDER-008                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-009                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-010                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-011                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-012                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-013                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-014                  | Co-Founder Account        | 0.0000          | 0.00    
+COFOUNDER-015                  | Co-Founder Account        | 0.0000          | 0.00    
+DEPT-032                       | Department Node           | 0.0000          | 0.00    
+DEPT-033                       | Department Node           | 0.0000          | 0.00    
+DEPT-034                       | Department Node           | 0.0000          | 0.00    
+DEPT-035                       | Department Node           | 0.0000          | 0.00    
+DEPT-036                       | Department Node           | 0.0000          | 0.00    
+DEPT-037                       | Department Node           | 0.0000          | 0.00    
+DEPT-038                       | Department Node           | 0.0000          | 0.00    
+DEPT-039                       | Department Node           | 0.0000          | 0.00    
+DEPT-040                       | Department Node           | 0.0000          | 0.00    
+DEPT-041                       | Department Node           | 0.0000          | 0.00    
+DEPT-042                       | Department Node           | 0.0000          | 0.00    
+DEPT-043                       | Department Node           | 0.0000          | 0.00    
+DEPT-044                       | Department Node           | 0.0000          | 0.00    
+DEPT-045                       | Department Node           | 0.0000          | 0.00    
+DEPT-046                       | Department Node           | 0.0000          | 0.00    
+DEPT-047                       | Department Node           | 0.0000          | 0.00    
+DEPT-048                       | Department Node           | 0.0000          | 0.00    
+DEPT-049                       | Department Node           | 0.0000          | 0.00    
+DEPT-050                       | Department Node           | 0.0000          | 0.00    
+DEPT-051                       | Department Node           | 0.0000          | 0.00    
+DEPT-052                       | Department Node           | 0.0000          | 0.00    
+DEPT-053                       | Department Node           | 0.0000          | 0.00    
+DEPT-054                       | Department Node           | 0.0000          | 0.00    
+DEPT-055                       | Department Node           | 0.0000          | 0.00    
+DEPT-056                       | Department Node           | 0.0000          | 0.00    
+DEPT-057                       | Department Node           | 0.0000          | 0.00    
+DEPT-058                       | Department Node           | 0.0000          | 0.00    
+DEPT-059                       | Department Node           | 0.0000          | 0.00    
+DEPT-060                       | Department Node           | 0.0000          | 0.00    
+DEPT-061                       | Department Node           | 0.0000          | 0.00    
+DEPT-062                       | Department Node           | 0.0000          | 0.00    
+DEPT-063                       | Department Node           | 0.0000          | 0.00    
+FOUNDER-001                    | Founder Account           | 15.6250         | 0.12    
+FOUNDER-002                    | Founder Account           | 0.0000          | 0.00    
+FOUNDER-003                    | Founder Account           | 0.0000          | 0.00    
+FOUNDER-004                    | Founder Account           | 0.0000          | 0.00    
+FOUNDER-005                    | Founder Account           | 0.0000          | 0.00    
+FOUNDER-006                    | Founder Account           | 0.0000          | 0.00    
+FOUNDER-007                    | Founder Account           | 0.0000          | 0.00    
+KID-0515                       | Baby Codac                | 0.0000          | 0.00    
+MEMBER-SAMPLE                  | Juan Dela Cruz            | 500.0000        | 0.00    
+SYSTEM-ALPHA                   | CODAC PRIME SOURCE        | 0.0000          | 0.00    
+SYSTEM-OMEGA                   | CODAC TREASURY            | 0.0000          | 0.00    
+TEAM-016                       | Team Account              | 0.0000          | 0.00    
+TEAM-017                       | Team Account              | 0.0000          | 0.00    
+TEAM-018                       | Team Account              | 0.0000          | 0.00    
+TEAM-019                       | Team Account              | 0.0000          | 0.00    
+TEAM-020                       | Team Account              | 0.0000          | 0.00    
+TEAM-021                       | Team Account              | 0.0000          | 0.00    
+TEAM-022                       | Team Account              | 0.0000          | 0.00    
+TEAM-023                       | Team Account              | 0.0000          | 0.00    
+TEAM-024                       | Team Account              | 0.0000          | 0.00    
+TEAM-025                       | Team Account              | 0.0000          | 0.00    
+TEAM-026                       | Team Account              | 0.0000          | 0.00    
+TEAM-027                       | Team Account              | 0.0000          | 0.00    
+TEAM-028                       | Team Account              | 0.0000          | 0.00    
+TEAM-029                       | Team Account              | 0.0000          | 0.00    
+TEAM-030                       | Team Account              | 0.0000          | 0.00    
+TEAM-031                       | Team Account              | 0.0000          | 0.00    
+TREASURY-064                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-065                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-066                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-067                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-068                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-069                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-070                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-071                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-072                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-073                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-074                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-075                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-076                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-077                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-078                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-079                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-080                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-081                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-082                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-083                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-084                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-085                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-086                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-087                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-088                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-089                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-090                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-091                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-092                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-093                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-094                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-095                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-096                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-097                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-098                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-099                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-100                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-101                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-102                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-103                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-104                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-105                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-106                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-107                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-108                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-109                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-110                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-111                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-112                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-113                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-114                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-115                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-116                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-117                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-118                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-119                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-120                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-121                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-122                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-123                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-124                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-125                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-126                   | Portal Treasury           | 0.0000          | 0.00    
+TREASURY-127                   | Portal Treasury           | 0.0000          | 0.00    
+
+=========================================================================
+ 🌐 TOTAL CIRCULATION: 518.3750 CODAC
+ 🔒 TOTAL SYSTEM LOCK: 0.12 CODAC
+=========================================================================
+ REPORT GENERATED BY FOUNDER AUTHORITY PORTAL

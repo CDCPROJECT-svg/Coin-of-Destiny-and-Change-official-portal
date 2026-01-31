@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODAC Official Portal</title>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+:root {
+    --gold: #ffd700;
+    --dark: #0a0a0a;
+    --gray: #1a1a1a;
+}
+body {
+    background: var(--dark);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* CODAC HEADER */
+.codac-header {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.codac-header h2, .codac-header h3 { color: var(--gold); margin: 0; }
+.codac-header p { color: #ccc; margin: 5px 0; }
+.codac-header ul { list-style:none; padding-left:0; margin:5px 0; }
+
+/* CODAC MENU */
+.codac-menu a, .codac-menu .dropbtn {
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.codac-menu { background: #111; padding: 10px; border-radius: 12px; }
+.dropdown { position: relative; display: inline-block; }
+.dropdown-content { display: none; position: absolute; background-color: #222; min-width: 200px; z-index: 1; border-radius: 10px; padding: 10px; }
+.dropdown-content a { padding: 5px; display: block; }
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Wallet Slide-out Panel */
+#walletPanel {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100%;
+    background: #111;
+    padding: 20px;
+    border-left: 2px solid var(--gold);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    overflow-y: auto;
+}
+#walletPanel.open { right: 0; }
+.wallet-box { background: #222; padding: 15px; border-radius: 10px; margin-bottom: 10px; }
+.wallet-title { font-size: 18px; color: gold; margin-bottom: 5px; }
+.wallet-toggle { position: fixed; top: 20px; right: 10px; background: var(--gold); color: black; border: none; padding: 10px; border-radius: 8px; cursor: pointer; z-index: 10000; }
+
+/* Swiper */
+.swiper { width: 100%; height: 300px; margin: 20px 0; }
+.swiper-slide { display: flex; flex-direction: column; padding: 10px; box-sizing: border-box; overflow-y: auto; }
+.header { text-align: center; border-bottom: 1px solid var(--gold); margin-bottom: 10px; padding-bottom: 5px; }
+.header h1 { color: var(--gold); font-size: 1.2rem; letter-spacing: 1px; }
+.card { background: var(--gray); border: 1px solid #333; border-radius: 12px; padding: 10px; margin-bottom: 10px; }
+.btn { background: var(--gold); color: black; border: none; padding: 10px; border-radius: 8px; font-weight: bold; width: 100%; margin-bottom: 5px; cursor: pointer; text-align: left; display: flex; justify-content: space-between; text-decoration: none; }
+
+/* Level Progress Grid */
+.level-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 10px; }
+.level-box { border: 1px solid #444; padding: 5px; font-size: 10px; border-radius: 4px; text-align: center; background: #000; color: #888; }
+.level-complete { border-color: var(--gold); color: var(--gold); font-weight: bold; }
+
+/* Section Box */
+.section-box {
+    background: rgba(255,255,255,0.05);
+    border: 2px solid var(--gold);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px 0;
+}
+.submenu { margin-left: 15px; display: none; }
+.submenu.active { display: block; }
+a:hover { color: #fff200; }
+</style>
+</head>
+
+<body>
+
+<!-- ======================= CODAC HEADER / GLOBAL INFO ======================= -->
+<div class="codac-header">
+  <h2>CODAC COIN OF DESTINY & CHANGE</h2>
+  <p>Empowering Communities • Creating Wealth • Watching • Spending Moments & Money</p>
+  <h3>💎 Global Reserve: <b>0</b> | 🏦 Treasury: <b>0</b> | 🪙 CODAC Price: <b>$1.02</b></h3>
+  <p>Founder: <b>Uday</b> | Succession: <b>Verified</b></p>
+
+  <!-- Account Overview -->
+  <div class="account-overview">
+    <b>Username:</b> default <br>
+    <b>Account Status:</b> default <br>
+    <b>Leadership / Level Status:</b> default <br>
+    <b>CODAC Points:</b> <span id="codacPointsHeader">0</span> <br>
+    <b>Total CODAC Earned:</b> 0 <br>
+    <b>CODAC Coin:</b> 0 <br>
+    <b>CODAC Coin Locked:</b> 0 <br>
+    <b>Portal USDT:</b> 0
+  </div>
+
+  <!-- Wallets Overview -->
+  <div class="wallets-overview">
+    <b>💰 Wallets:</b>
+    <ul>
+      <li>CODAC-Coin TREASURY</li>
+      <li>CODAC-Coin RESERVE</li>
+      <li>CODAC-Coin PORTAL</li>
+      <li>USDT</li>
+      <li>CODAC-Coin Forfeited</li>
+      <li>CODAC-Coin Merchant</li>
+      <li>CODAC-Coin Backup</li>
+      <li>CODAC-Coin Miscellaneous</li>
+      <li>CODAC-Coin Locked</li>
+      <li>CODAC-Coin Incentive</li>
+      <li>CODAC-Coin Reward</li>
+      <li>CODAC-Coin INFRA</li>
+      <li>CODAC-Coin Foundation</li>
+      <li>CODAC-Coin 204 Countries Charity</li>
+      <li>CODAC-Coin Innovation</li>
+      <li>CODAC-Coin Blockchain Fund</li>
+      <li>CODAC-Coin System Maintenance</li>
+    </ul>
+  </div>
+
+  <!-- Language Selector -->
+  <div>
+    <b>🌐 Language:</b>
+    <select>
+      <option>Select Language</option>
+      <option>English</option>
+      <option>Filipino</option>
+      <option>Chinese</option>
+      <option>Arabic</option>
+      <option>Spanish</option>
+      <option>French</option>
+      <option>German</option>
+      <option>Japanese</option>
+      <option>Hindi</option>
+      <option>Portuguese</option>
+      <option>Russian</option>
+    </select>
+  </div>
+
+  <!-- Country & Currency -->
+  <div style="margin-top:5px;">
+    <b>🌍 Country & Currency:</b>
+    <select>
+      <option>Select Country</option>
+      <option>CODAC-Coin</option>
+      <option>USDT</option>
+      <option>🇦🇫 Afghanistan – AFN</option>
+      <option>🇦🇱 Albania – ALL</option>
+      <option>🇩🇿 Algeria – DZD</option>
+      <option>🇦🇷 Argentina – ARS</option>
+      <option>🇦🇺 Australia – AUD</option>
+      <option>🇧🇩 Bangladesh – BDT</option>
+      <option>🇧🇪 Belgium – EUR</option>
+      <option>🇧🇷 Brazil – BRL</option>
+      <option>🇨🇦 Canada – CAD</option>
+      <option>🇨🇳 China – CNY</option>
+      <option>🇨🇴 Colombia – COP</option>
+      <option>🇨🇿 Czech Republic – CZK</option>
+      <option>🇩🇰 Denmark – DKK</option>
+      <option>🇪🇬 Egypt – EGP</option>
+      <option>🇫🇮 Finland – EUR</option>
+      <option>🇫🇷 France – EUR</option>
+      <option>🇩🇪 Germany – EUR</option>
+      <option>🇬🇭 Ghana – GHS</option>
+      <option>🇭🇰 Hong Kong – HKD</option>
+      <option>🇭🇺 Hungary – HUF</option>
+      <option>🇮🇳 India – INR</option>
+      <option>🇮🇩 Indonesia – IDR</option>
+      <option>🇮🇪 Ireland – EUR</option>
+      <option>🇮🇱 Israel – ILS</option>
+      <option>🇮🇹 Italy – EUR</option>
+      <option>🇯🇵 Japan – JPY</option>
+      <option>🇰🇪 Kenya – KES</option>
+      <option>🇲🇾 Malaysia – MYR</option>
+      <option>🇲🇽 Mexico – MXN</option>
+      <option>🇳🇱 Netherlands – EUR</option>
+      <option>🇳🇬 Nigeria – NGN</option>
+      <option>🇳🇴 Norway – NOK</option>
+      <option>🇵🇰 Pakistan – PKR</option>
+      <option>🇵🇭 Philippines – PHP</option>
+      <option>🇵🇱 Poland – PLN</option>
+      <option>🇵🇹 Portugal – EUR</option>
+      <option>🇶🇦 Qatar – QAR</option>
+      <option>🇷🇺 Russia – RUB</option>
+      <option>🇸🇦 Saudi Arabia – SAR</option>
+      <option>🇸🇬 Singapore – SGD</option>
+      <option>🇿🇦 South Africa – ZAR</option>
+      <option>🇰🇷 South Korea – KRW</option>
+      <option>🇪🇸 Spain – EUR</option>
+      <option>🇸🇪 Sweden – SEK</option>
+      <option>🇨🇭 Switzerland – CHF</option>
+      <option>🇹🇭 Thailand – THB</option>
+      <option>🇹🇷 Turkey – TRY</option>
+      <option>🇦🇪 United Arab Emirates – AED</option>
+      <option>🇬🇧 United Kingdom – GBP</option>
+      <option>🇺🇸 United States – USD</option>
+      <option>🇻🇳 Vietnam – VND</option>
+    </select>
+  </div>
+
+  <!-- Live Blockchain Feed Placeholder -->
+  <div style="margin-top:10px; color:var(--gold);">
+    <b>● LIVE BLOCKCHAIN FEED:</b> Coming Soon…
+  </div>
+</div>
+
+<!-- ======================= CODAC MENU ======================= -->
+<nav class="codac-menu">
+  <a href="homepage.html">🏠 HOME</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">💼 BUSINESS</button>
+    <div class="dropdown-content">
+      <a href="#">Registration</a>
+      <a href="#">Personal</a>
+      <a href="#">Merchant</a>
+      <a href="#">Association</a>
+      <a href="#">Cooperative</a>
+      <a href="#">Family Clan</a>
+      <a href="#">Corporation</a>
+      <a href="#">Government Agency</a>
+      <a href="#">Country</a>
+      <a href="#" onclick="toggleWallet()">➡ Open Wallet Panel</a>
+    </div>
+  </div>
+
+  <a href="#" onclick="toggleWallet()">💰 WALLET</a>
+  <span class="points">CODAC Points: <b id="codacPoints">0</b></span>
+
+  <a href="incentives.html">🏆 INCENTIVES</a>
+  <div class="dropdown">
+    <button class="dropbtn">🎁 Incentives</button>
+    <div class="dropdown-content">
+      <a href="house.html">🏠 House</a>
+      <a href="health.html">🏥 Health</a>
+      <a href="car.html">🚗 Car</a>
+      <a href="travel.html">✈️ Travel</a>
+      <a href="shopping.html">🛍️ Shopping</a>
+      <a href="scholar.html">🎓 Scholar</a>
+      <a href="agedcare.html">👵 AgedCare</a>
+      <a href="bonus.html">💰 Bonus</a>
+    </div>
+  </div>
+
+  <a href="rewards.html">🏆 REWARDS</a>
+  <div class="dropdown">
+    <button class="dropbtn">Rewards</button>
+    <div class="dropdown-content">
+      <a href="cycle1_rewards.html">Cycle 1 → Reward</a>
+      <a href="cycle2_rewards.html">Cycle 2 → Reward</a>
+    </div>
+  </div>
+
+  <a href="genealogy.html">🌳 GENEALOGY</a>
+  <a href="action_center.html">⚡ ACTION CENTER</a>
+  <a href="more.html">➕ MORE</a>
+</nav>
+
+<!-- ======================= WALLET PANEL ======================= -->
+<button class="wallet-toggle" onclick="toggleWallet()">🪙 My Wallet</button>
+<div id="walletPanel">
+  <h3>💰 CODAC WALLET PANEL</h3>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC-Coin Wallet Address</div>
+    <p id="walletCODAC">0x0000...abcd</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">USDT Wallet Address</div>
+    <p id="walletUSDT">0x1111...efgh</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">Total CODAC Earned</div>
+    <p id="totalCODAC">0</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC Coin Balance</div>
+    <p id="balanceCODAC">0</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC Coin Locked</div>
+    <p id="lockedCODAC">0</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">Portal USDT Wallet</div>
+    <p id="portalUSDT">0</p>
+  </div>
+  <div class="wallet-box">
+    <div class="wallet-title">CODAC-POINT</div>
+    <p id="codacPoint">0</p>
+  </div>
+</div>
+
+<!-- ======================= DASHBOARD / MASTER HUB ======================= -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="header"><h1>CODAC MASTER HUB</h1></div>
+      <div class="card">
+        <button class="btn" onclick="location.href='business_test.html'">💼 BUSINESS ENGINE</button>
+        <button class="btn" onclick="location.href='portal.html'">🌳 BINARY MONITOR (L28)</button>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="header"><h1>LEADERSHIP LEVEL STATUS</h1></div>
+      <div class="card">
+        <div class="level-grid" id="levelGrid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>CODAC Coin of Destiny & Change © 2026</p>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+// Initialize Swiper
+const swiper = new Swiper('.swiper', { direction: 'horizontal' });
+
+// Toggle wallet panel
+function toggleWallet() {
+  document.getElementById('walletPanel').classList.toggle('open');
+}
+
+// Auto-update wallet values (placeholder logic)
+function updateWallet() {
+  document.getElementById('walletCODAC').textContent = '0xABC123...';
+  document.getElementById('walletUSDT').textContent = '0xUSDT456...';
+  document.getElementById('totalCODAC').textContent = Math.floor(Math.random()*10000);
+  document.getElementById('balanceCODAC').textContent = Math.floor(Math.random()*5000);
+  document.getElementById('lockedCODAC').textContent = Math.floor(Math.random()*1000);
+  document.getElementById('portalUSDT').textContent = Math.floor(Math.random()*2000);
+  const points = Math.floor(Math.random()*500);
+  document.getElementById('codacPoint').textContent = points;
+  document.getElementById('codacPoints').textContent = points;
+  document.getElementById('codacPointsHeader').textContent = points;
+}
+setInterval(updateWallet, 2000);
+
+// Level 1–20 progress visual tracker
+const levelGrid = document.getElementById('levelGrid');
+for(let i=1; i<=20; i++){
+  const div = document.createElement('div');
+  div.className = 'level-box';
+  div.textContent = 'L'+i;
+  if(i===20) div.classList.add('level-complete');
+  levelGrid.appendChild(div);
+}
+</script>
+</body>
+</html>

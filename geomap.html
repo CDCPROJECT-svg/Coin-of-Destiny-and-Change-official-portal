@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODAC | Real-Time Sovereign Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; --blue: #0052ff; --red: #ff3b30; }
+        body { background: var(--dark); color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        .realtime-header { padding: 20px; border-bottom: 1px solid var(--gold); background: #000; display: flex; justify-content: space-between; align-items: center; }
+        .live-clock { color: var(--gold); font-family: monospace; font-size: 14px; }
+        
+        .map-card { background: #111; margin: 15px; border-radius: 12px; border: 1px solid #222; overflow: hidden; }
+        .status-bar { padding: 10px; font-size: 10px; background: #1a1a1a; display: flex; justify-content: space-between; border-bottom: 1px solid #222; }
+        .country-info { padding: 20px; }
+        .pulse { display: inline-block; width: 8px; height: 8px; background: var(--red); border-radius: 50%; margin-right: 5px; animation: blink 1s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+        
+        .calc-input-group { background: #000; padding: 15px; border-radius: 8px; margin-top: 15px; }
+        input { background: #222; border: 1px solid #333; color: white; padding: 10px; border-radius: 5px; width: 100%; box-sizing: border-box; margin-top: 5px; }
+        .btn-calc { background: var(--blue); color: white; border: none; width: 100%; padding: 12px; border-radius: 5px; margin-top: 10px; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="realtime-header">
+        <div>
+            <h3 style="margin:0;">GEOMAP LIVE</h3>
+            <small style="color:#888;">204 Sovereign Nations</small>
+        </div>
+        <div class="live-clock" id="clock">JAN 07, 2026 - 23:33:56</div>
+    </div>
+
+    <div class="map-card">
+        <div class="status-bar">
+            <span><span class="pulse"></span> SYSTEM STATUS: MONITORING</span>
+            <span id="yearLabel">YEAR: 2026</span>
+        </div>
+        
+        <div class="country-info">
+            <h2 style="margin:0;">🇵🇭 PHILIPPINES</h2>
+            <p style="font-size:12px; color:#888;">Live 2026 Pop. Est: <b id="totalPop">117,000,000</b></p>
+            
+            <div class="calc-input-group">
+                <label style="font-size:11px; color:var(--gold);">ENTER AFFECTED POPULATION:</label>
+                <input type="number" id="affectedPop" placeholder="e.g. 748000" oninput="calculateRealtime()">
+                
+                <div id="results" style="display:none; margin-top:15px; border-top: 1px solid #222; padding-top:10px;">
+                    <div style="display:flex; justify-content:space-between; font-size:13px;">
+                        <span>Impact Impact %:</span>
+                        <span id="impactPerc" style="color:var(--blue); font-weight:bold;">0%</span>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; margin-top:10px; color:var(--gold); font-weight:bold;">
+                        <span>Release Auth:</span>
+                        <span id="releaseAmt">0 CODAC</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn-calc" onclick="location.href='vote.html'">INITIATE 18% QUORUM VOTE</button>
+        </div>
+    </div>
+
+    <script>
+        // Update Clock Real-Time
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerText = now.toLocaleString('en-US', { 
+                month: 'short', day: '2-digit', year: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false 
+            }).toUpperCase();
+        }
+        setInterval(updateClock, 1000);
+
+        function calculateRealtime() {
+            const total = 117000000;
+            const affected = document.getElementById('affectedPop').value;
+            const resDiv = document.getElementById('results');
+            
+            if(affected > 0) {
+                resDiv.style.display = 'block';
+                const impact = (affected / total * 100).toFixed(2);
+                document.getElementById('impactPerc').innerText = impact + '%';
+                
+                // Assuming 1M Country Fund
+                const release = (1000000 * (impact / 100)).toLocaleString();
+                document.getElementById('releaseAmt').innerText = release + ' CODAC';
+            } else {
+                resDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
