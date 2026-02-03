@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CODAC MASTER PORTAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { background: #050505; color: #d4af37; font-family: Arial, sans-serif; }
+    .panel { background:#111; border:1px solid #ffd700; border-radius:8px; padding:15px; margin:15px 20px; text-align:center; }
+    .panel h3 { color:#ffd700; margin:0 0 5px; }
+    .panel p { color:#eaeaea; margin:0 0 10px; }
+    .panel button { background:linear-gradient(90deg,#ffd700,#ffb700); color:#000; border:none; border-radius:6px; padding:10px 20px; font-weight:bold; cursor:pointer; }
+
+    /* MASTER VIEW / ADMIN PANEL */
+    .header { background: #000; padding: 15px; display:flex; justify-content:space-between; align-items:center; }
+    .master-badge { color: #0f0; font-size: 0.8em; font-weight:bold; }
+    .admin-section { background: #111; margin: 10px 20px; padding: 10px; border-radius:6px; }
+    .account-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+    .locked-id { color: #888; font-style: italic; }
+    .reset-btn { background: #d4af37; color: #000; padding:4px 8px; border:none; border-radius:4px; cursor:pointer; }
+    #loginArea { padding-top: 100px; text-align:center; }
+    input { background:#000; border:1px solid #ffd700; color:#fff; padding:8px; border-radius:4px; width:200px; margin-right:5px; }
+    button#loginBtn { background:#d4af37; color:#000; padding:8px 15px; border:none; border-radius:4px; cursor:pointer; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== FOUNDER-ONLY MASTER LOGIN ===== -->
+  <div class="panel master-login-dev" id="loginArea">
+    <h3>CODAC GLOBAL MASTER PORTAL</h3>
+    <p>LOGIN AS MASTER (Founder Only)</p>
+    <input type="text" id="masterID" placeholder="Enter Founder Key">
+    <button id="loginBtn" onclick="masterLogin()">MASTER LOGIN</button>
+  </div>
+
+  <!-- ===== MASTER VIEW DASHBOARD ===== -->
+  <div id="masterView" style="display:none;">
+    <div class="header">
+      <div>
+        <span style="font-weight:bold;">AF000A2</span>
+        <span class="master-badge">MASTER</span>
+      </div>
+      <button onclick="location.reload()" style="background:#d4af37; color:#000; border:none; border-radius:4px; padding:4px 8px; cursor:pointer;">
+        LOGOUT
+      </button>
+    </div>
+
+    <h2 style="margin-top:20px;">FOUNDATION GOVERNANCE</h2>
+    <p style="font-size:0.6em; color:#ff0000;">Admin Overview</p>
+
+    <div class="admin-section">
+      <div id="foundationNodes"></div>
+    </div>
+  </div>
+
+  <script>
+    function masterLogin() {
+      const keyInput = document.getElementById('masterID').value;
+      if(keyInput === "CODACFOUNDER2026") {
+        alert("Welcome Master! Access Granted.");
+        document.getElementById('loginArea').style.display = 'none';
+        document.getElementById('masterView').style.display = 'block';
+      } else {
+        alert("Access Denied! Wrong Key.");
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+    <div id="masterView" style="display:none;">
+        <div class="header">
+            <div>
+                <span style="font-weight:bold;">AF000A1</span> 
+                <span class="master-badge">MASTER FOUNDER</span>
+            </div>
+            <button onclick="location.reload()" style="background:#400; color:white; border:1px solid red; padding:5px 10px;">LOGOUT</button>
+        </div>
+
+        <h2 style="margin-top:20px;">FOUNDATION GOVERNANCE (L1-L8)</h2>
+        <p style="font-size: 0.6em; color: #ff0000;">⚠️ USERNAME MODIFICATION IS PERMANENTLY ENCRYPTED & LOCKED</p>
+
+        <div class="admin-section">
+            <div style="font-size: 0.6em; color: #888; margin-bottom: 10px;">FOUNDATION NODES:</div>
+            <div id="foundationNodes">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        const levels = [
+            {id: "AF000A2", role: "UDAY GOVERNANCE (L2)"},
+            {id: "AF000A4", role: "UDAY GOVERNANCE (L3)"},
+            {id: "ACF000A8", role: "CD-BUDZ MGMT (L4)"},
+            {id: "AT000A32", role: "CODAC TECH TEAM (L6)"},
+            {id: "IL000A64", role: "INNOVATION (L7)"},
+            {id: "RB000A128", role: "RESERVE BACKUP (L8)"}
+        ];
+
+        function verifyAccess() {
+            const id = document.getElementById('masterID').value.toUpperCase();
+            if(id === "AF000A1") {
+                document.getElementById('loginArea').style.display = 'none';
+                document.getElementById('masterView').style.display = 'block';
+                loadNodes();
+            } else {
+                alert("ACCESS DENIED: ONLY MASTER FOUNDER CAN ACCESS THIS TERMINAL.");
+            }
+        }
+
+        function loadNodes() {
+            const container = document.getElementById('foundationNodes');
+            levels.forEach(node => {
+                container.innerHTML += `
+                    <div class="account-row">
+                        <span><span style="color:#d4af37">🔒</span> <span class="locked-id">${node.id}</span> - ${node.role}</span>
+                        <button class="reset-btn" onclick="resetPass('${node.id}')">RESET PASS</button>
+                    </div>
+                `;
+            });
+        }
+
+        function resetPass(nodeId) {
+            const newPass = prompt("ENTER NEW PASSWORD FOR " + nodeId);
+            if(newPass) {
+                alert("SECURITY UPDATE: Password for " + nodeId + " has been reset. The Username remains locked to the Binary Tree.");
+            }
+        }
+    </script>
+</body>
+</html>

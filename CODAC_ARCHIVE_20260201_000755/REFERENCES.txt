@@ -1,0 +1,32 @@
+================================================================
+🏛️ CODAC PROJECT OFFICIAL REFERENCES & RULES
+================================================================
+
+[SECTION 1: THE GEMINI WORKFLOW RULES]
+(Para hindi tayo paulit-ulit at direkta sa trabaho)
+
+RULE #1: CONTEXT PRESERVATION (The Single Source of Truth)
+   - Laging basahin muna ang Database (codac_master.db) at References (PDFs) bago gumawa ng bagong code.
+   - Huwag manghula. Kung ano ang nasa Ledger, yun ang batas.
+
+RULE #2: INCREMENTAL BUILD (Patong, Hindi Ulit)
+   - Huwag buburahin ang gumagana na.
+   - Ayusin lang ang sira, at dagdagan ang kulang. Verify muna bago i-save.
+
+================================================================
+[SECTION 2: CORE DOCUMENTS]
+1. CODAC_CENTRAL_BANKING_PLAN.pdf (The Blueprint)
+2. CODAC_MASTER_LEDGER.pdf (The Financial Truth)
+
+================================================================
+[SECTION 3: SYSTEM MANIFEST (As of Git Init)]
+File Inventory:
+
+- CORE SCRIPTS: app.py, dashboard.py, global_viral_engine.py
+- ENGINES: graduation_engine_smart.py, task_race_engine.py
+- DATABASE: codac_master.db, setup_governance.py
+- FRONTEND: homepage.html, portal.html, cycle2_rewards.html
+- UTILS: fix_database.py, check_execution_status.py
+
+(Full file list archived in Git History)
+================================================================

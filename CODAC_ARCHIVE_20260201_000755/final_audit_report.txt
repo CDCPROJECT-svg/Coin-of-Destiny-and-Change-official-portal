@@ -1,0 +1,219 @@
+============================================================
+            CODAC COIN PORTAL - MASTER AUDIT REPORT         
+============================================================
+
+TOTAL COUNTRIES      : 204
+GROUP A (118 Target) : 118
+GROUP B (86 Target)  : 86
+STATUS               : READY (OFF-CHAIN)
+------------------------------------------------------------
+
+--- GROUP A: POOREST/PRIORITY (REWARD: 1,888,888) ---
+  1. Afghanistan                    | 0x33Aa905b232243F705dAD8FBD606D9cA902174Bf
+  2. Albania                        | 0x7BeA305F58ebe722bE488E3e44f22e376359d44D
+  3. Andorra                        | 0xaBb506812576810824c90ac16A15117c6D8d3aF4
+  4. Antigua and Barbuda            | 0x4194943A5d3b14DB2Cc1847EfbF2EF07B08a3222
+  5. Armenia                        | 0x2be05aca98b68C8Bc3193F02a33fffE9161d6aB9
+  6. Bahamas                        | 0xcBc379A6f39bc0fE386aeA1e386567f4e425c630
+  7. Bahrain                        | 0x137b2E8146E730cA7EECb5b45DF2ccB1830499B2
+  8. Barbados                       | 0x76c89f02aD9E67848ca93384e40e004665994c51
+  9. Belize                         | 0xf9F8F1e7A3895A8964741B6c3c20D7cACB5eB9d7
+ 10. Benin                          | 0x0f976f6b0Fc9278BF4708663CC26849dB1f7A361
+ 11. Bhutan                         | 0xd38DfC5Ad69ebf5ECa638593E439a906071BF796
+ 12. Bosnia and Herzegovina         | 0xbb0de68239b5057784b3742269243c6D64d132B8
+ 13. Botswana                       | 0x59E9F9B1BFe1FaF79d350bb8F5225484FD38A970
+ 14. Brunei                         | 0x2bdc11dDd41A8e747f735e53676a6cF31312B522
+ 15. Burkina Faso                   | 0x18C889B301a7902992358ed726FFf451d1BF1221
+ 16. Burundi                        | 0x57D226c2BE524823FA47B2D0Aad8b2303470043E
+ 17. Cabo Verde                     | 0xA1BCA590AAdc18dbEFFF11b6ae41f10dCca9aA86
+ 18. Cambodia                       | 0x9BE7534Ef957aBC961bA51684e1baEAC7e3becF8
+ 19. Cameroon                       | 0x18b2d3D2188BE00Cb9102dB8e6b32f0f1c4C219a
+ 20. Central African Republic       | 0x85b8A5639036C32DaCB361d80C86b42F73531761
+ 21. Chad                           | 0x143b7fb132b19Fab7Dc8E86c427495c9911f5630
+ 22. Comoros                        | 0x0E329aD0dbd64880E0b675F180C691Ef53aC01f2
+ 23. Congo                          | 0x27846A2f101aeA5D2669E0B50cF0a4779d249271
+ 24. Cuba                           | 0x3b43e1E4ad749D0fAb97C5Cbf5AE2f7d609c27D8
+ 25. Cyprus                         | 0x260f6CBFEac5c810fDeE0B66C1379264308D147d
+ 26. Democratic Republic of the Congo | 0xAA82774365C5f33ef7E66A77a5F21ffD38c62acc
+ 27. Djibouti                       | 0x457E4A2912da4d3952683b1296b01FaaE70895C5
+ 28. Dominica                       | 0x7712c630683994Aee50ABea27d46215A6EB3F5F9
+ 29. East Timor                     | 0x9312596038196C2354343905D3eC817FBD644068
+ 30. El Salvador                    | 0x8aAa25dAC2FcAac060F536E2485A796c1aB58eB9
+ 31. Equatorial Guinea              | 0x2183f769ef8E54aA0Cb5eA1e588d00ef20FA4311
+ 32. Eritrea                        | 0xe69876BE29087D84c558b87868AcD3b1A97e26EC
+ 33. Estonia                        | 0x74cAc0fd88844Ca94cA92A52270DEf2372A1a24D
+ 34. Eswatini                       | 0xc3657FB6d4fae6De80F4bb7fFaE01c9302C3B299
+ 35. Fiji                           | 0x5A53aDe52450581d760307A338056A801eb3e358
+ 36. French Guiana                  | 0x269066c403009e0CffA983a155621fCFA833408E
+ 37. Gabon                          | 0x75bCeC9aEB1C64050EC4B3fe2daaFD9D62B1C85F
+ 38. Gambia                         | 0xBd7cD3f3a088702A058900e9b10D1Ea580923Cf2
+ 39. Georgia                        | 0x9E971e50e06960cbd25648c5A717D45AF7BCBc11
+ 40. Ghana                          | 0xb43C932aD8021865f128C56b98d63c0FfD121C24
+ 41. Greenland                      | 0xEB7C5A9c3924E47B4F1c00140F34DdC4aE40d0Fa
+ 42. Grenada                        | 0xCd81e26A78398189E813ec73f6F23E4400083B61
+ 43. Guadeloupe                     | 0x5A067e186D28259dadbE6daC5080201A0a4d34cD
+ 44. Guinea                         | 0x27aAb766f17b692c3E93093fAEa1E47E7309010d
+ 45. Guinea-Bissau                  | 0xeA6A0b3D706dBCB108b216942973739c89734B86
+ 46. Guyana                         | 0x96649acF5DE7089B505b0f0EeB66250d1A9a8d0F
+ 47. Haiti                          | 0x54eaEeD8498CD60091E228995c3927357316808b
+ 48. Honduras                       | 0x4eA9b9a0150818b11508384fa195CaF915C76F73
+ 49. Iceland                        | 0xC3D5496B19561B7fF80d36D4d311f25544A97542
+ 50. Iran                           | 0x2858e784211df7d36d474e3bD9a570aa737cf770
+ 51. Jamaica                        | 0xD64DC76422A53B2E4e5E872405896979dd1D411d
+ 52. Kiribati                       | 0x1A04c99bb3AE45481Ec8Cce2468fD2d19bFe73b4
+ 53. Kosovo                         | 0xF90491429d08Ce1Cd54bB9A54F26d805eE3977fE
+ 54. Kyrgyzstan                     | 0x53bCeec77A04bff178b4B52a520229c44BB68779
+ 55. Laos                           | 0xC3aa84B0092bcF72706C3eB0cffd2B73721A7CDb
+ 56. Latvia                         | 0xA4cab694c22B755dE93b9F91068F28069A3663D2
+ 57. Lesotho                        | 0xdBF949c8447806809DA9A818a280fa0391f254C7
+ 58. Liberia                        | 0x44b061E6613AA1e684F7cA084FCD4b1863029Ebf
+ 59. Liechtenstein                  | 0xbA915da22A691DAae0477aBA9E5a5EbA2d2bB4C7
+ 60. Madagascar                     | 0xbdfE4b0FAbaB87404860681DFf527F85F26EB623
+ 61. Malawi                         | 0x77f18DB6Ee9a626c3f87494076E7559B7BB32C08
+ 62. Maldives                       | 0x6a6F466f727a92CFc907110D96F0Caf5c17A4a90
+ 63. Mali                           | 0xd95c6C5F31D66e9b122B3a7A5aC517466D21bA65
+ 64. Malta                          | 0x913853988FdAAb72940F23ec7300bDAC81e2bFd1
+ 65. Marshall Islands               | 0x3cce2BC7CF85EEA1E3F4a9B21b444F712eFd78df
+ 66. Martinique                     | 0xB192Fa343088Db46BA47620D475c9aB5C5b8358F
+ 67. Mauritania                     | 0x1cEADD13E0dAED9E7690d0A725E71e7ee39eB386
+ 68. Mauritius                      | 0xaABa37954dD18818Df8520EF0aCeD0EE7916248b
+ 69. Micronesia                     | 0xDd8a60dd73B57eE869f69B16dE7AaA8Ae9496b83
+ 70. Moldova                        | 0xad65c616E324C479Bda78C5250ad092AC4c93C0a
+ 71. Monaco                         | 0x2B8B8958bc1B17f78BF93dCf535E15B7657356f0
+ 72. Mongolia                       | 0x4daC0BeB9564f48e8F34fA8637C7e287f40E2C15
+ 73. Montenegro                     | 0x9c8d56972106BB47195AEC0CDcD39E4A265e84FB
+ 74. Mozambique                     | 0xF5DAfeEC457Ba2e5917d318309398C9aa98fe477
+ 75. Myanmar                        | 0xE749264649B9D8C6E2474a8470e0Ad7BD31b5bC9
+ 76. Namibia                        | 0xd7624FBbD84F12174781ff09B4DC6aE08Faf110b
+ 77. Nauru                          | 0x86A428a3953AFaA9E85A63268Cc4B625EFBaf275
+ 78. Nepal                          | 0x298DC4e1b10Fd95E316d2B1C590b50F7eb80eFCD
+ 79. Nicaragua                      | 0x454aD4f9Dd05c5E888F82e48fd6dC1e47a6ef23a
+ 80. Niger                          | 0xF534F47f5e3c054C6A323514c6D637fcF1d39E37
+ 81. Nigeria                        | 0x903ad798b11B420D3bF7414cFf47f3d8CEB94b10
+ 82. North Korea                    | 0xF4a28021ffEE0382296be9Eb7b40f2B1884A38Ae
+ 83. North Macedonia                | 0x2260a5d9E6C669F0f48A04f7dcA4E0A60CBc84C9
+ 84. Palau                          | 0x69926896ee5b4e47E3d3705d1568E4e26b1DE0e6
+ 85. Palestine                      | 0x4AA07848792387b17ec3e4c5eFE9C4d0F1166f4f
+ 86. Papua New Guinea               | 0xd8663cAEB3b58373Ff3ab1c061146d689E4d5683
+ 87. Reunion                        | 0x32e9e0Fd115F7f9A5d365D03e3ef978476424936
+ 88. Rwanda                         | 0xE739074bBA1d888fF9C1c04064F9cD0d3EEf8e0d
+ 89. Saint Kitts and Nevis          | 0x3c667b67D7703638E8d73BE3a13d3212b5C8844A
+ 90. Saint Lucia                    | 0x9b1eE5091b7344d8083203f1eee2F039ae3ABA98
+ 91. Saint Vincent                  | 0x137754A790F5D663D93AdED64b734799db1840EF
+ 92. Samoa                          | 0xa0be96a7BD2fcf83AeA3aB78fFc91B7284eEd3ed
+ 93. San Marino                     | 0x701615A94f0f669B15947f95B7d8D9Af1E516321
+ 94. Sao Tome and Principe          | 0xC194B1ad3778919518d0dd48490e66E9D71C152b
+ 95. Senegal                        | 0x09da25541E5cbc5777BC10A1d35C35B51E60741F
+ 96. Seychelles                     | 0x5102882a5475E94E4010026d3bA352424D980883
+ 97. Sierra Leone                   | 0xE2451405194C2904141B961E74284F1a37053912
+ 98. Solomon Islands                | 0x46D51CAd7bce142BaA17e6Ca96836cd1abE3b5AE
+ 99. Somalia                        | 0xb396B76bEC498B181A0159cA98684b3DA8232A30
+100. South Sudan                    | 0xBfa9c64d37DF235337aB92064f5d3eA071bA692d
+101. Sudan                          | 0xAA7949447505355aA654dE39211c95a22C5f46C4
+102. Suriname                       | 0x6fC42405eF33e6a5c984F7Bc9bc2c7c3f5dbb875
+103. Syria                          | 0x6E6B7202F9eF41ef4DB599eEa864Ab9f0aD400c7
+104. Taiwan                         | 0xcd294fB6C758aE26cE3534582eA5d414399060c4
+105. Tajikistan                     | 0x9916BA20c125C328D802856389FC955Ff6c4d443
+106. Togo                           | 0x951B617ebAc60beB11AC8fCed5de8934209B80c4
+107. Tonga                          | 0xEbCe3b684F8f84d3c362A6a3E2ece63551D34938
+108. Trinidad and Tobago            | 0xD4224c127F3965b9F79f3f792cEC4758eb3bD74C
+109. Tuvalu                         | 0xB1977828f72b582B1b2194CE56E2B4535347Da1d
+110. Uganda                         | 0x66b65b59099117eAE6d09C4E4E3d21580c9E8423
+111. Ukraine                        | 0x576Eb56A089F854099e3eEB96C33eeA7ba5b9967
+112. Vanuatu                        | 0xEEA1096b9900f5a40339F26AF9dB617A1167B803
+113. Vatican City                   | 0xF86bed95156C18bC0506096ecD2EdF35EB62be17
+114. Venezuela                      | 0xa95ce1CF4f2aC0Dd996347C0B1495425a862Ba34
+115. Western Sahara                 | 0x7F5Aec13EFC47edd87B7868a534385776be04989
+116. Yemen                          | 0x23A617973704D500f0B2cF770e03C4A57a16F0a1
+117. Zambia                         | 0x47f70004758106d129954B395fccc374dC57227b
+118. Zimbabwe                       | 0x7798fB5f1f5c06D09bb998A08d73cd874632f276
+
+============================================================
+
+--- GROUP B: DEVELOPED/RICH (REWARD: 888,888) ---
+  1. Algeria                        | 0xf813FD8A4B7d8F36Ca2cB604047D3FA818985567
+  2. Angola                         | 0xFC094FA15A6402E6eAA262f85581cf122d264Cc3
+  3. Argentina                      | 0xa3822AdE121b09d9d600359A7F4832a77Fbff332
+  4. Australia                      | 0x10147376133aAD409Dd266332033401c14520873
+  5. Austria                        | 0xFa3BD05d45c869991f95617701187B2D01AfcDaE
+  6. Azerbaijan                     | 0xd55775b0F83B108975186aD3afC16d5e0F56641B
+  7. Bangladesh                     | 0x898656abCd744ccC064F7c543A795FFC06848441
+  8. Belarus                        | 0xA9D75Cc1eA9e652cAaACdAeDa9B4405035a10037
+  9. Belgium                        | 0x809820f7D4691143d20C2CF92c02F1Cf10f3D4A1
+ 10. Bolivia                        | 0x5706447Aed10513d0acBC843b51E2D5402106648
+ 11. Brazil                         | 0x7F62c725FE49ec6bE6a0d196bF6dE5319445e913
+ 12. Bulgaria                       | 0xE8E116860EA735D8e444a72097eB52f7908e7558
+ 13. Canada                         | 0x4731BccF28365E60011f3638A536603c0f112B46
+ 14. Chile                          | 0x7781FD9887DDBC878c3C61c2F4fB5678B9Def84e
+ 15. China                          | 0xd1F467fbD6A72E654B1307727150884561D9c329
+ 16. Colombia                       | 0x25e6DA851b17d08372bd2838F1c9657665E96826
+ 17. Costa Rica                     | 0xc5CEb64a3fC9305268E5B2f6e2b188DaE45dC212
+ 18. Croatia                        | 0x00226E285233f70eA737598fa33F02858E60f6ec
+ 19. Denmark                        | 0x49b532954460C0b236D3D9e41799407D60267aAa
+ 20. Dominican Republic             | 0x54F2540fF4185E40a28B5B93610fd17A3891aDDE
+ 21. Ecuador                        | 0x36628112bA57F1fFf68Cdf419eB128e2508d65d2
+ 22. Egypt                          | 0x34956a747f78A3B4bD16F4cE081b21aD7bC7E0C6
+ 23. Ethiopia                       | 0x6Ee76c2a54ED32951E6c58AEABcae92d49E8E98B
+ 24. Finland                        | 0xbEB663225eb46E3Ba38291Fb8475645a97dB2261
+ 25. France                         | 0xbA8B9f7Da7B2DDa2372DB83b319353ea8938d536
+ 26. Germany                        | 0x5A31374b5C60f2F7a5d2c7EFFfba8b9F99D89a55
+ 27. Greece                         | 0x16B1B355e412883172Ab5FdceD5df00A75802bf0
+ 28. Guatemala                      | 0x26a0ffADB22887CDC112f65785E921407404BEF2
+ 29. Hong Kong                      | 0xa5bE0068CF47A5Fe46029eecA7B5751EF802Ef8a
+ 30. Hungary                        | 0x1b9D998F9b3bA737C5F41A2EDD87755E1898ABBb
+ 31. India                          | 0x07894346dB78a68B7587b9A6C4e2BDe18EA14742
+ 32. Indonesia                      | 0xAeE1c7603EF048B30a91Dad139FC634bD76552DF
+ 33. Iraq                           | 0xa53aE1cE8957Cce87af9dC8B50058af44BC3DE2F
+ 34. Ireland                        | 0x325E78d8bf2bf8A39cb2831F58175f3e48e1bD99
+ 35. Israel                         | 0xFE6228B435eF69CDa9Bbbd7A3f1Ae992cb8a706f
+ 36. Italy                          | 0xa49D9D8311e5d673cB4EF4D95AdDB818A10AD003
+ 37. Japan                          | 0x031D5DEC9601119800974406E5653DE09e3f16C5
+ 38. Jordan                         | 0x53117271B92CFC714E39Cd45ed5320C63B195f32
+ 39. Kazakhstan                     | 0xb8e0EB956789143DC64600D967dCb4114875BD45
+ 40. Kenya                          | 0x9f293d5EA6A597285E4e5e3D12e60263E164Be8F
+ 41. Kuwait                         | 0xb5a59316954859f9de0C99AC5182baEd9A5E5BD6
+ 42. Lebanon                        | 0x73C8720bDcd37AC65Dd0fD62bF83d1D8ec83a666
+ 43. Libya                          | 0xB39A5199feA6196eE26512E64a5e17B0F6a7A0B5
+ 44. Lithuania                      | 0x9e944cAc5E552D644DCE2Ac259cB9D947C82f162
+ 45. Luxembourg                     | 0x3f3ADba08F4B9B7aA49b55A9187d9f72D12d7785
+ 46. Macau                          | 0x1461f701c30338687a5D4af0E02aEB5B0285A70E
+ 47. Malaysia                       | 0xE3cdA139ea614Abe2E9264af23776f4eD416C6Ef
+ 48. Mexico                         | 0xe4E0B476735Ef0d6F7Fb33180d93C09716E3ee0f
+ 49. Morocco                        | 0x2E9d9dEC1510E54a3988023E27980294CD9c3aaD
+ 50. Netherlands                    | 0x6d429c7954fE6fc6B8a08bf9A74c3F52e4F1a42E
+ 51. New Zealand                    | 0xCEA30c8b93C91C1d0E3bC608AFEbe29Fe04C7225
+ 52. Norway                         | 0x317bb3C22D2e8068BFAA8E0976FB9144a89f0BFC
+ 53. Oman                           | 0x4CE03f81d1b0Cb0d057425025931cD36687E19b8
+ 54. Pakistan                       | 0x2324A76ef484120d66Dc656A1587558FDdbEe3e9
+ 55. Panama                         | 0xA73E69b3dF1957DF846b3BB9850343A3F3003E4E
+ 56. Paraguay                       | 0x2f5165D96AfbD6fa7C2821c8c733A58a97908E62
+ 57. Peru                           | 0xDDfFc65EAdbefE67FC9F1c0A16376fC1CDa56eb6
+ 58. Philippines                    | 0x2d6cDa6Ce939B71932eaA21ef3805A122348339A
+ 59. Poland                         | 0xE1eD03208C696C98107E6FD5543EE9aECF6D8e21
+ 60. Portugal                       | 0x7E52e47E7682912B9C832777fa8f08ACF89D9731
+ 61. Puerto Rico                    | 0xEc847060b6C5Af1114976737C3C0bc481fE4ccd8
+ 62. Qatar                          | 0x7B49faCb405B992788f80Cca545e14Ff1BB634c5
+ 63. Romania                        | 0x2aB93B4c5599558C28D5FBdbD12088CD8b68FC3c
+ 64. Russia                         | 0x3725f1fC381e67213cE971a1C10dDD3E70A5eB22
+ 65. Saudi Arabia                   | 0x38577795Ff6B17327Dc2B5EFe61ecCDE206ebFA2
+ 66. Serbia                         | 0x0B8F4d809F5a9b53A926d6Bd88Fb8f6E90bCBb3E
+ 67. Singapore                      | 0x86F15FA781d6b3135c849dABe1B0dA5C7D3378Eb
+ 68. Slovakia                       | 0xD39EED50E1fb9f1Cd466C961f2a064Fa1434EE2d
+ 69. Slovenia                       | 0xAC7fe1Daa89D3f6024ADa531E4E0BF0e9F7C426A
+ 70. South Africa                   | 0x09821Fb781DCDA4B81EA02fb9A9D2C64FbD63665
+ 71. South Korea                    | 0xfe75Ee1a523630423F8579bd7204106B2024FDE0
+ 72. Spain                          | 0x3A6022ab576c8E2B2a765dB321cBd254cA10A1F7
+ 73. Sri Lanka                      | 0x5eF9f81f0259C71BF11d28ab03BBD294799408A6
+ 74. Sweden                         | 0x34FD6A4d55f06123232f470eFe8063B2Cf273C19
+ 75. Switzerland                    | 0xE021248a908d1a501306Adb80Bb06838d626801B
+ 76. Tanzania                       | 0xf546daba025ae92890a4F76fD35D103Bd4f95D70
+ 77. Thailand                       | 0xB6f09B8df0792dcCFFc6C3030b6709924F404b8F
+ 78. Tunisia                        | 0x0Cd7188e55162fFeb4F95EB83DD72b96BfdC8c8c
+ 79. Turkey                         | 0xaa2dd62d300f55361D20993aFe99b2F0aeEEe676
+ 80. Turkmenistan                   | 0x783282f661FD15bE9E2908969F4b760A34d9Da37
+ 81. United Arab Emirates           | 0xf69cF8a60195fA0a5dF19AF5Da2Bef96B6C858bc
+ 82. United Kingdom                 | 0xD28063fA96Bf1df603c2B85c430887848A3DBeA8
+ 83. United States                  | 0x1c16D2C03f4659DEf60D8A471CF057303D9fa19e
+ 84. Uruguay                        | 0xbb4Dc6E5b10E0E4c075b20863d72121CF789bfe0
+ 85. Uzbekistan                     | 0xDdcfD0f081F3B58b2e744E342BD2B69654460dfd
+ 86. Vietnam                        | 0xcfc0Fb1C33813Eb9f6E270b69dbC873EB2F210Ac

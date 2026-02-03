@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODAC | Sovereign Voting Gate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #d4af37; --dark: #050505; --blue: #0052ff; --green: #00ff00; }
+        body { background: var(--dark); color: #fff; font-family: 'Inter', sans-serif; margin: 0; padding: 15px; }
+        .vote-card { background: #111; border: 1px solid #222; border-radius: 16px; padding: 25px; text-align: center; }
+        .quorum-container { margin: 25px 0; }
+        .progress-bg { background: #222; height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 10px; }
+        .progress-fill { background: linear-gradient(90deg, var(--blue), var(--green)); width: 12.5%; height: 100%; transition: 1.5s ease-in-out; }
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+        .stat-box { background: #000; padding: 10px; border-radius: 8px; border: 1px solid #333; }
+        .stat-label { font-size: 10px; color: #888; display: block; }
+        .btn-yes { width: 100%; padding: 18px; background: var(--green); color: #000; border: none; border-radius: 10px; font-weight: bold; font-size: 18px; cursor: pointer; }
+        .btn-yes:disabled { background: #222; color: #555; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <div class="vote-card">
+        <h2 style="color:var(--gold); margin-bottom:5px;">SOVEREIGN VOTE</h2>
+        <p style="font-size:12px; color:#888;">COUNTRY: PHILIPPINES | IMPACT: 0.64%</p>
+
+        <div class="quorum-container">
+            <div class="progress-bg"><div class="progress-fill" id="fill"></div></div>
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+                <span>Current: <b id="currentPer">12.5%</b></span>
+                <span>Target: <b>18% Quorum</b></span>
+            </div>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-box">
+                <span class="stat-label">Member Bonus (28.88%)</span>
+                <span style="color:var(--green); font-weight:bold;">1,848.32 CODAC</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Community Aid (71.12%)</span>
+                <span style="color:var(--gold); font-weight:bold;">4,551.68 CODAC</span>
+            </div>
+        </div>
+
+        <button id="voteBtn" class="btn-yes" onclick="castSovereignVote()">YES, RELEASE RELIEF</button>
+        <p id="msg" style="font-size:10px; color:#555; margin-top:15px;">Voting is only open to residents of the affected area.</p>
+    </div>
+
+    <script>
+        function castSovereignVote() {
+            document.getElementById('voteBtn').disabled = true;
+            document.getElementById('voteBtn').innerText = "VOTE REGISTERED";
+            let fill = document.getElementById('fill');
+            fill.style.width = '18%'; 
+            document.getElementById('currentPer').innerText = "18% (QUORUM REACHED)";
+            
+            setTimeout(() => {
+                alert("QUORUM REACHED! Authorization confirmed.\n\nRelief Split 28.88% / 71.12% has been initiated for 204 Country Protocol.");
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

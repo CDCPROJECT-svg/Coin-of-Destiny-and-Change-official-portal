@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.db
+*.sqlite3
+secrets.py
+secrets_EXAMPLE.py
+.env
+/database
+/venv
+.DS_Store
