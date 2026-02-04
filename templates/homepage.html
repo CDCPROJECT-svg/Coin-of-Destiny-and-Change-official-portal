@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODAC | Coin of Destiny & Change</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* === THEME: Midnight Gold === */
+        body { background-color: #050505; color: #e5e5e5; font-family: 'Segoe UI', sans-serif; }
+        .codac-gold-text { color: #FFD700; }
+        .glass-panel { background: rgba(20, 20, 20, 0.95); border: 1px solid #333; backdrop-filter: blur(10px); }
+        .nav-item:hover { color: #FFD700; border-bottom: 2px solid #FFD700; transition: 0.3s; }
+        .level-box { font-size: 0.7rem; padding: 4px; border: 1px solid #444; text-align: center; border-radius: 4px; }
+        .wallet-item { background: #111; padding: 10px; border-radius: 6px; border: 1px solid #222; font-size: 0.8rem; display: flex; justify-content: space-between; }
+        .incentive-icon { display: flex; flex-direction: column; align-items: center; font-size: 0.7rem; color: #aaa; }
+        .incentive-icon span { font-size: 1.2rem; margin-bottom: 4px; }
+        .incentive-icon:hover { color: #FFD700; cursor: pointer; }
+        select { background: #000; color: #fff; border: 1px solid #444; padding: 5px; font-size: 0.8rem; border-radius: 4px; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen pb-20">
+
+    <nav class="w-full bg-black border-b border-gray-800 fixed top-0 z-50 h-16 flex items-center shadow-lg shadow-yellow-900/10">
+        <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="h-8 w-8 bg-yellow-600 rounded-full flex items-center justify-center font-bold text-black">C</div>
+                <span class="text-lg font-bold tracking-wider text-white">
+                    CODAC <span class="text-yellow-500">COIN OF DESTINY & CHANGE</span>
+                </span>
+            </div>
+            <div class="hidden md:flex space-x-6 text-xs font-semibold tracking-wide uppercase">
+                <a href="/" class="nav-item text-yellow-500">🏠 Home</a>
+                <a href="/business" class="nav-item text-gray-400">💼 Business</a>
+                <a href="#" class="nav-item text-gray-400">💰 Wallet</a>
+                <a href="#" class="nav-item text-gray-400">🎁 Incentives</a>
+                <a href="#" class="nav-item text-gray-400">🏆 Rewards</a>
+                <a href="#" class="nav-item text-gray-400">🌳 Genealogy</a>
+            </div>
+             <div class="flex items-center gap-3">
+                 <div class="text-right hidden sm:block">
+                    <div class="text-xs text-gray-400">Founder</div>
+                    <div class="text-sm font-bold text-white">UDAY</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-16 bg-gray-900 border-b border-gray-800 py-2">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap gap-4 justify-between items-center text-xs text-gray-400">
+            <div class="flex gap-4 overflow-x-auto whitespace-nowrap">
+                <span>💎 Global Reserve: <span class="text-white">0</span></span>
+                <span>🏦 Treasury: <span class="text-white">0</span></span>
+                <span>🪙 CODAC Price: <span class="text-yellow-400">$1.02</span></span>
+            </div>
+            <div class="flex gap-2">
+                <select>
+                    <option>🌐 English</option><option>Filipino</option><option>Chinese</option><option>Arabic</option><option>Spanish</option>
+                </select>
+                <select>
+                    <option>🌍 Global (USDT)</option><option>🇵🇭 PHP</option><option>🇺🇸 USD</option><option>🇨🇳 CNY</option><option>🇪🇺 EUR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="md:col-span-2 space-y-6">
+            
+            <div class="glass-panel p-6 rounded-xl">
+                <h2 class="text-2xl font-bold text-white">Founder Dashboard</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6">
+                    <div class="bg-black/50 p-3 rounded border border-gray-700">
+                        <div class="text-xs text-gray-500">CODAC Points</div>
+                        <div class="text-xl font-bold text-yellow-500">85</div>
+                    </div>
+                    <div class="bg-black/50 p-3 rounded border border-gray-700">
+                        <div class="text-xs text-gray-500">Total Earned</div>
+                        <div class="text-xl font-bold text-white">0</div>
+                    </div>
+                    <div class="bg-black/50 p-3 rounded border border-gray-700">
+                        <div class="text-xs text-gray-500">Locked Coin</div>
+                        <div class="text-xl font-bold text-red-400">0</div>
+                    </div>
+                    <div class="bg-black/50 p-3 rounded border border-gray-700">
+                        <div class="text-xs text-gray-500">Succession</div>
+                        <div class="text-xs font-bold text-green-400 mt-1">VERIFIED</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel p-4 rounded-xl">
+                <h3 class="text-xs font-bold text-gray-500 uppercase mb-3">🎁 Lifestyle Incentives</h3>
+                <div class="flex justify-between px-2">
+                    <div class="incentive-icon"><span>🏠</span>House</div>
+                    <div class="incentive-icon"><span>🏥</span>Health</div>
+                    <div class="incentive-icon"><span>🚗</span>Car</div>
+                    <div class="incentive-icon"><span>✈️</span>Travel</div>
+                    <div class="incentive-icon"><span>🛍️</span>Shop</div>
+                    <div class="incentive-icon"><span>🎓</span>Scholar</div>
+                    <div class="incentive-icon"><span>👵</span>AgedCare</div>
+                    <div class="incentive-icon"><span>💰</span>Bonus</div>
+                </div>
+            </div>
+
+            <div class="glass-panel p-6 rounded-xl">
+                <h3 class="text-lg font-bold text-yellow-500 mb-4">🔐 MASTER WALLET VAULT</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <div class="wallet-item"><span>🏛️ TREASURY</span><span class="text-gray-500">Active</span></div>
+                    <div class="wallet-item"><span>💎 RESERVE</span><span class="text-gray-500">Active</span></div>
+                    <div class="wallet-item"><span>🌐 PORTAL</span><span class="text-gray-500">Active</span></div>
+                    <div class="wallet-item"><span>💵 USDT</span><span class="text-green-500">Active</span></div>
+                    <div class="wallet-item"><span>❌ Forfeited</span><span class="text-red-500">View</span></div>
+                    <div class="wallet-item"><span>🛍️ Merchant</span><span class="text-blue-400">View</span></div>
+                    <div class="wallet-item"><span>💾 Backup</span><span class="text-gray-600">Secure</span></div>
+                    <div class="wallet-item"><span>📂 Misc</span><span class="text-gray-500">View</span></div>
+                    <div class="wallet-item"><span>🔒 Locked</span><span class="text-yellow-600">View</span></div>
+                    <div class="wallet-item"><span>🎁 Incentive</span><span class="text-pink-400">View</span></div>
+                    <div class="wallet-item"><span>🏆 Reward</span><span class="text-yellow-400">View</span></div>
+                    <div class="wallet-item"><span>🏗️ INFRA</span><span class="text-gray-400">View</span></div>
+                    <div class="wallet-item"><span>🏢 Foundation</span><span class="text-gray-400">View</span></div>
+                    <div class="wallet-item"><span>🌍 204 Charity</span><span class="text-green-400">View</span></div>
+                    <div class="wallet-item"><span>💡 Innovation</span><span class="text-blue-400">View</span></div>
+                    <div class="wallet-item"><span>🔗 Blockchain</span><span class="text-purple-400">View</span></div>
+                    <div class="wallet-item"><span>🛠️ Maint.</span><span class="text-gray-600">View</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-xl h-fit">
+            <h3 class="text-lg font-bold text-white mb-4">🌳 BINARY MONITOR</h3>
+            <div class="grid grid-cols-4 gap-2">
+                <div class="level-box bg-green-900/30 text-green-400 border-green-700">L1</div>
+                <div class="level-box bg-green-900/20 text-gray-300">L2</div>
+                <div class="level-box bg-green-900/20 text-gray-300">L3</div>
+                <div class="level-box bg-green-900/20 text-gray-300">L4</div>
+                <div class="level-box bg-gray-900 text-gray-600">L5</div>
+                <div class="level-box bg-gray-900 text-gray-600">L6</div>
+                <div class="level-box bg-gray-900 text-gray-600">L7</div>
+                <div class="level-box bg-gray-900 text-gray-600">L8</div>
+                <div class="level-box bg-gray-900 text-gray-600">L9</div>
+                <div class="level-box bg-gray-900 text-gray-600">L10</div>
+                <div class="level-box bg-gray-900 text-gray-600">L11</div>
+                <div class="level-box bg-gray-900 text-gray-600">L12</div>
+                <div class="level-box bg-gray-900 text-gray-600">L13</div>
+                <div class="level-box bg-gray-900 text-gray-600">L14</div>
+                <div class="level-box bg-gray-900 text-gray-600">L15</div>
+                <div class="level-box bg-gray-900 text-gray-600">L16</div>
+                <div class="level-box bg-gray-900 text-gray-600">L17</div>
+                <div class="level-box bg-gray-900 text-gray-600">L18</div>
+                <div class="level-box bg-gray-900 text-gray-600">L19</div>
+                <div class="level-box bg-gray-900 text-gray-600">L20</div>
+                <div class="level-box bg-gray-900 text-gray-600">L21</div>
+                <div class="level-box bg-gray-900 text-gray-600">L22</div>
+                <div class="level-box bg-gray-900 text-gray-600">L23</div>
+                <div class="level-box bg-gray-900 text-gray-600">L24</div>
+                <div class="level-box bg-gray-900 text-gray-600">L25</div>
+                <div class="level-box bg-gray-900 text-gray-600">L26</div>
+                <div class="level-box bg-gray-900 text-gray-600">L27</div>
+                <div class="level-box bg-yellow-900/20 text-yellow-600 border-yellow-800">L28</div>
+            </div>
+            <div class="mt-4 text-center">
+                <button class="w-full bg-yellow-600 text-black text-xs font-bold py-2 rounded">VIEW FULL TREE</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer class="text-center text-gray-600 text-xs py-8">
+        CODAC Coin of Destiny & Change © 2026<br>
+        System ID: CODAC-2026-XX
+    </footer>
+
+</body>
+</html>

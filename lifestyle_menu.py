@@ -13,3 +13,6 @@ def show_lifestyle_menu():
     print(" [A]  AGED CARE         (Pension Plan)")
     print(" [B]  BUSINESS LOAN     (Zero Interest)")
     print("-----------------------------------------------------")
+
+if __name__ == "__main__":
+    show_lifestyle_menu()

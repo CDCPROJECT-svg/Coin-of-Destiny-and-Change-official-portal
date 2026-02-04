@@ -24,7 +24,7 @@ def home():
     user = conn.execute("SELECT * FROM active_members WHERE user_id='FOUNDER-001'").fetchone()
     
     # Accurate Count for Binary Monitor
-    pioneers = conn.execute("SELECT COUNT(*) FROM active_members WHERE current_level BETWEEN 2 AND 8").fetchone()[0]
+    pioneers = conn.execute("SELECT COUNT(*) FROM active_members WHERE current_level >= 2 AND current_level <= 8").fetchone()[0]
     countries = conn.execute("SELECT COUNT(*) FROM active_members WHERE current_level = 9").fetchone()[0]
     max_lvl = conn.execute("SELECT MAX(current_level) FROM active_members").fetchone()[0]
     conn.close()

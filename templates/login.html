@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login | CODAC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white h-screen flex items-center justify-center">
+    <div class="bg-gray-900 p-8 rounded-lg border border-yellow-600 w-96">
+        <h2 class="text-2xl font-bold text-yellow-500 mb-6 text-center">ACCESS PORTAL</h2>
+        <form action="/login" method="post" class="space-y-4">
+            <input type="text" name="username" placeholder="Username" class="w-full p-3 bg-black border border-gray-700 rounded text-white" required>
+            <input type="password" name="password" placeholder="Password" class="w-full p-3 bg-black border border-gray-700 rounded text-white" required>
+            <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-500 text-black font-bold p-3 rounded">LOGIN</button>
+        </form>
+        <p class="text-gray-500 text-xs text-center mt-4">Don't have an ID? <a href="/register" class="text-yellow-500">Register Here</a></p>
+    </div>
+</body>
+</html>
